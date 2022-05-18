@@ -65,7 +65,7 @@ label,
 li,
 td {
   text-rendering: optimizeLegibility !important;
-  margin-bottom: 0!important;
+  margin-bottom: 0 !important;
 }
 [class*='-montserrat'] {
   font-family: 'montserrat';
@@ -98,6 +98,18 @@ td {
 [class*='-italic'] {
   font-style: italic !important;
 }
+.branco {
+  color: #fff;
+  fill: #fff;
+}
+.black {
+  color: #000;
+  fill: #000;
+}
+.green {
+  color: var(--verde);
+  fill: var(--verde);
+}
 [class*='titulo-1'] {
   font-size: 120px;
 }
@@ -123,6 +135,9 @@ td {
   font-size: 24px;
 }
 [class*='paragrafo-2'] {
+  font-size: 20px;
+}
+[class*='paragrafo-3'] {
   font-size: 16px;
 }
 [class*='link-1'] {
