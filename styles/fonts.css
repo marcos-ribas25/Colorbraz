@@ -53,6 +53,11 @@
   src: url('../fonts/Arboria-Medium.ttf') format('truetype');
   font-weight: 500;
 }
+@font-face {
+  font-family: 'poppis';
+  src: url('../fonts/Poppins-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
 h1,
 h2,
 h3,
@@ -80,6 +85,9 @@ td {
 }
 [class*='-arboria'] {
   font-family: 'Arboria';
+}
+[class*='-poppis'] {
+  font-family: 'poppis';
 }
 .uppercase {
   text-transform: uppercase;
