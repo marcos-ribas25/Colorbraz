@@ -20,7 +20,12 @@ $(document).ready(function () {
       items: 1,
    })
 
-
+   $("#myInput").on("keyup", function () {
+      var value = $(this).val().toLowerCase();
+      $(".dropdown-menu li").filter(function () {
+         $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });
+   });
 
    if ($('.cep-mask').length > 0) {
       $('.cep-mask').mask('99.999-999');
