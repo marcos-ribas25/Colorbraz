@@ -175,6 +175,9 @@ td {
 [class*='link-4'] {
   font-size: 13px;
 }
+[class*='link-5'] {
+  font-size: 12px;
+}
 :root {
   --amarelo: #ffd500;
   --verde: #00803e;
@@ -1329,6 +1332,134 @@ footer .barra-footer .box-right h3 {
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
+#title-simulador {
+  padding-top: 195px;
+}
+#title-simulador h1 {
+  color: var(--verde);
+}
+#title-simulador h1 + * {
+  margin-top: 33px;
+}
+#grid-simulador .container-color {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+#grid-simulador .box-simulador {
+  padding: 30px 30px 20px;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+#banner-text {
+  padding-top: 195px;
+}
+#banner-text h1 {
+  color: var(--verde);
+}
+#banner-text h1 + * {
+  margin-top: 20px;
+}
+#banner-text + * {
+  margin-top: 20px;
+}
+#cores-select {
+  padding-bottom: 100px;
+}
+#cores-select .search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#cores-select .search-form {
+  max-width: 545px;
+  width: 100%;
+  border: 1px solid var(--azul);
+  background-color: transparent;
+  padding: 15px 24px 12px 34px;
+  max-height: 58px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#cores-select .search-form button,
+#cores-select .search-form input {
+  border: unset;
+  background-color: transparent;
+}
+#cores-select .search-form input {
+  width: 85%;
+}
+#cores-select .search-form input::placeholder {
+  color: #000000;
+  opacity: 0.2;
+}
+#cores-select .search,
+#cores-select .tabela-cores {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+#cores-select .search + * {
+  margin-top: 40px;
+}
+#cores-select .container-color {
+  max-width: 1440px;
+}
+#cores-select .cores {
+  background-color: #fff;
+  padding: 30px;
+  display: flex;
+  gap: 30px;
+}
+#cores-select .cores a {
+  max-width: 108px;
+  width: 100%;
+  height: 108px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#cores-select .tabela-cores {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  gap: 118px;
+}
+#cores-select .busca-tonalidade ul {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  max-width: 706px;
+  width: 100%;
+  gap: 30px;
+}
+#cores-select .busca-tonalidade li a {
+  display: flex;
+  width: 62px;
+  height: 62px;
+  border-radius: 100%;
+}
+#cores-select .detalhes-cor {
+  max-width: 522px;
+  width: 100%;
+}
+#cores-select .detalhes-cor .cor-escolhida {
+  display: flex;
+  width: 100%;
+  height: 522px;
+  background-color: red;
+}
+#cores-select .detalhes-cor .cor-escolhida + * {
+  margin-top: 5px;
+}
+#cores-select .detalhes-cor .nome-ancorda {
+  text-align: center;
+}
+#cores-select .detalhes-cor .nome-ancorda a {
+  margin: 0 auto;
+}
+#cores-select .detalhes-cor .nome-ancorda span + * {
+  margin-top: 5px;
+}
 #blog {
   padding: 195px 15px 6.25vw;
 }
@@ -1612,8 +1743,11 @@ footer .barra-footer .box-right h3 {
   justify-content: space-between;
   align-items: flex-start;
 }
+#blog.post .side-box.tags .content.grid-tags {
+  display: block;
+}
 #blog.post .side-box.tags h4 + * {
-  margin-top: 21px;
+  margin-top: 15px;
 }
 #blog.post .side-box.tags .grid-tags {
   display: flex;
@@ -1622,27 +1756,19 @@ footer .barra-footer .box-right h3 {
   width: 100%;
   flex-wrap: wrap;
 }
-#blog.post .side-box.tags .grid-tags .bt {
-  max-width: unset;
-  width: unset;
-  padding: 10px 15px;
-  height: 32px;
-  color: #000;
-}
 #blog.post .side-box.tags .share {
-  max-width: 140px;
+  max-width: 139px;
   width: 100%;
+  display: block;
+  border: unset;
+  padding-top: unset;
 }
 #blog.post .side-box.tags .share .midias {
   display: flex;
-  max-width: 138px;
-  width: 100%;
-  justify-content: space-between;
   gap: 10px;
 }
 #blog.post .side-box.tags .share .midias svg {
   max-width: 20px;
-  width: 100%;
   object-fit: contain;
   fill: var(--verde);
 }
@@ -1661,6 +1787,16 @@ footer .barra-footer .box-right h3 {
 }
 #blog.post .tags h4 + * {
   margin-top: 15px;
+}
+#tags-post {
+  display: flex;
+  flex-direction: column;
+}
+#tags-post h4 {
+  margin: 0 auto;
+}
+#tags-post .grid-tags {
+  display: flex !important;
 }
 .side-box.filtros.desktop {
   display: block;
