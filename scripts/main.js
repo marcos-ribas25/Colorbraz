@@ -20,6 +20,13 @@ $(document).ready(function () {
       items: 1,
    })
 
+   $('.owl-tintas').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      items: 1,
+   })
+
    $("#myInput").on("keyup", function () {
       var value = $(this).val().toLowerCase();
       $(".dropdown-menu li").filter(function () {

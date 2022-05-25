@@ -1,0 +1,74 @@
+[class*="container-color"] {
+  max-width: 640px;
+}
+.block-bar {
+  display: flex !important;
+}
+.box-generic {
+  max-width: 195px;
+  padding: 15px 20px;
+}
+.box-generic img {
+  max-width: 50px;
+  max-height: 50px;
+}
+header {
+  background-position: 17%;
+}
+header .container-color {
+  max-width: 100%;
+  padding-right: 50px;
+  padding-left: 60px;
+}
+.title-text {
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+.title-text .container-color {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+.title-text .title {
+  max-width: 90%;
+}
+.title-text .content {
+  max-width: 90%;
+  justify-content: center;
+  padding-top: unset;
+}
+.title-text .description {
+  width: 100%;
+  line-height: 20px;
+}
+#banner-home .owl-carousel .owl-stage-outer {
+  height: 720px;
+}
+#banner-home .owl-carousel .item {
+  height: 600px;
+}
+#banner-home .owl-carousel .item .container-color {
+  padding-top: 120px;
+}
+#banner-home .owl-carousel .item .container-color h1 {
+  margin-left: 110px;
+}
+#banner-home .owl-carousel .item .container-color .barra-absolute {
+  left: 180px;
+  max-width: 345px;
+  height: 82px;
+  top: 180px;
+}
+#banner-home .owl-carousel .item .container-color.box {
+  bottom: -120px;
+}
+#banner-home .owl-carousel .owl-dots {
+  bottom: 165px;
+}
+#tintas .box-tintas {
+  margin: 0 auto;
+}
+#tintas .owl-theme .owl-dots .owl-dots.active span {
+  background-color: var(--amarelo);
+}

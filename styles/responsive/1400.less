@@ -3,6 +3,17 @@
     max-width: 1080px;
 }
 
+.box-generic {
+    max-width: 340px;
+    padding: 25px 30px;
+
+    img {
+        max-width: 65px;
+        max-height: 65px;
+    }
+}
+
+
 //SECTIONS
 header {
     .logo {
@@ -20,4 +31,64 @@ header {
     }
 }
 
+.title-text {
+    padding-top: 45px;
+    padding-bottom: 25px;
+
+    .container-color {
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .title {
+        max-width: 430px;
+    }
+
+    .content {
+        max-width: 50%;
+        margin-right: unset;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .description {
+        max-width: 460px;
+        width: 100%;
+    }
+}
+
 //PAGE HOME
+#banner-home {
+    .owl-carousel {
+        .owl-stage-outer {
+            height: 880px;
+        }
+
+        .item {
+            height: 740px;
+
+            .container-color {
+                h1 {
+                    margin-left: 275px;
+                }
+
+                .barra-absolute {
+                    left: 350px;
+                }
+            }
+        }
+
+        .owl-dots {
+            bottom: 200px;
+        }
+    }
+}
+
+#tintas {
+    padding: 25px 0 40px;
+
+    .content {
+        max-width: 175px;
+        padding: 14px 0 11px;
+    }
+}

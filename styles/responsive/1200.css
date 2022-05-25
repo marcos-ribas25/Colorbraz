@@ -1,6 +1,19 @@
 [class*="container-color"] {
   max-width: 940px;
 }
+.box-generic {
+  max-width: 295px;
+  padding: 20px 25px;
+}
+.box-generic img {
+  max-width: 55px;
+  max-height: 55px;
+}
+.box-generic .description {
+  max-width: 181px;
+  width: 100%;
+  margin: 0 auto;
+}
 header {
   background-position: 38%;
 }
@@ -16,4 +29,39 @@ header nav a + * {
 }
 header .container-color {
   padding: 20px 15px;
+}
+.title-text {
+  padding-top: 35px;
+  padding-bottom: 20px;
+}
+.title-text h3 + * {
+  margin-top: 0;
+}
+#banner-home .owl-carousel .owl-stage-outer {
+  height: 855px;
+}
+#banner-home .owl-carousel .item {
+  height: 700px;
+}
+#banner-home .owl-carousel .item .container-color {
+  padding-top: 145px;
+}
+#banner-home .owl-carousel .item .container-color h1 {
+  margin-left: 205px;
+}
+#banner-home .owl-carousel .item .container-color .barra-absolute {
+  left: 265px;
+  max-width: 435px;
+  height: 95px;
+  top: 220px;
+}
+#banner-home .owl-carousel .owl-dots {
+  bottom: 185px;
+}
+#tintas {
+  padding: 20px 0 30px;
+}
+#tintas .content {
+  max-width: 145px;
+  padding: 13px 0 9px;
 }

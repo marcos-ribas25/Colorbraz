@@ -1,6 +1,14 @@
 [class*="container-color"] {
   max-width: 1080px;
 }
+.box-generic {
+  max-width: 340px;
+  padding: 25px 30px;
+}
+.box-generic img {
+  max-width: 65px;
+  max-height: 65px;
+}
 header .logo {
   max-width: 225px;
 }
@@ -9,4 +17,47 @@ header a + nav {
 }
 header nav a + * {
   margin-left: 30px;
+}
+.title-text {
+  padding-top: 45px;
+  padding-bottom: 25px;
+}
+.title-text .container-color {
+  justify-content: center;
+  gap: 30px;
+}
+.title-text .title {
+  max-width: 430px;
+}
+.title-text .content {
+  max-width: 50%;
+  margin-right: unset;
+  display: flex;
+  justify-content: flex-end;
+}
+.title-text .description {
+  max-width: 460px;
+  width: 100%;
+}
+#banner-home .owl-carousel .owl-stage-outer {
+  height: 880px;
+}
+#banner-home .owl-carousel .item {
+  height: 740px;
+}
+#banner-home .owl-carousel .item .container-color h1 {
+  margin-left: 275px;
+}
+#banner-home .owl-carousel .item .container-color .barra-absolute {
+  left: 350px;
+}
+#banner-home .owl-carousel .owl-dots {
+  bottom: 200px;
+}
+#tintas {
+  padding: 25px 0 40px;
+}
+#tintas .content {
+  max-width: 175px;
+  padding: 14px 0 11px;
 }

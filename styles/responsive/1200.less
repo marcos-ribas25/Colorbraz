@@ -3,6 +3,22 @@
     max-width: 940px;
 }
 
+.box-generic {
+    max-width: 295px;
+    padding: 20px 25px;
+
+    img {
+        max-width: 55px;
+        max-height: 55px;
+    }
+
+    .description {
+        max-width: 181px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
 //SECTIONS
 header {
     background-position: 38%;
@@ -25,5 +41,52 @@ header {
     }
 }
 
-//PAGE HOME
+.title-text {
+    padding-top: 35px;
+    padding-bottom: 20px;
 
+    h3+* {
+        margin-top: 0;
+    }
+}
+
+//PAGE HOME
+#banner-home {
+    .owl-carousel {
+        .owl-stage-outer {
+            height: 855px;
+        }
+
+        .item {
+            height: 700px;
+
+            .container-color {
+                padding-top: 145px;
+
+                h1 {
+                    margin-left: 205px;
+                }
+
+                .barra-absolute {
+                    left: 265px;
+                    max-width: 435px;
+                    height: 95px;
+                    top: 220px;
+                }
+            }
+        }
+
+        .owl-dots {
+            bottom: 185px;
+        }
+    }
+}
+
+#tintas {
+    padding: 20px 0 30px;
+
+    .content {
+        max-width: 145px;
+        padding: 13px 0 9px;
+    }
+}

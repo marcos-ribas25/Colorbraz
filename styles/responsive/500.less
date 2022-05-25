@@ -1,0 +1,100 @@
+//COMPONENTES
+[class*="container-color"] {
+    max-width: 320px;
+}
+
+.box-generic {
+    max-width: 75%;
+    padding: 10px;
+    margin: 0 auto;
+
+    img {
+        max-width: 35px;
+        max-height: 35px;
+    }
+
+    img+* {
+        margin-top: 7px;
+    }
+
+    h3 {
+        font-size: 13px;
+    }
+
+    .description {
+        font-size: 12px;
+        max-width: 80%;
+    }
+}
+
+//SECTIONS
+header {
+    background-position: 17%;
+
+    .container-color {
+        max-width: 100%;
+        padding: 15px 30px 10px 45px;
+    }
+}
+
+.title-text {
+    padding-top: 20px;
+
+    .container-color {
+        max-width: 90%;
+        gap: 10px;
+    }
+
+    .content {
+        max-width: 94%;
+    }
+
+    .description {
+        line-height: 19px;
+    }
+}
+
+//PAGE HOME
+#banner-home {
+    .owl-carousel {
+        .owl-stage-outer {
+            height: 745px;
+        }
+
+        .item {
+            height: 430px;
+
+            .container-color {
+                padding-top: 105px;
+
+                h1 {
+                    margin: 0 auto;
+                    text-align: center;
+
+                    span {
+                        margin-left: 25px;
+                    }
+                }
+
+                .barra-absolute {
+                    left: 64px;
+                    max-width: 225px;
+                    height: 55px;
+                    top: 138px;
+                }
+            }
+
+            .container-color.box {
+                bottom: -285px;
+
+                .box {
+                    flex-direction: column;
+                }
+            }
+        }
+
+        .owl-dots {
+            bottom: 0;
+        }
+    }
+}

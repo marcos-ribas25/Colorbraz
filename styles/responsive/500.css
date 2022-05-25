@@ -1,0 +1,73 @@
+[class*="container-color"] {
+  max-width: 320px;
+}
+.box-generic {
+  max-width: 75%;
+  padding: 10px;
+  margin: 0 auto;
+}
+.box-generic img {
+  max-width: 35px;
+  max-height: 35px;
+}
+.box-generic img + * {
+  margin-top: 7px;
+}
+.box-generic h3 {
+  font-size: 13px;
+}
+.box-generic .description {
+  font-size: 12px;
+  max-width: 80%;
+}
+header {
+  background-position: 17%;
+}
+header .container-color {
+  max-width: 100%;
+  padding: 15px 30px 10px 45px;
+}
+.title-text {
+  padding-top: 20px;
+}
+.title-text .container-color {
+  max-width: 90%;
+  gap: 10px;
+}
+.title-text .content {
+  max-width: 94%;
+}
+.title-text .description {
+  line-height: 19px;
+}
+#banner-home .owl-carousel .owl-stage-outer {
+  height: 745px;
+}
+#banner-home .owl-carousel .item {
+  height: 430px;
+}
+#banner-home .owl-carousel .item .container-color {
+  padding-top: 105px;
+}
+#banner-home .owl-carousel .item .container-color h1 {
+  margin: 0 auto;
+  text-align: center;
+}
+#banner-home .owl-carousel .item .container-color h1 span {
+  margin-left: 25px;
+}
+#banner-home .owl-carousel .item .container-color .barra-absolute {
+  left: 64px;
+  max-width: 225px;
+  height: 55px;
+  top: 138px;
+}
+#banner-home .owl-carousel .item .container-color.box {
+  bottom: -285px;
+}
+#banner-home .owl-carousel .item .container-color.box .box {
+  flex-direction: column;
+}
+#banner-home .owl-carousel .owl-dots {
+  bottom: 0;
+}

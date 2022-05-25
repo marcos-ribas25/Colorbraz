@@ -1,6 +1,10 @@
 [class*="container-color"] {
   max-width: 1280px;
 }
+.box-generic {
+  max-width: 400px;
+  padding: 25px 30px;
+}
 header a + nav {
   margin-left: 30px;
 }
@@ -12,4 +16,25 @@ header nav a + * {
 }
 header .container-color {
   padding: 20px 15px;
+}
+.title-text {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+.title-text .container-color {
+  justify-content: center;
+  gap: 20px;
+}
+#banner-home .owl-carousel .owl-stage-outer {
+  height: 935px;
+}
+#banner-home .owl-carousel .item {
+  height: 785px;
+}
+#banner-home .owl-carousel .owl-dots {
+  bottom: 210px;
+}
+#tintas {
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
