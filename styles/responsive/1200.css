@@ -1,0 +1,19 @@
+[class*="container-color"] {
+  max-width: 940px;
+}
+header {
+  background-position: 38%;
+}
+header .logo {
+  max-width: 225px;
+  height: 42px;
+}
+header nav {
+  margin-top: 0;
+}
+header nav a + * {
+  margin-left: 20px;
+}
+header .container-color {
+  padding: 20px 15px;
+}

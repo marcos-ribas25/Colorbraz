@@ -178,6 +178,21 @@ td {
 [class*='link-5'] {
   font-size: 12px;
 }
+@media only screen and (max-width: 1400px) {
+  [class*='link-2'] {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  [class*='link-2'] {
+    font-size: 14.5px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  [class*='link-2'] {
+    font-size: 14px;
+  }
+}
 :root {
   --amarelo: #ffd500;
   --verde: #00803e;
@@ -648,10 +663,12 @@ header {
   width: 100%;
   position: absolute;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
   z-index: 99;
   top: 0;
   left: 0;
+  z-index: 3;
 }
 header .container-color {
   display: flex;
@@ -661,10 +678,11 @@ header .container-color {
 }
 header .logo {
   max-width: 290px;
-}
-header .logo img {
   width: 100%;
-  object-fit: contain;
+  height: 55px;
+}
+header .logo::after {
+  display: none;
 }
 header a {
   position: relative;
@@ -793,6 +811,10 @@ footer .barra-footer .box-right h3 {
 }
 #banner-home .owl-carousel .item {
   height: 900px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  width: 100%;
 }
 #banner-home .owl-carousel .item .container-color {
   position: relative;
@@ -2093,11 +2115,53 @@ footer .barra-footer .box-right h3 {
 @media only screen and (max-width: 1600px) {
   [class*="container-color"] {
     max-width: 1280px;
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+  }
+  header a + nav {
+    margin-left: 30px;
+  }
+  header nav {
+    margin-top: 5px;
+  }
+  header nav a + * {
+    margin-left: 50px;
+  }
+  header .container-color {
+    padding: 20px 15px;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  [class*="container-color"] {
+    max-width: 1080px;
+  }
+  header .logo {
+    max-width: 225px;
+  }
+  header a + nav {
+    margin-left: 0;
+  }
+  header nav a + * {
+    margin-left: 30px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  [class*="container-color"] {
+    max-width: 940px;
+  }
+  header {
+    background-position: 38%;
+  }
+  header .logo {
+    max-width: 225px;
+    height: 42px;
+  }
+  header nav {
+    margin-top: 0;
+  }
+  header nav a + * {
+    margin-left: 20px;
+  }
+  header .container-color {
+    padding: 20px 15px;
   }
 }
 @media only screen and (max-width: 1024px) {
