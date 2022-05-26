@@ -1,6 +1,10 @@
 [class*="container-color"] {
   max-width: 320px;
 }
+.bt {
+  max-width: 163px;
+  height: 36px;
+}
 .box-generic {
   max-width: 75%;
   padding: 10px;
@@ -40,6 +44,41 @@ header .container-color {
 .title-text .description {
   line-height: 19px;
 }
+.text-absolute-image {
+  padding: 15px 0;
+}
+.text-absolute-image .container-color {
+  max-width: 90%;
+}
+.text-absolute-image .description {
+  line-height: 18px;
+}
+.text-absolute-image .description + * {
+  margin-top: 10px;
+}
+.text-absolute-image.right .content {
+  padding: 25px 20px 20px;
+}
+.contato {
+  padding: 20px 0;
+}
+.contato .container-color {
+  gap: 12px;
+  max-width: 90%;
+}
+.contato input + * {
+  margin-top: 5px;
+}
+.contato .bt {
+  max-width: 280px;
+}
+.contato .actions {
+  flex-direction: column;
+  gap: 20px;
+}
+.contato .actions .recapcha {
+  max-width: 230px;
+}
 #banner-home .owl-carousel .owl-stage-outer {
   height: 745px;
 }
@@ -70,4 +109,44 @@ header .container-color {
 }
 #banner-home .owl-carousel .owl-dots {
   bottom: 0;
+}
+#tintas {
+  padding: 15px 0;
+}
+#teste {
+  padding: 15px 0;
+}
+#teste .title {
+  height: 120px;
+  padding-top: 20px;
+}
+#teste .title h2 {
+  font-size: 24px;
+}
+#teste .image {
+  display: none;
+}
+#teste .content {
+  padding: 15px;
+  margin-top: -25px;
+  max-width: 100%;
+}
+#teste .content .description {
+  line-height: 17px;
+  font-size: 11px;
+}
+#teste .content .description + * {
+  margin-top: 10px;
+}
+#dicas {
+  padding: 15px 0;
+}
+#dicas h2 + * {
+  margin-top: 8px;
+}
+#dicas .owl-carousel {
+  margin-top: 15px;
+}
+#contato-home {
+  margin-top: 15px;
 }

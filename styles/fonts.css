@@ -182,6 +182,9 @@ td {
   [class*='titulo-3'] {
     font-size: 46px;
   }
+  [class*='paragrafo-1'] {
+    font-size: 22px;
+  }
 }
 @media only screen and (max-width: 1400px) {
   [class*='titulo-3'] {
@@ -194,6 +197,12 @@ td {
     font-size: 15px;
   }
   [class*='paragrafo-2'] {
+    font-size: 18px;
+  }
+  [class*='paragrafo-1'] {
+    font-size: 20px;
+  }
+  [class*='link-1'] {
     font-size: 18px;
   }
   [class*='link-2'] {
@@ -222,6 +231,12 @@ td {
   [class*='paragrafo-2'] {
     font-size: 16px;
   }
+  [class*='paragrafo-1'] {
+    font-size: 18px;
+  }
+  [class*='link-1'] {
+    font-size: 16px;
+  }
   [class*='link-2'] {
     font-size: 14.5px;
   }
@@ -245,6 +260,12 @@ td {
   [class*='paragrafo-3'] {
     font-size: 13px;
   }
+  [class*='link-1'] {
+    font-size: 14px;
+  }
+  [class*='paragrafo-1'] {
+    font-size: 16px;
+  }
   [class*='link-2'] {
     font-size: 14px;
   }
@@ -259,6 +280,9 @@ td {
   [class*='titulo-3'] {
     font-size: 30px;
   }
+  [class*='link-2'] {
+    font-size: 13px;
+  }
 }
 @media only screen and (max-width: 500px) {
   [class*='titulo-1'] {
@@ -272,5 +296,11 @@ td {
   }
   [class*='titulo-7'] {
     font-size: 13px;
+  }
+  [class*='paragrafo-3'] {
+    font-size: 12px;
+  }
+  [class*='link-2'] {
+    font-size: 12px;
   }
 }

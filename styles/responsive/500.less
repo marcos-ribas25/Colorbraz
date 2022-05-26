@@ -3,6 +3,11 @@
     max-width: 320px;
 }
 
+.bt {
+    max-width: 163px;
+    height: 36px;
+}
+
 .box-generic {
     max-width: 75%;
     padding: 10px;
@@ -54,6 +59,56 @@ header {
     }
 }
 
+.text-absolute-image {
+    padding: 15px 0;
+
+    .container-color {
+        max-width: 90%;
+    }
+
+    .description {
+        line-height: 18px;
+    }
+
+    .description+* {
+        margin-top: 10px;
+    }
+}
+
+.text-absolute-image.right {
+    .content {
+        padding: 25px 20px 20px;
+    }
+}
+
+.contato {
+    padding: 20px 0;
+
+    .container-color {
+        gap: 12px;
+        max-width: 90%;
+    }
+
+    input+* {
+        margin-top: 5px;
+    }
+
+
+
+    .bt {
+        max-width: 280px;
+    }
+
+    .actions {
+        flex-direction: column;
+        gap: 20px;
+
+        .recapcha {
+            max-width: 230px;
+        }
+    }
+}
+
 //PAGE HOME
 #banner-home {
     .owl-carousel {
@@ -97,4 +152,56 @@ header {
             bottom: 0;
         }
     }
+}
+
+#tintas {
+    padding: 15px 0;
+}
+
+#teste {
+    padding: 15px 0;
+
+    .title {
+        height: 120px;
+        padding-top: 20px;
+
+        h2 {
+            font-size: 24px;
+        }
+    }
+
+    .image {
+        display: none;
+    }
+
+    .content {
+        padding: 15px;
+        margin-top: -25px;
+        max-width: 100%;
+
+        .description {
+            line-height: 17px;
+            font-size: 11px;
+        }
+
+        .description+* {
+            margin-top: 10px;
+        }
+    }
+}
+
+#dicas {
+    padding: 15px 0;
+
+    h2+* {
+        margin-top: 8px;
+    }
+
+    .owl-carousel {
+        margin-top: 15px;
+    }
+}
+
+#contato-home {
+    margin-top: 15px;
 }

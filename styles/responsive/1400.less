@@ -3,6 +3,15 @@
     max-width: 1080px;
 }
 
+.bt {
+    max-width: 200px;
+    height: 45px;
+}
+
+.bt.full {
+    max-width: 330px;
+}
+
 .box-generic {
     max-width: 340px;
     padding: 25px 30px;
@@ -57,6 +66,67 @@ header {
     }
 }
 
+.text-absolute-image {
+    padding-top: 45px;
+    padding-bottom: 35px;
+
+    .absolute-image {
+        max-width: 390px;
+    }
+
+    .content {
+        max-width: 735px;
+        padding: 50px 0;
+    }
+
+    h2+* {
+        margin-top: 20px;
+    }
+
+    .description+* {
+        margin-top: 30px;
+    }
+}
+
+.text-absolute-image.right {
+    .content {
+        padding-left: 110px;
+    }
+}
+
+.contato {
+    padding-top: 65px;
+    padding-bottom: 50px;
+
+    input {
+        padding: 16px 15px 14px 20px;
+    }
+
+    h2+* {
+        margin-top: 37px;
+    }
+
+    .links+* {
+        margin-top: 15px;
+    }
+
+    label+* {
+        margin-top: 3px;
+    }
+
+    input+* {
+        margin-top: 15px;
+    }
+
+    form {
+        max-width: 560px;
+    }
+
+    .bt {
+        max-width: 290px;
+    }
+}
+
 //PAGE HOME
 #banner-home {
     .owl-carousel {
@@ -91,4 +161,97 @@ header {
         max-width: 175px;
         padding: 14px 0 11px;
     }
+}
+
+#teste {
+    padding: 40px 0;
+
+    .title {
+        height: 320px;
+        padding-top: 45px;
+
+        .icon-absolute-left {
+            bottom: 75px;
+            left: 95px;
+            max-width: 200px;
+        }
+
+        .icon-absolute-top {
+            top: -65px;
+            right: 0;
+            max-width: 170px;
+        }
+    }
+
+    .image {
+        margin-top: -130px;
+    }
+
+    .container-color {
+        max-width: 940px;
+    }
+
+    .content {
+        padding: 30px 25px;
+        margin-top: -65px;
+
+        .description {
+            line-height: 21px;
+            font-size: 14px;
+        }
+
+        .description+* {
+            margin-top: 17px;
+        }
+
+        .bt {
+            max-width: 200px;
+            height: 35px;
+            font-size: 14px;
+        }
+    }
+}
+
+#dicas {
+    padding: 35px 0;
+
+    h2+* {
+        margin-top: 20px;
+    }
+
+    .title+* {
+        margin-top: 25px;
+    }
+
+    .box {
+        gap: 25px;
+    }
+
+    .description {
+        line-height: 22px;
+    }
+
+    .box-dicas {
+        padding: 20px 20px 30px;
+
+        .image+* {
+            margin-top: 12px;
+        }
+
+        h4+* {
+            margin-top: 7px;
+        }
+
+        h3+* {
+            margin-top: 11px;
+        }
+
+        .description+* {
+            margin-top: 22px;
+        }
+    }
+}
+
+#contato-home {
+    margin-top: 40px;
 }

@@ -1,3 +1,25 @@
 [class*="container-color"] {
   max-width: 380px;
 }
+.bt {
+  max-width: 155px;
+  height: 33px;
+}
+.text-absolute-image {
+  padding: 15px 0;
+}
+.text-absolute-image h2 {
+  font-size: 20px;
+}
+.text-absolute-image .container-color {
+  max-width: 90%;
+}
+.text-absolute-image .description {
+  line-height: 17px;
+}
+.text-absolute-image .description + * {
+  margin-top: 10px;
+}
+.text-absolute-image.right .content {
+  padding: 20px 17px 20px;
+}

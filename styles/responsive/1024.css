@@ -42,6 +42,58 @@ header .container-color {
   width: 100%;
   line-height: 20px;
 }
+.text-absolute-image {
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+.text-absolute-image .absolute-image {
+  display: none;
+}
+.text-absolute-image .content {
+  max-width: 100%;
+  text-align: center;
+}
+.text-absolute-image h2 {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.text-absolute-image h2 + * {
+  margin-top: 10px;
+}
+.text-absolute-image .description {
+  line-height: 20px;
+}
+.text-absolute-image .bt {
+  margin: 0 auto;
+}
+.text-absolute-image .description + * {
+  margin-top: 20px;
+}
+.text-absolute-image.right .content {
+  padding: 40px 50px 30px;
+}
+.contato {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.contato .container-color {
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.contato h2 {
+  text-align: center;
+}
+.contato h2 + * {
+  margin-top: 0;
+}
+.contato .links {
+  display: none;
+}
+.contato input {
+  padding: 8px 15px 6px;
+  height: 45px;
+}
 #banner-home .owl-carousel .owl-stage-outer {
   height: 720px;
 }
@@ -66,9 +118,60 @@ header .container-color {
 #banner-home .owl-carousel .owl-dots {
   bottom: 165px;
 }
+#tintas {
+  padding: 15px 0 20px;
+}
 #tintas .box-tintas {
   margin: 0 auto;
 }
-#tintas .owl-theme .owl-dots .owl-dots.active span {
-  background-color: var(--amarelo);
+#teste {
+  padding: 20px 0;
+}
+#teste .title {
+  height: 230px;
+  padding-top: 30px;
+}
+#teste .title .icon-absolute-left {
+  left: 8.73vw;
+  max-width: 130px;
+  bottom: 60px;
+}
+#teste .title .icon-absolute-top {
+  top: -40px;
+  max-width: 95px;
+}
+#teste .image {
+  margin-top: -80px;
+}
+#teste .container-color {
+  max-width: 630px;
+}
+#teste .content {
+  padding: 20px 25px;
+  margin-top: -50px;
+  max-width: 470px;
+}
+#teste .content .description {
+  line-height: 19px;
+  font-size: 12px;
+}
+#teste .content .description + * {
+  margin-top: 12px;
+}
+#teste .content .bt {
+  max-width: 175px;
+  height: 29px;
+  font-size: 12px;
+}
+#dicas {
+  padding: 20px 0;
+}
+#dicas h2 + * {
+  margin-top: 10px;
+}
+#dicas .description {
+  line-height: 20px;
+}
+#contato-home {
+  margin-top: 25px;
 }

@@ -1,6 +1,10 @@
 [class*="container-color"] {
   max-width: 1280px;
 }
+.bt {
+  max-width: 215px;
+  height: 55px;
+}
 .box-generic {
   max-width: 400px;
   padding: 25px 30px;
@@ -25,6 +29,42 @@ header .container-color {
   justify-content: center;
   gap: 20px;
 }
+.text-absolute-image {
+  padding-top: 55px;
+  padding-bottom: 45px;
+}
+.text-absolute-image .absolute-image {
+  max-width: 469px;
+}
+.text-absolute-image .content {
+  max-width: 910px;
+  padding: 70px 0;
+}
+.text-absolute-image h2 + * {
+  margin-top: 25px;
+}
+.text-absolute-image .description + * {
+  margin-top: 42px;
+}
+.text-absolute-image.right .content {
+  padding-left: 180px;
+}
+.contato {
+  padding-top: 85px;
+  padding-bottom: 65px;
+}
+.contato label + * {
+  margin-top: 5px;
+}
+.contato input + * {
+  margin-top: 17px;
+}
+.contato form {
+  max-width: 705px;
+}
+.contato h2 + * {
+  margin-top: 42px;
+}
 #banner-home .owl-carousel .owl-stage-outer {
   height: 935px;
 }
@@ -37,4 +77,86 @@ header .container-color {
 #tintas {
   padding-top: 30px;
   padding-bottom: 50px;
+}
+#teste {
+  padding: 45px 0;
+}
+#teste .title {
+  height: 400px;
+  padding-top: 65px;
+}
+#teste .title .icon-absolute-left {
+  bottom: 105px;
+  left: 50px;
+  max-width: 275px;
+}
+#teste .title .icon-absolute-top {
+  top: -80px;
+  right: -10px;
+  max-width: 230px;
+}
+#teste .image {
+  margin-top: -170px;
+}
+#teste .container-color {
+  max-width: 1125px;
+}
+#teste .content {
+  padding: 40px;
+  margin-top: -80px;
+}
+#teste .content .description {
+  line-height: 22px;
+}
+#teste .content .description + * {
+  margin-top: 20px;
+}
+#teste .content .bt {
+  max-width: 220px;
+  height: 40px;
+}
+#dicas {
+  padding: 40px 0;
+}
+#dicas h2 + * {
+  margin-top: 25px;
+}
+#dicas .title + * {
+  margin-top: 30px;
+}
+#dicas .box {
+  gap: 27px;
+}
+#dicas .description {
+  line-height: 23px;
+}
+#dicas .box-dicas {
+  padding: 20px 20px 30px;
+}
+#dicas .box-dicas .image + * {
+  margin-top: 15px;
+}
+#dicas .box-dicas h4 + * {
+  margin-top: 8px;
+}
+#dicas .box-dicas h3 + * {
+  margin-top: 13px;
+}
+#dicas .box-dicas .description + * {
+  margin-top: 25px;
+}
+#contato-home {
+  margin-top: 45px;
+}
+#banner-sobre {
+  padding-top: 180px;
+}
+#banner-sobre .title + * {
+  margin-top: 105px;
+}
+#banner-sobre .image {
+  max-width: 670px;
+}
+#banner-sobre .description {
+  margin-bottom: 55px;
 }

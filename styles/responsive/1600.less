@@ -3,6 +3,11 @@
     max-width: 1280px;
 }
 
+.bt {
+    max-width: 215px;
+    height: 55px;
+}
+
 .box-generic {
     max-width: 400px;
     padding: 25px 30px;
@@ -37,6 +42,56 @@ header {
     }
 }
 
+.text-absolute-image {
+    padding-top: 55px;
+    padding-bottom: 45px;
+
+    .absolute-image {
+        max-width: 469px;
+    }
+
+    .content {
+        max-width: 910px;
+        padding: 70px 0;
+    }
+
+    h2+* {
+        margin-top: 25px;
+    }
+
+    .description+* {
+        margin-top: 42px;
+    }
+}
+
+.text-absolute-image.right {
+    .content {
+        padding-left: 180px;
+    }
+}
+
+.contato {
+    padding-top: 85px;
+    padding-bottom: 65px;
+
+    label+* {
+        margin-top: 5px;
+    }
+
+    input+* {
+        margin-top: 17px;
+    }
+
+    form {
+        max-width: 705px;
+    }
+
+    h2+* {
+        margin-top: 42px;
+    }
+}
+
+
 //PAGE HOME
 #banner-home {
     .owl-carousel {
@@ -57,4 +112,112 @@ header {
 #tintas {
     padding-top: 30px;
     padding-bottom: 50px;
+}
+
+#teste {
+    padding: 45px 0;
+
+    .title {
+        height: 400px;
+        padding-top: 65px;
+
+        .icon-absolute-left {
+            bottom: 105px;
+            left: 50px;
+            max-width: 275px;
+        }
+
+        .icon-absolute-top {
+            top: -80px;
+            right: -10px;
+            max-width: 230px;
+        }
+    }
+
+    .image {
+        margin-top: -170px;
+    }
+
+    .container-color {
+        max-width: 1125px;
+    }
+
+    .content {
+        padding: 40px;
+        margin-top: -80px;
+
+        .description {
+            line-height: 22px;
+        }
+
+        .description+* {
+            margin-top: 20px;
+        }
+
+        .bt {
+            max-width: 220px;
+            height: 40px;
+        }
+    }
+}
+
+#dicas {
+    padding: 40px 0;
+
+    h2+* {
+        margin-top: 25px;
+    }
+
+    .title+* {
+        margin-top: 30px;
+    }
+
+    .box {
+        gap: 27px;
+    }
+
+    .description {
+        line-height: 23px;
+    }
+
+    .box-dicas {
+        padding: 20px 20px 30px;
+
+        .image+* {
+            margin-top: 15px;
+        }
+
+        h4+* {
+            margin-top: 8px;
+        }
+
+        h3+* {
+            margin-top: 13px;
+        }
+
+        .description+* {
+            margin-top: 25px;
+        }
+    }
+}
+
+#contato-home {
+    margin-top: 45px;
+}
+
+//PAGE SOBRE
+#banner-sobre {
+    padding-top: 180px;
+
+    .title+* {
+        margin-top: 105px;
+    }
+
+    .image {
+        max-width: 670px;
+    }
+
+    .description {
+        margin-bottom: 55px;
+    }
 }

@@ -3,6 +3,13 @@
     max-width: 480px;
 }
 
+.bt {
+    max-width: 170px;
+    height: 40px;
+}
+
+
+
 .box-generic {
     max-width: 145px;
     padding: 12px;
@@ -42,6 +49,44 @@
     }
 }
 
+.text-absolute-image {
+    padding: 15px 0;
+
+    h2 {
+        margin: 0 auto;
+    }
+
+    .description {
+        line-height: 19px;
+    }
+
+    .description+* {
+        margin-top: 15px;
+    }
+}
+
+.text-absolute-image.right {
+    .content {
+        padding: 30px 20px 20px;
+    }
+}
+
+.contato {
+    padding: 30px 0;
+
+    .container-color {
+        gap: 15px;
+    }
+
+    input+* {
+        margin-top: 7px;
+    }
+
+    .bt {
+        max-width: 205px;
+    }
+}
+
 
 //PAGE HOME
 #banner-home {
@@ -76,4 +121,60 @@
             bottom: 140px;
         }
     }
+}
+
+#teste {
+    padding: 20px 0;
+
+    .title {
+        height: 170px;
+        padding-top: 30px;
+
+        h2 {
+            max-width: 450px;
+        }
+
+        .icon-absolute-left {
+            display: none;
+        }
+
+        .icon-absolute-top {
+            display: none;
+        }
+    }
+
+    .image {
+        margin-top: -45px;
+    }
+
+    .container-color {
+        max-width: 90%;
+    }
+
+    .content {
+        padding: 17px 15px;
+        margin-top: -25px;
+        max-width: 75vw;
+
+        .description {
+            line-height: 17px;
+            font-size: 11px;
+        }
+
+        .bt {
+            max-width: 171px;
+            height: 28px;
+            font-size: 11px;
+        }
+    }
+}
+
+#dicas {
+    .container-color {
+        max-width: 90%;
+    }
+}
+
+#contato-home {
+    margin-top: 20px;
 }

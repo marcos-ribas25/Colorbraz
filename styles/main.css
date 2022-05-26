@@ -182,6 +182,9 @@ td {
   [class*='titulo-3'] {
     font-size: 46px;
   }
+  [class*='paragrafo-1'] {
+    font-size: 22px;
+  }
 }
 @media only screen and (max-width: 1400px) {
   [class*='titulo-3'] {
@@ -194,6 +197,12 @@ td {
     font-size: 15px;
   }
   [class*='paragrafo-2'] {
+    font-size: 18px;
+  }
+  [class*='paragrafo-1'] {
+    font-size: 20px;
+  }
+  [class*='link-1'] {
     font-size: 18px;
   }
   [class*='link-2'] {
@@ -222,6 +231,12 @@ td {
   [class*='paragrafo-2'] {
     font-size: 16px;
   }
+  [class*='paragrafo-1'] {
+    font-size: 18px;
+  }
+  [class*='link-1'] {
+    font-size: 16px;
+  }
   [class*='link-2'] {
     font-size: 14.5px;
   }
@@ -245,6 +260,12 @@ td {
   [class*='paragrafo-3'] {
     font-size: 13px;
   }
+  [class*='link-1'] {
+    font-size: 14px;
+  }
+  [class*='paragrafo-1'] {
+    font-size: 16px;
+  }
   [class*='link-2'] {
     font-size: 14px;
   }
@@ -259,6 +280,9 @@ td {
   [class*='titulo-3'] {
     font-size: 30px;
   }
+  [class*='link-2'] {
+    font-size: 13px;
+  }
 }
 @media only screen and (max-width: 500px) {
   [class*='titulo-1'] {
@@ -272,6 +296,12 @@ td {
   }
   [class*='titulo-7'] {
     font-size: 13px;
+  }
+  [class*='paragrafo-3'] {
+    font-size: 12px;
+  }
+  [class*='link-2'] {
+    font-size: 12px;
   }
 }
 :root {
@@ -532,6 +562,9 @@ ul {
 .list-breadcrumb li:last-child::after span {
   margin-right: unset;
 }
+.owl-theme .owl-dots .owl-dot.active span {
+  background-color: var(--amarelo) !important;
+}
 .dropdown-menu {
   min-width: 100%;
 }
@@ -676,6 +709,14 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
+}
+.contato .actions .recapcha {
+  max-width: 385px;
+}
+.contato .actions .recapcha img {
+  object-fit: contain;
+  width: 100%;
 }
 .contato button {
   border: unset;
@@ -690,6 +731,8 @@ ul {
 }
 .text-absolute-image .absolute-image {
   position: absolute;
+  max-width: 513px;
+  width: 100%;
 }
 .text-absolute-image .content {
   max-width: 1005px;
@@ -1118,11 +1161,34 @@ footer .barra-footer .box-right h3 {
   padding: 20px 20px 40px;
   background-color: #fff;
   text-align: center;
+  max-width: 430px;
+  width: 100%;
 }
 #dicas .box-dicas .text {
   max-width: 350px;
   width: 100%;
   margin: 0 auto;
+}
+#dicas .box-dicas .image {
+  max-width: 390px;
+}
+#dicas .box-dicas .image img {
+  width: 100%;
+  object-fit: contain;
+}
+#dicas .box-dicas h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+#dicas .box-dicas p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
 }
 #dicas .box-dicas a {
   margin: 0 auto;
@@ -1139,16 +1205,21 @@ footer .barra-footer .box-right h3 {
 #dicas .box-dicas .description + * {
   margin-top: 29px;
 }
+#dicas .box-aparecer {
+  display: none;
+}
 #contato-home {
   margin-top: 50px;
 }
 #banner-sobre {
   background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
   padding-top: 235px;
   padding-bottom: 45px;
 }
 #banner-sobre .container-color {
-  max-width: 1660px;
+  max-width: 86vw;
   padding-right: 0;
   margin: 0 0 0 auto;
   display: flex;
@@ -1173,7 +1244,7 @@ footer .barra-footer .box-right h3 {
   left: -20px;
 }
 #banner-sobre .title + * {
-  margin-top: 285px;
+  margin-top: 14.84vw;
 }
 #banner-sobre .description {
   line-height: 32px;
@@ -2210,6 +2281,10 @@ footer .barra-footer .box-right h3 {
   [class*="container-color"] {
     max-width: 1280px;
   }
+  .bt {
+    max-width: 215px;
+    height: 55px;
+  }
   .box-generic {
     max-width: 400px;
     padding: 25px 30px;
@@ -2234,6 +2309,42 @@ footer .barra-footer .box-right h3 {
     justify-content: center;
     gap: 20px;
   }
+  .text-absolute-image {
+    padding-top: 55px;
+    padding-bottom: 45px;
+  }
+  .text-absolute-image .absolute-image {
+    max-width: 469px;
+  }
+  .text-absolute-image .content {
+    max-width: 910px;
+    padding: 70px 0;
+  }
+  .text-absolute-image h2 + * {
+    margin-top: 25px;
+  }
+  .text-absolute-image .description + * {
+    margin-top: 42px;
+  }
+  .text-absolute-image.right .content {
+    padding-left: 180px;
+  }
+  .contato {
+    padding-top: 85px;
+    padding-bottom: 65px;
+  }
+  .contato label + * {
+    margin-top: 5px;
+  }
+  .contato input + * {
+    margin-top: 17px;
+  }
+  .contato form {
+    max-width: 705px;
+  }
+  .contato h2 + * {
+    margin-top: 42px;
+  }
   #banner-home .owl-carousel .owl-stage-outer {
     height: 935px;
   }
@@ -2247,10 +2358,99 @@ footer .barra-footer .box-right h3 {
     padding-top: 30px;
     padding-bottom: 50px;
   }
+  #teste {
+    padding: 45px 0;
+  }
+  #teste .title {
+    height: 400px;
+    padding-top: 65px;
+  }
+  #teste .title .icon-absolute-left {
+    bottom: 105px;
+    left: 50px;
+    max-width: 275px;
+  }
+  #teste .title .icon-absolute-top {
+    top: -80px;
+    right: -10px;
+    max-width: 230px;
+  }
+  #teste .image {
+    margin-top: -170px;
+  }
+  #teste .container-color {
+    max-width: 1125px;
+  }
+  #teste .content {
+    padding: 40px;
+    margin-top: -80px;
+  }
+  #teste .content .description {
+    line-height: 22px;
+  }
+  #teste .content .description + * {
+    margin-top: 20px;
+  }
+  #teste .content .bt {
+    max-width: 220px;
+    height: 40px;
+  }
+  #dicas {
+    padding: 40px 0;
+  }
+  #dicas h2 + * {
+    margin-top: 25px;
+  }
+  #dicas .title + * {
+    margin-top: 30px;
+  }
+  #dicas .box {
+    gap: 27px;
+  }
+  #dicas .description {
+    line-height: 23px;
+  }
+  #dicas .box-dicas {
+    padding: 20px 20px 30px;
+  }
+  #dicas .box-dicas .image + * {
+    margin-top: 15px;
+  }
+  #dicas .box-dicas h4 + * {
+    margin-top: 8px;
+  }
+  #dicas .box-dicas h3 + * {
+    margin-top: 13px;
+  }
+  #dicas .box-dicas .description + * {
+    margin-top: 25px;
+  }
+  #contato-home {
+    margin-top: 45px;
+  }
+  #banner-sobre {
+    padding-top: 180px;
+  }
+  #banner-sobre .title + * {
+    margin-top: 105px;
+  }
+  #banner-sobre .image {
+    max-width: 670px;
+  }
+  #banner-sobre .description {
+    margin-bottom: 55px;
+  }
 }
 @media only screen and (max-width: 1400px) {
   [class*="container-color"] {
     max-width: 1080px;
+  }
+  .bt {
+    max-width: 200px;
+    height: 45px;
+  }
+  .bt.full {
+    max-width: 330px;
   }
   .box-generic {
     max-width: 340px;
@@ -2290,6 +2490,51 @@ footer .barra-footer .box-right h3 {
     max-width: 460px;
     width: 100%;
   }
+  .text-absolute-image {
+    padding-top: 45px;
+    padding-bottom: 35px;
+  }
+  .text-absolute-image .absolute-image {
+    max-width: 390px;
+  }
+  .text-absolute-image .content {
+    max-width: 735px;
+    padding: 50px 0;
+  }
+  .text-absolute-image h2 + * {
+    margin-top: 20px;
+  }
+  .text-absolute-image .description + * {
+    margin-top: 30px;
+  }
+  .text-absolute-image.right .content {
+    padding-left: 110px;
+  }
+  .contato {
+    padding-top: 65px;
+    padding-bottom: 50px;
+  }
+  .contato input {
+    padding: 16px 15px 14px 20px;
+  }
+  .contato h2 + * {
+    margin-top: 37px;
+  }
+  .contato .links + * {
+    margin-top: 15px;
+  }
+  .contato label + * {
+    margin-top: 3px;
+  }
+  .contato input + * {
+    margin-top: 15px;
+  }
+  .contato form {
+    max-width: 560px;
+  }
+  .contato .bt {
+    max-width: 290px;
+  }
   #banner-home .owl-carousel .owl-stage-outer {
     height: 880px;
   }
@@ -2312,10 +2557,86 @@ footer .barra-footer .box-right h3 {
     max-width: 175px;
     padding: 14px 0 11px;
   }
+  #teste {
+    padding: 40px 0;
+  }
+  #teste .title {
+    height: 320px;
+    padding-top: 45px;
+  }
+  #teste .title .icon-absolute-left {
+    bottom: 75px;
+    left: 95px;
+    max-width: 200px;
+  }
+  #teste .title .icon-absolute-top {
+    top: -65px;
+    right: 0;
+    max-width: 170px;
+  }
+  #teste .image {
+    margin-top: -130px;
+  }
+  #teste .container-color {
+    max-width: 940px;
+  }
+  #teste .content {
+    padding: 30px 25px;
+    margin-top: -65px;
+  }
+  #teste .content .description {
+    line-height: 21px;
+    font-size: 14px;
+  }
+  #teste .content .description + * {
+    margin-top: 17px;
+  }
+  #teste .content .bt {
+    max-width: 200px;
+    height: 35px;
+    font-size: 14px;
+  }
+  #dicas {
+    padding: 35px 0;
+  }
+  #dicas h2 + * {
+    margin-top: 20px;
+  }
+  #dicas .title + * {
+    margin-top: 25px;
+  }
+  #dicas .box {
+    gap: 25px;
+  }
+  #dicas .description {
+    line-height: 22px;
+  }
+  #dicas .box-dicas {
+    padding: 20px 20px 30px;
+  }
+  #dicas .box-dicas .image + * {
+    margin-top: 12px;
+  }
+  #dicas .box-dicas h4 + * {
+    margin-top: 7px;
+  }
+  #dicas .box-dicas h3 + * {
+    margin-top: 11px;
+  }
+  #dicas .box-dicas .description + * {
+    margin-top: 22px;
+  }
+  #contato-home {
+    margin-top: 40px;
+  }
 }
 @media only screen and (max-width: 1200px) {
   [class*="container-color"] {
     max-width: 940px;
+  }
+  .bt {
+    max-width: 185px;
+    height: 45px;
   }
   .box-generic {
     max-width: 295px;
@@ -2353,6 +2674,58 @@ footer .barra-footer .box-right h3 {
   .title-text h3 + * {
     margin-top: 0;
   }
+  .text-absolute-image {
+    padding-top: 35px;
+    padding-bottom: 25px;
+  }
+  .text-absolute-image .absolute-image {
+    max-width: 357px;
+  }
+  .text-absolute-image .content {
+    max-width: 600px;
+    padding: 40px 0;
+  }
+  .text-absolute-image h2 + * {
+    margin-top: 15px;
+  }
+  .text-absolute-image .description {
+    line-height: 21px;
+  }
+  .text-absolute-image .description + * {
+    margin-top: 25px;
+  }
+  .text-absolute-image.right .content {
+    padding-left: 80px;
+    padding-right: 20px;
+  }
+  .contato {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+  .contato input {
+    padding: 15px 15px 12px 20px;
+  }
+  .contato h2 + * {
+    margin-top: 32px;
+  }
+  .contato .links a {
+    margin-top: 5px;
+  }
+  .contato .links + * {
+    margin-top: 10px;
+  }
+  .contato label + * {
+    margin-top: 3px;
+  }
+  .contato input + * {
+    margin-top: 15px;
+  }
+  .contato form {
+    max-width: 560px;
+  }
+  .contato .bt {
+    max-width: 290px;
+  }
   #banner-home .owl-carousel .owl-stage-outer {
     height: 855px;
   }
@@ -2380,6 +2753,83 @@ footer .barra-footer .box-right h3 {
   #tintas .content {
     max-width: 145px;
     padding: 13px 0 9px;
+  }
+  #teste {
+    padding: 30px 0;
+  }
+  #teste .title {
+    height: 280px;
+    padding-top: 40px;
+  }
+  #teste .title .icon-absolute-left {
+    left: 105px;
+    max-width: 150px;
+  }
+  #teste .title .icon-absolute-top {
+    top: -45px;
+    max-width: 115px;
+  }
+  #teste .image {
+    margin-top: -110px;
+  }
+  #teste .container-color {
+    max-width: 780px;
+  }
+  #teste .content {
+    padding: 25px 20px;
+    margin-top: -55px;
+  }
+  #teste .content .description {
+    line-height: 20px;
+    font-size: 13px;
+  }
+  #teste .content .description + * {
+    margin-top: 15px;
+  }
+  #teste .content .bt {
+    max-width: 185px;
+    height: 33px;
+    font-size: 13px;
+  }
+  #dicas {
+    padding: 25px 0;
+  }
+  #dicas h2 + * {
+    margin-top: 15px;
+  }
+  #dicas .description {
+    line-height: 21px;
+  }
+  #dicas .box-dicas {
+    padding: 18px 18px 25px;
+    max-width: 375px;
+    margin: 0 auto;
+  }
+  #dicas .box-dicas .image + * {
+    margin-top: 10px;
+  }
+  #dicas .box-dicas h4 + * {
+    margin-top: 6px;
+  }
+  #dicas .box-dicas h3 + * {
+    margin-top: 10px;
+  }
+  #dicas .box-dicas .description + * {
+    margin-top: 20px;
+  }
+  #dicas .box-sumir {
+    display: none;
+  }
+  #dicas .box-aparecer {
+    display: block;
+  }
+  #dicas .owl-carousel {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+  #contato-home {
+    margin-top: 35px;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -2427,6 +2877,58 @@ footer .barra-footer .box-right h3 {
     width: 100%;
     line-height: 20px;
   }
+  .text-absolute-image {
+    padding-top: 25px;
+    padding-bottom: 15px;
+  }
+  .text-absolute-image .absolute-image {
+    display: none;
+  }
+  .text-absolute-image .content {
+    max-width: 100%;
+    text-align: center;
+  }
+  .text-absolute-image h2 {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .text-absolute-image h2 + * {
+    margin-top: 10px;
+  }
+  .text-absolute-image .description {
+    line-height: 20px;
+  }
+  .text-absolute-image .bt {
+    margin: 0 auto;
+  }
+  .text-absolute-image .description + * {
+    margin-top: 20px;
+  }
+  .text-absolute-image.right .content {
+    padding: 40px 50px 30px;
+  }
+  .contato {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .contato .container-color {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .contato h2 {
+    text-align: center;
+  }
+  .contato h2 + * {
+    margin-top: 0;
+  }
+  .contato .links {
+    display: none;
+  }
+  .contato input {
+    padding: 8px 15px 6px;
+    height: 45px;
+  }
   #banner-home .owl-carousel .owl-stage-outer {
     height: 720px;
   }
@@ -2451,11 +2953,62 @@ footer .barra-footer .box-right h3 {
   #banner-home .owl-carousel .owl-dots {
     bottom: 165px;
   }
+  #tintas {
+    padding: 15px 0 20px;
+  }
   #tintas .box-tintas {
     margin: 0 auto;
   }
-  #tintas .owl-theme .owl-dots .owl-dots.active span {
-    background-color: var(--amarelo);
+  #teste {
+    padding: 20px 0;
+  }
+  #teste .title {
+    height: 230px;
+    padding-top: 30px;
+  }
+  #teste .title .icon-absolute-left {
+    left: 8.73vw;
+    max-width: 130px;
+    bottom: 60px;
+  }
+  #teste .title .icon-absolute-top {
+    top: -40px;
+    max-width: 95px;
+  }
+  #teste .image {
+    margin-top: -80px;
+  }
+  #teste .container-color {
+    max-width: 630px;
+  }
+  #teste .content {
+    padding: 20px 25px;
+    margin-top: -50px;
+    max-width: 470px;
+  }
+  #teste .content .description {
+    line-height: 19px;
+    font-size: 12px;
+  }
+  #teste .content .description + * {
+    margin-top: 12px;
+  }
+  #teste .content .bt {
+    max-width: 175px;
+    height: 29px;
+    font-size: 12px;
+  }
+  #dicas {
+    padding: 20px 0;
+  }
+  #dicas h2 + * {
+    margin-top: 10px;
+  }
+  #dicas .description {
+    line-height: 20px;
+  }
+  #contato-home {
+    margin-top: 25px;
   }
   .sumir {
     display: none !important;
@@ -2467,6 +3020,10 @@ footer .barra-footer .box-right h3 {
 @media only screen and (max-width: 768px) {
   [class*="container-color"] {
     max-width: 480px;
+  }
+  .bt {
+    max-width: 170px;
+    height: 40px;
   }
   .box-generic {
     max-width: 145px;
@@ -2497,6 +3054,33 @@ footer .barra-footer .box-right h3 {
   .title-text .description {
     line-height: 19px;
   }
+  .text-absolute-image {
+    padding: 15px 0;
+  }
+  .text-absolute-image h2 {
+    margin: 0 auto;
+  }
+  .text-absolute-image .description {
+    line-height: 19px;
+  }
+  .text-absolute-image .description + * {
+    margin-top: 15px;
+  }
+  .text-absolute-image.right .content {
+    padding: 30px 20px 20px;
+  }
+  .contato {
+    padding: 30px 0;
+  }
+  .contato .container-color {
+    gap: 15px;
+  }
+  .contato input + * {
+    margin-top: 7px;
+  }
+  .contato .bt {
+    max-width: 205px;
+  }
   #banner-home .owl-carousel .owl-stage-outer {
     height: 630px;
   }
@@ -2519,10 +3103,56 @@ footer .barra-footer .box-right h3 {
   #banner-home .owl-carousel .owl-dots {
     bottom: 140px;
   }
+  #teste {
+    padding: 20px 0;
+  }
+  #teste .title {
+    height: 170px;
+    padding-top: 30px;
+  }
+  #teste .title h2 {
+    max-width: 450px;
+  }
+  #teste .title .icon-absolute-left {
+    display: none;
+  }
+  #teste .title .icon-absolute-top {
+    display: none;
+  }
+  #teste .image {
+    margin-top: -45px;
+  }
+  #teste .container-color {
+    max-width: 90%;
+  }
+  #teste .content {
+    padding: 17px 15px;
+    margin-top: -25px;
+    max-width: 75vw;
+  }
+  #teste .content .description {
+    line-height: 17px;
+    font-size: 11px;
+  }
+  #teste .content .bt {
+    max-width: 171px;
+    height: 28px;
+    font-size: 11px;
+  }
+  #dicas .container-color {
+    max-width: 90%;
+  }
+  #contato-home {
+    margin-top: 20px;
+  }
 }
 @media only screen and (max-width: 500px) {
   [class*="container-color"] {
     max-width: 320px;
+  }
+  .bt {
+    max-width: 163px;
+    height: 36px;
   }
   .box-generic {
     max-width: 75%;
@@ -2563,6 +3193,41 @@ footer .barra-footer .box-right h3 {
   .title-text .description {
     line-height: 19px;
   }
+  .text-absolute-image {
+    padding: 15px 0;
+  }
+  .text-absolute-image .container-color {
+    max-width: 90%;
+  }
+  .text-absolute-image .description {
+    line-height: 18px;
+  }
+  .text-absolute-image .description + * {
+    margin-top: 10px;
+  }
+  .text-absolute-image.right .content {
+    padding: 25px 20px 20px;
+  }
+  .contato {
+    padding: 20px 0;
+  }
+  .contato .container-color {
+    gap: 12px;
+    max-width: 90%;
+  }
+  .contato input + * {
+    margin-top: 5px;
+  }
+  .contato .bt {
+    max-width: 280px;
+  }
+  .contato .actions {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .contato .actions .recapcha {
+    max-width: 230px;
+  }
   #banner-home .owl-carousel .owl-stage-outer {
     height: 745px;
   }
@@ -2594,9 +3259,71 @@ footer .barra-footer .box-right h3 {
   #banner-home .owl-carousel .owl-dots {
     bottom: 0;
   }
+  #tintas {
+    padding: 15px 0;
+  }
+  #teste {
+    padding: 15px 0;
+  }
+  #teste .title {
+    height: 120px;
+    padding-top: 20px;
+  }
+  #teste .title h2 {
+    font-size: 24px;
+  }
+  #teste .image {
+    display: none;
+  }
+  #teste .content {
+    padding: 15px;
+    margin-top: -25px;
+    max-width: 100%;
+  }
+  #teste .content .description {
+    line-height: 17px;
+    font-size: 11px;
+  }
+  #teste .content .description + * {
+    margin-top: 10px;
+  }
+  #dicas {
+    padding: 15px 0;
+  }
+  #dicas h2 + * {
+    margin-top: 8px;
+  }
+  #dicas .owl-carousel {
+    margin-top: 15px;
+  }
+  #contato-home {
+    margin-top: 15px;
+  }
 }
 @media only screen and (max-width: 400px) {
   [class*="container-color"] {
     max-width: 380px;
+  }
+  .bt {
+    max-width: 155px;
+    height: 33px;
+  }
+  .text-absolute-image {
+    padding: 15px 0;
+  }
+  .text-absolute-image h2 {
+    font-size: 20px;
+  }
+  .text-absolute-image .container-color {
+    max-width: 90%;
+  }
+  .text-absolute-image .description {
+    line-height: 17px;
+  }
+  .text-absolute-image .description + * {
+    margin-top: 10px;
+  }
+  .text-absolute-image.right .content {
+    padding: 20px 17px 20px;
   }
 }

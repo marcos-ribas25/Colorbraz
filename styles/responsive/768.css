@@ -1,6 +1,10 @@
 [class*="container-color"] {
   max-width: 480px;
 }
+.bt {
+  max-width: 170px;
+  height: 40px;
+}
 .box-generic {
   max-width: 145px;
   padding: 12px;
@@ -30,6 +34,33 @@
 .title-text .description {
   line-height: 19px;
 }
+.text-absolute-image {
+  padding: 15px 0;
+}
+.text-absolute-image h2 {
+  margin: 0 auto;
+}
+.text-absolute-image .description {
+  line-height: 19px;
+}
+.text-absolute-image .description + * {
+  margin-top: 15px;
+}
+.text-absolute-image.right .content {
+  padding: 30px 20px 20px;
+}
+.contato {
+  padding: 30px 0;
+}
+.contato .container-color {
+  gap: 15px;
+}
+.contato input + * {
+  margin-top: 7px;
+}
+.contato .bt {
+  max-width: 205px;
+}
 #banner-home .owl-carousel .owl-stage-outer {
   height: 630px;
 }
@@ -51,4 +82,46 @@
 }
 #banner-home .owl-carousel .owl-dots {
   bottom: 140px;
+}
+#teste {
+  padding: 20px 0;
+}
+#teste .title {
+  height: 170px;
+  padding-top: 30px;
+}
+#teste .title h2 {
+  max-width: 450px;
+}
+#teste .title .icon-absolute-left {
+  display: none;
+}
+#teste .title .icon-absolute-top {
+  display: none;
+}
+#teste .image {
+  margin-top: -45px;
+}
+#teste .container-color {
+  max-width: 90%;
+}
+#teste .content {
+  padding: 17px 15px;
+  margin-top: -25px;
+  max-width: 75vw;
+}
+#teste .content .description {
+  line-height: 17px;
+  font-size: 11px;
+}
+#teste .content .bt {
+  max-width: 171px;
+  height: 28px;
+  font-size: 11px;
+}
+#dicas .container-color {
+  max-width: 90%;
+}
+#contato-home {
+  margin-top: 20px;
 }

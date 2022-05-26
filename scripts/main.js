@@ -22,9 +22,35 @@ $(document).ready(function () {
 
    $('.owl-tintas').owlCarousel({
       loop: true,
-      margin: 0,
+      margin: 20,
       nav: false,
-      items: 1,
+      items: 2,
+      responsive: {
+         0: {
+            items: 1,
+            margin: 0,
+         },
+         600: {
+            items: 2,
+            margin: 15,
+         }
+      }
+   })
+
+   $('.owl-dicas').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: false,
+      items: 2,
+      responsive: {
+         0: {
+            items: 1,
+         },
+         769: {
+            items: 2,
+            margin: 15,
+         }
+      }
    })
 
    $("#myInput").on("keyup", function () {

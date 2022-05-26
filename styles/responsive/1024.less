@@ -55,6 +55,77 @@ header {
     }
 }
 
+.text-absolute-image {
+    padding-top: 25px;
+    padding-bottom: 15px;
+
+    .absolute-image {
+        display: none;
+    }
+
+    .content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    h2 {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    h2+* {
+        margin-top: 10px;
+    }
+
+    .description {
+        line-height: 20px;
+    }
+
+    .bt {
+        margin: 0 auto;
+    }
+
+    .description+* {
+        margin-top: 20px;
+    }
+}
+
+.text-absolute-image.right {
+    .content {
+        padding: 40px 50px 30px;
+    }
+}
+
+.contato {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .container-color {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    h2+* {
+        margin-top: 0;
+    }
+
+    .links {
+        display: none;
+    }
+
+    input {
+        padding: 8px 15px 6px;
+        height: 45px;
+    }
+
+}
+
+
 //PAGE HOME
 #banner-home {
     .owl-carousel {
@@ -92,17 +163,76 @@ header {
 }
 
 #tintas {
+    padding: 15px 0 20px;
+
     .box-tintas {
         margin: 0 auto;
     }
 
-    .owl-theme {
-        .owl-dots {
-            .owl-dots.active {
-                span {
-                    background-color: var(--amarelo);
-                }
-            }
+
+}
+
+#teste {
+    padding: 20px 0;
+
+    .title {
+        height: 230px;
+        padding-top: 30px;
+
+        .icon-absolute-left {
+            left: 8.73vw;
+            max-width: 130px;
+            bottom: 60px;
+        }
+
+        .icon-absolute-top {
+            top: -40px;
+            max-width: 95px;
         }
     }
+
+    .image {
+        margin-top: -80px;
+    }
+
+    .container-color {
+        max-width: 630px;
+    }
+
+    .content {
+        padding: 20px 25px;
+        margin-top: -50px;
+        max-width: 470px;
+
+        .description {
+            line-height: 19px;
+            font-size: 12px;
+        }
+
+        .description+* {
+            margin-top: 12px;
+        }
+
+        .bt {
+            max-width: 175px;
+            height: 29px;
+            font-size: 12px;
+        }
+    }
+}
+
+#dicas {
+    padding: 20px 0;
+
+    h2+* {
+        margin-top: 10px;
+    }
+
+    .description {
+        line-height: 20px;
+    }
+}
+
+#contato-home {
+    margin-top: 25px;
 }

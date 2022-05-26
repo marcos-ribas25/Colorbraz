@@ -3,6 +3,11 @@
     max-width: 940px;
 }
 
+.bt {
+    max-width: 185px;
+    height: 45px;
+}
+
 .box-generic {
     max-width: 295px;
     padding: 20px 25px;
@@ -50,6 +55,79 @@ header {
     }
 }
 
+.text-absolute-image {
+    padding-top: 35px;
+    padding-bottom: 25px;
+
+    .absolute-image {
+        max-width: 357px;
+    }
+
+    .content {
+        max-width: 600px;
+        padding: 40px 0;
+    }
+
+    h2+* {
+        margin-top: 15px;
+    }
+
+    .description {
+        line-height: 21px;
+    }
+
+    .description+* {
+        margin-top: 25px;
+    }
+}
+
+.text-absolute-image.right {
+    .content {
+        padding-left: 80px;
+        padding-right: 20px;
+    }
+}
+
+.contato {
+    padding-top: 50px;
+    padding-bottom: 40px;
+
+    input {
+        padding: 15px 15px 12px 20px;
+    }
+
+    h2+* {
+        margin-top: 32px;
+    }
+
+    .links {
+        a {
+            margin-top: 5px;
+        }
+    }
+
+    .links+* {
+        margin-top: 10px;
+    }
+
+    label+* {
+        margin-top: 3px;
+    }
+
+    input+* {
+        margin-top: 15px;
+    }
+
+    form {
+        max-width: 560px;
+    }
+
+    .bt {
+        max-width: 290px;
+    }
+}
+
+
 //PAGE HOME
 #banner-home {
     .owl-carousel {
@@ -89,4 +167,103 @@ header {
         max-width: 145px;
         padding: 13px 0 9px;
     }
+}
+
+#teste {
+    padding: 30px 0;
+
+    .title {
+        height: 280px;
+        padding-top: 40px;
+
+        .icon-absolute-left {
+            left: 105px;
+            max-width: 150px;
+        }
+
+        .icon-absolute-top {
+            top: -45px;
+            max-width: 115px;
+        }
+    }
+
+    .image {
+        margin-top: -110px;
+    }
+
+    .container-color {
+        max-width: 780px;
+    }
+
+    .content {
+        padding: 25px 20px;
+        margin-top: -55px;
+
+        .description {
+            line-height: 20px;
+            font-size: 13px;
+        }
+
+        .description+* {
+            margin-top: 15px;
+        }
+
+        .bt {
+            max-width: 185px;
+            height: 33px;
+            font-size: 13px;
+        }
+    }
+}
+
+#dicas {
+    padding: 25px 0;
+
+    h2+* {
+        margin-top: 15px;
+    }
+
+    .description {
+        line-height: 21px;
+    }
+
+    .box-dicas {
+        padding: 18px 18px 25px;
+        max-width: 375px;
+        margin: 0 auto;
+
+        .image+* {
+            margin-top: 10px;
+        }
+
+        h4+* {
+            margin-top: 6px;
+        }
+
+        h3+* {
+            margin-top: 10px;
+        }
+
+        .description+* {
+            margin-top: 20px;
+        }
+    }
+
+    .box-sumir {
+        display: none;
+    }
+
+    .box-aparecer {
+        display: block;
+    }
+
+    .owl-carousel {
+        max-width: 800px;
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+}
+
+#contato-home {
+    margin-top: 35px;
 }

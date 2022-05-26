@@ -1,6 +1,10 @@
 [class*="container-color"] {
   max-width: 940px;
 }
+.bt {
+  max-width: 185px;
+  height: 45px;
+}
 .box-generic {
   max-width: 295px;
   padding: 20px 25px;
@@ -37,6 +41,58 @@ header .container-color {
 .title-text h3 + * {
   margin-top: 0;
 }
+.text-absolute-image {
+  padding-top: 35px;
+  padding-bottom: 25px;
+}
+.text-absolute-image .absolute-image {
+  max-width: 357px;
+}
+.text-absolute-image .content {
+  max-width: 600px;
+  padding: 40px 0;
+}
+.text-absolute-image h2 + * {
+  margin-top: 15px;
+}
+.text-absolute-image .description {
+  line-height: 21px;
+}
+.text-absolute-image .description + * {
+  margin-top: 25px;
+}
+.text-absolute-image.right .content {
+  padding-left: 80px;
+  padding-right: 20px;
+}
+.contato {
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+.contato input {
+  padding: 15px 15px 12px 20px;
+}
+.contato h2 + * {
+  margin-top: 32px;
+}
+.contato .links a {
+  margin-top: 5px;
+}
+.contato .links + * {
+  margin-top: 10px;
+}
+.contato label + * {
+  margin-top: 3px;
+}
+.contato input + * {
+  margin-top: 15px;
+}
+.contato form {
+  max-width: 560px;
+}
+.contato .bt {
+  max-width: 290px;
+}
 #banner-home .owl-carousel .owl-stage-outer {
   height: 855px;
 }
@@ -64,4 +120,81 @@ header .container-color {
 #tintas .content {
   max-width: 145px;
   padding: 13px 0 9px;
+}
+#teste {
+  padding: 30px 0;
+}
+#teste .title {
+  height: 280px;
+  padding-top: 40px;
+}
+#teste .title .icon-absolute-left {
+  left: 105px;
+  max-width: 150px;
+}
+#teste .title .icon-absolute-top {
+  top: -45px;
+  max-width: 115px;
+}
+#teste .image {
+  margin-top: -110px;
+}
+#teste .container-color {
+  max-width: 780px;
+}
+#teste .content {
+  padding: 25px 20px;
+  margin-top: -55px;
+}
+#teste .content .description {
+  line-height: 20px;
+  font-size: 13px;
+}
+#teste .content .description + * {
+  margin-top: 15px;
+}
+#teste .content .bt {
+  max-width: 185px;
+  height: 33px;
+  font-size: 13px;
+}
+#dicas {
+  padding: 25px 0;
+}
+#dicas h2 + * {
+  margin-top: 15px;
+}
+#dicas .description {
+  line-height: 21px;
+}
+#dicas .box-dicas {
+  padding: 18px 18px 25px;
+  max-width: 375px;
+  margin: 0 auto;
+}
+#dicas .box-dicas .image + * {
+  margin-top: 10px;
+}
+#dicas .box-dicas h4 + * {
+  margin-top: 6px;
+}
+#dicas .box-dicas h3 + * {
+  margin-top: 10px;
+}
+#dicas .box-dicas .description + * {
+  margin-top: 20px;
+}
+#dicas .box-sumir {
+  display: none;
+}
+#dicas .box-aparecer {
+  display: block;
+}
+#dicas .owl-carousel {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+#contato-home {
+  margin-top: 35px;
 }
