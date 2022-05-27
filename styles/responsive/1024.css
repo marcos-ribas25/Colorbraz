@@ -175,3 +175,46 @@ header .container-color {
 #contato-home {
   margin-top: 25px;
 }
+#banner-sobre {
+  padding-top: 130px;
+  padding-bottom: 30px;
+  background-position: 10% -155px;
+  background-size: cover;
+}
+#banner-sobre .title + * {
+  margin-top: 80px;
+}
+#banner-sobre .title {
+  padding-top: 15px;
+  max-width: 495px;
+  margin: 0 auto;
+}
+#banner-sobre .title .barra-absolute {
+  height: 80px;
+  top: 72px;
+  left: -10px;
+  max-width: 345px;
+}
+#banner-sobre .container-color {
+  max-width: 95%;
+}
+#banner-sobre .text {
+  max-width: 100%;
+}
+#banner-sobre .text h1 {
+  font-size: 45px;
+}
+#banner-sobre .text span {
+  font-size: 85px;
+}
+#banner-sobre .text .description {
+  font-size: 17px;
+  line-height: 25px;
+}
+#banner-sobre .image {
+  height: 405px;
+}
+#banner-sobre .description {
+  max-width: 495px;
+  margin-bottom: 30px;
+}

@@ -150,13 +150,26 @@ header .container-color {
 }
 #banner-sobre {
   padding-top: 180px;
+  padding-bottom: 40px;
+  background-position: 10% -3.5vw;
+  background-size: contain;
 }
 #banner-sobre .title + * {
   margin-top: 105px;
 }
 #banner-sobre .image {
   max-width: 670px;
+  height: auto;
 }
 #banner-sobre .description {
   margin-bottom: 55px;
+}
+#historia {
+  padding: 40px 0 45px;
+}
+#historia .absolute-right {
+  position: absolute;
+  right: 0;
+  top: -40px;
+  max-width: 14.33vw;
 }

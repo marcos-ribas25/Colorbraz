@@ -198,3 +198,55 @@ header .container-color {
 #contato-home {
   margin-top: 35px;
 }
+#banner-sobre {
+  padding-top: 130px;
+  padding-bottom: 30px;
+  background-position: 10% -4vw;
+}
+#banner-sobre .title + * {
+  margin-top: 80px;
+}
+#banner-sobre .title .barra-absolute {
+  height: 80px;
+  top: 92px;
+  left: -10px;
+}
+#banner-sobre .text {
+  max-width: 33.33vw;
+}
+#banner-sobre .text h1 {
+  font-size: 45px;
+}
+#banner-sobre .text span {
+  font-size: 85px;
+}
+#banner-sobre .text .description {
+  font-size: 17px;
+  line-height: 27px;
+}
+#banner-sobre .image {
+  height: 455px;
+}
+#banner-sobre .description {
+  margin-bottom: 40px;
+}
+#historia {
+  padding: 30px 0 35px;
+}
+#historia .container-color {
+  gap: 60px;
+}
+#historia .image {
+  height: 420px;
+  max-width: 430px;
+}
+#historia .absolute-right {
+  top: -30px;
+}
+#historia h2 + * {
+  margin-top: 20px;
+}
+#historia .text {
+  padding-top: 25px;
+  max-width: 375px;
+}

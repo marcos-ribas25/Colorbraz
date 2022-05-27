@@ -185,3 +185,44 @@ header nav a + * {
 #contato-home {
   margin-top: 40px;
 }
+#banner-sobre {
+  padding-top: 160px;
+  padding-bottom: 35px;
+  background-position: 10% -1vw;
+  background-size: contain;
+}
+#banner-sobre .title + * {
+  margin-top: 100px;
+}
+#banner-sobre .text {
+  max-width: 475px;
+}
+#banner-sobre .image {
+  max-width: 100%;
+  height: 545px;
+}
+#banner-sobre .image img {
+  object-position: left;
+}
+#banner-sobre .description {
+  margin-bottom: 50px;
+}
+#historia {
+  padding: 35px 0 40px;
+}
+#historia .image {
+  height: 439px;
+}
+#historia .image img {
+  height: inherit;
+}
+#historia .absolute-right {
+  top: -35px;
+}
+#historia h2 + * {
+  margin-top: 30px;
+}
+#historia .text {
+  padding-top: 30px;
+  max-width: 460px;
+}

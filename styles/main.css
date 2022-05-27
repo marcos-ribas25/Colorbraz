@@ -1222,6 +1222,7 @@ footer .barra-footer .box-right h3 {
   max-width: 86vw;
   padding-right: 0;
   margin: 0 0 0 auto;
+  gap: 30px;
   display: flex;
   justify-content: space-between;
 }
@@ -1269,10 +1270,12 @@ footer .barra-footer .box-right h3 {
 }
 #banner-sobre .image {
   max-width: 960px;
+  height: 779px;
 }
 #banner-sobre .image img {
   width: 100%;
   object-fit: cover;
+  height: inherit;
 }
 #historia {
   padding-top: 45px;
@@ -1283,6 +1286,7 @@ footer .barra-footer .box-right h3 {
   position: absolute;
   right: 0;
   top: -45px;
+  max-width: 18.33vw;
 }
 #historia .container-color {
   display: flex;
@@ -2430,15 +2434,28 @@ footer .barra-footer .box-right h3 {
   }
   #banner-sobre {
     padding-top: 180px;
+    padding-bottom: 40px;
+    background-position: 10% -3.5vw;
+    background-size: contain;
   }
   #banner-sobre .title + * {
     margin-top: 105px;
   }
   #banner-sobre .image {
     max-width: 670px;
+    height: auto;
   }
   #banner-sobre .description {
     margin-bottom: 55px;
+  }
+  #historia {
+    padding: 40px 0 45px;
+  }
+  #historia .absolute-right {
+    position: absolute;
+    right: 0;
+    top: -40px;
+    max-width: 14.33vw;
   }
 }
 @media only screen and (max-width: 1400px) {
@@ -2628,6 +2645,80 @@ footer .barra-footer .box-right h3 {
   }
   #contato-home {
     margin-top: 40px;
+  }
+  #banner-sobre {
+    padding-top: 160px;
+    padding-bottom: 35px;
+    background-position: 10% -1vw;
+    background-size: contain;
+  }
+  #banner-sobre .title + * {
+    margin-top: 100px;
+  }
+  #banner-sobre .text {
+    max-width: 475px;
+  }
+  #banner-sobre .image {
+    max-width: 100%;
+    height: 545px;
+  }
+  #banner-sobre .image img {
+    object-position: left;
+  }
+  #banner-sobre .description {
+    margin-bottom: 50px;
+  }
+  #historia {
+    padding: 35px 0 40px;
+  }
+  #historia .image {
+    height: 439px;
+  }
+  #historia .image img {
+    height: inherit;
+  }
+  #historia .absolute-right {
+    top: -35px;
+  }
+  #historia h2 + * {
+    margin-top: 30px;
+  }
+  #historia .text {
+    padding-top: 30px;
+    max-width: 460px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  #banner-sobre {
+    padding-top: 160px;
+    padding-bottom: 35px;
+    background-position: 10% -1vw;
+  }
+  #banner-sobre .title + * {
+    margin-top: 100px;
+  }
+  #banner-sobre .title .barra-absolute {
+    height: 95px;
+    top: 105px;
+  }
+  #banner-sobre .text {
+    max-width: 400px;
+  }
+  #banner-sobre .text h1 {
+    font-size: 50px;
+  }
+  #banner-sobre .text span {
+    font-size: 100px;
+  }
+  #banner-sobre .text .description {
+    font-size: 18px;
+  }
+  #banner-sobre .image {
+    max-width: 100%;
+    height: 500px;
+  }
+  #banner-sobre .description {
+    margin-bottom: 50px;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -2831,6 +2922,58 @@ footer .barra-footer .box-right h3 {
   #contato-home {
     margin-top: 35px;
   }
+  #banner-sobre {
+    padding-top: 130px;
+    padding-bottom: 30px;
+    background-position: 10% -4vw;
+  }
+  #banner-sobre .title + * {
+    margin-top: 80px;
+  }
+  #banner-sobre .title .barra-absolute {
+    height: 80px;
+    top: 92px;
+    left: -10px;
+  }
+  #banner-sobre .text {
+    max-width: 33.33vw;
+  }
+  #banner-sobre .text h1 {
+    font-size: 45px;
+  }
+  #banner-sobre .text span {
+    font-size: 85px;
+  }
+  #banner-sobre .text .description {
+    font-size: 17px;
+    line-height: 27px;
+  }
+  #banner-sobre .image {
+    height: 455px;
+  }
+  #banner-sobre .description {
+    margin-bottom: 40px;
+  }
+  #historia {
+    padding: 30px 0 35px;
+  }
+  #historia .container-color {
+    gap: 60px;
+  }
+  #historia .image {
+    height: 420px;
+    max-width: 430px;
+  }
+  #historia .absolute-right {
+    top: -30px;
+  }
+  #historia h2 + * {
+    margin-top: 20px;
+  }
+  #historia .text {
+    padding-top: 25px;
+    max-width: 375px;
+  }
 }
 @media only screen and (max-width: 1024px) {
   [class*="container-color"] {
@@ -3010,6 +3153,49 @@ footer .barra-footer .box-right h3 {
   #contato-home {
     margin-top: 25px;
   }
+  #banner-sobre {
+    padding-top: 130px;
+    padding-bottom: 30px;
+    background-position: 10% -155px;
+    background-size: cover;
+  }
+  #banner-sobre .title + * {
+    margin-top: 80px;
+  }
+  #banner-sobre .title {
+    padding-top: 15px;
+    max-width: 495px;
+    margin: 0 auto;
+  }
+  #banner-sobre .title .barra-absolute {
+    height: 80px;
+    top: 72px;
+    left: -10px;
+    max-width: 345px;
+  }
+  #banner-sobre .container-color {
+    max-width: 95%;
+  }
+  #banner-sobre .text {
+    max-width: 100%;
+  }
+  #banner-sobre .text h1 {
+    font-size: 45px;
+  }
+  #banner-sobre .text span {
+    font-size: 85px;
+  }
+  #banner-sobre .text .description {
+    font-size: 17px;
+    line-height: 25px;
+  }
+  #banner-sobre .image {
+    height: 405px;
+  }
+  #banner-sobre .description {
+    max-width: 495px;
+    margin-bottom: 30px;
+  }
   .sumir {
     display: none !important;
   }
@@ -3144,6 +3330,43 @@ footer .barra-footer .box-right h3 {
   }
   #contato-home {
     margin-top: 20px;
+  }
+  #banner-sobre {
+    padding: 115px 0 20px;
+    background-position: 10% -98px;
+  }
+  #banner-sobre .image {
+    display: none;
+  }
+  #banner-sobre .container-color {
+    justify-content: center;
+    margin: 0 auto;
+  }
+  #banner-sobre .title {
+    padding-top: 0;
+  }
+  #banner-sobre .title .barra-absolute {
+    top: 58px;
+    left: 57px;
+    max-width: 360px;
+  }
+  #banner-sobre .title + * {
+    margin-top: 50px;
+  }
+  #banner-sobre .text {
+    text-align: center;
+  }
+  #banner-sobre .text .description {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 23px;
+  }
+  #banner-sobre .text a {
+    display: flex;
+    justify-content: center;
+  }
+  #banner-sobre .text a img {
+    max-width: 20px;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -3298,6 +3521,44 @@ footer .barra-footer .box-right h3 {
   }
   #contato-home {
     margin-top: 15px;
+  }
+  #banner-sobre {
+    padding-top: 90px;
+    padding-bottom: 15px;
+    background-position: 10% -120px;
+  }
+  #banner-sobre .title {
+    padding-top: 10px;
+    max-width: 100%;
+    width: 100%;
+  }
+  #banner-sobre .title .barra-absolute {
+    height: 58px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 46%;
+    max-width: 260px;
+  }
+  #banner-sobre .container-color {
+    max-width: 90%;
+  }
+  #banner-sobre .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #banner-sobre .text h1 {
+    font-size: 30px;
+  }
+  #banner-sobre .text span {
+    font-size: 55px;
+  }
+  #banner-sobre .text .description {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+  #banner-sobre .text a img {
+    max-width: 17px;
   }
 }
 @media only screen and (max-width: 400px) {

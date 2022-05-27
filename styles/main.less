@@ -1196,6 +1196,7 @@ footer {
     max-width: 86vw;
     padding-right: 0;
     margin: 0 0 0 auto;
+    gap: 30px;
 
     display: flex;
     justify-content: space-between;
@@ -1254,10 +1255,12 @@ footer {
 
   .image {
     max-width: 960px;
+    height: 779px;
 
     img {
       width: 100%;
       object-fit: cover;
+      height: inherit;
     }
   }
 }
@@ -1271,6 +1274,7 @@ footer {
     position: absolute;
     right: 0;
     top: -45px;
+    max-width: 18.33vw;
   }
 
   .container-color {
@@ -2553,6 +2557,10 @@ footer {
 
 @media only screen and (max-width: 1400px) {
   @import "responsive/1400";
+}
+
+@media only screen and (max-width: 1300px) {
+  @import "responsive/1300";
 }
 
 @media only screen and (max-width: 1200px) {

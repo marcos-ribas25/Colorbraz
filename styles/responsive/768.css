@@ -125,3 +125,40 @@
 #contato-home {
   margin-top: 20px;
 }
+#banner-sobre {
+  padding: 115px 0 20px;
+  background-position: 10% -98px;
+}
+#banner-sobre .image {
+  display: none;
+}
+#banner-sobre .container-color {
+  justify-content: center;
+  margin: 0 auto;
+}
+#banner-sobre .title {
+  padding-top: 0;
+}
+#banner-sobre .title .barra-absolute {
+  top: 58px;
+  left: 57px;
+  max-width: 360px;
+}
+#banner-sobre .title + * {
+  margin-top: 50px;
+}
+#banner-sobre .text {
+  text-align: center;
+}
+#banner-sobre .text .description {
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 23px;
+}
+#banner-sobre .text a {
+  display: flex;
+  justify-content: center;
+}
+#banner-sobre .text a img {
+  max-width: 20px;
+}
