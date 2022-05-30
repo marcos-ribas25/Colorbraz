@@ -59,6 +59,9 @@ header .container-color {
 .text-absolute-image.right .content {
   padding: 25px 20px 20px;
 }
+.text-absolute-image.left .content {
+  padding: 25px 20px 20px;
+}
 .contato {
   padding: 20px 0;
 }
@@ -151,9 +154,8 @@ header .container-color {
   margin-top: 15px;
 }
 #banner-sobre {
-  padding-top: 90px;
-  padding-bottom: 15px;
-  background-position: 10% -120px;
+  padding: 90px 0 50px;
+  background-position: 10% 23px;
 }
 #banner-sobre .title {
   padding-top: 10px;
@@ -161,14 +163,17 @@ header .container-color {
   width: 100%;
 }
 #banner-sobre .title .barra-absolute {
-  height: 58px;
+  height: 45px;
   left: 50%;
   transform: translate(-50%, 0);
-  top: 46%;
-  max-width: 260px;
+  top: 54%;
+  max-width: 180px;
 }
 #banner-sobre .container-color {
   max-width: 90%;
+}
+#banner-sobre .title + * {
+  margin-top: 20px;
 }
 #banner-sobre .text {
   display: flex;
@@ -179,12 +184,29 @@ header .container-color {
   font-size: 30px;
 }
 #banner-sobre .text span {
-  font-size: 55px;
+  font-size: 40px;
 }
 #banner-sobre .text .description {
-  font-size: 15px;
-  margin-bottom: 15px;
+  font-size: 13px;
+  margin-bottom: 8px;
+  line-height: 20px;
 }
-#banner-sobre .text a img {
-  max-width: 17px;
+#banner-sobre .text a svg {
+  max-width: 14px;
+}
+#banner-sobre .text a p {
+  margin-top: 0;
+  font-size: 11px;
+}
+#historia {
+  padding: 0 0 15px;
+}
+#historia h2 {
+  max-width: 280px;
+}
+#historia h2 + * {
+  margin-top: 7px;
+}
+#historia h3 + * {
+  margin-top: 0;
 }

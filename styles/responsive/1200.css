@@ -237,7 +237,7 @@ header .container-color {
   gap: 60px;
 }
 #historia .image {
-  height: 420px;
+  height: 410px;
   max-width: 430px;
 }
 #historia .absolute-right {
@@ -248,5 +248,5 @@ header .container-color {
 }
 #historia .text {
   padding-top: 25px;
-  max-width: 375px;
+  max-width: 420px;
 }

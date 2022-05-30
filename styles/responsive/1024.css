@@ -72,6 +72,9 @@ header .container-color {
 .text-absolute-image.right .content {
   padding: 40px 50px 30px;
 }
+.text-absolute-image.left .content {
+  padding: 40px 50px 30px;
+}
 .contato {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -217,4 +220,45 @@ header .container-color {
 #banner-sobre .description {
   max-width: 495px;
   margin-bottom: 30px;
+}
+#historia {
+  padding: 25px 0;
+}
+#historia .container-color {
+  gap: 40px;
+  max-width: 90%;
+}
+#historia .image {
+  height: auto;
+}
+#historia .image img {
+  height: 100%;
+  object-position: 20%;
+}
+#historia h2 + * {
+  margin-top: 13px;
+}
+#historia .text {
+  padding-top: 20px;
+}
+#sustentabilidade {
+  padding-bottom: 40px;
+}
+#missao {
+  flex-direction: column;
+}
+#missao .text-missao {
+  max-width: 100%;
+}
+#missao .text-missao .container-color {
+  max-width: 80%;
+}
+#missao .content {
+  max-width: 100%;
+}
+#missao .text {
+  max-width: 100%;
+}
+#missao .text .container-color {
+  max-width: 80%;
 }

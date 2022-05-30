@@ -49,6 +49,10 @@ header .container-color {
 .text-absolute-image.right .content {
   padding-left: 180px;
 }
+.text-absolute-image.left .content {
+  padding-right: 210px;
+  padding-left: 70px;
+}
 .contato {
   padding-top: 85px;
   padding-bottom: 65px;
@@ -151,8 +155,8 @@ header .container-color {
 #banner-sobre {
   padding-top: 180px;
   padding-bottom: 40px;
-  background-position: 10% -3.5vw;
-  background-size: contain;
+  background-position: 10% -195px;
+  background-size: cover;
 }
 #banner-sobre .title + * {
   margin-top: 105px;
@@ -172,4 +176,11 @@ header .container-color {
   right: 0;
   top: -40px;
   max-width: 14.33vw;
+}
+#sustentabilidade {
+  padding-bottom: 90px;
+}
+#sustentabilidade .absolute-image {
+  right: 95px;
+  max-width: 435px;
 }

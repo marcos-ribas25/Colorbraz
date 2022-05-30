@@ -66,6 +66,10 @@ header nav a + * {
 .text-absolute-image.right .content {
   padding-left: 110px;
 }
+.text-absolute-image.left .content {
+  padding-right: 110px;
+  padding-left: 60px;
+}
 .contato {
   padding-top: 65px;
   padding-bottom: 50px;
@@ -225,4 +229,27 @@ header nav a + * {
 #historia .text {
   padding-top: 30px;
   max-width: 460px;
+}
+#sustentabilidade {
+  padding-bottom: 70px;
+}
+#sustentabilidade .absolute-image {
+  right: 50px;
+  max-width: 365px;
+}
+#missao .text-missao {
+  padding: 95px 0 0;
+}
+#missao .text-missao .container-color {
+  max-width: 365px;
+  margin: 0 auto;
+}
+#missao .text .container-color {
+  max-width: 500px;
+}
+#missao .text.visao {
+  padding: 45px 0;
+}
+#missao .text.valores {
+  padding: 60px 0 50px;
 }
