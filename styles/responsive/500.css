@@ -210,3 +210,24 @@ header .container-color {
 #historia h3 + * {
   margin-top: 0;
 }
+#missao p {
+  line-height: 19px !important;
+}
+#missao .container-color {
+  max-width: 90% !important;
+}
+#missao .text-missao {
+  padding: 20px 0;
+}
+#missao .text {
+  padding: 25px 0 !important;
+}
+#missao .text ul li + * {
+  margin-top: 3px;
+}
+#produtos-sobre {
+  padding: 30px 0;
+}
+#produtos-sobre a {
+  max-width: 340px;
+}

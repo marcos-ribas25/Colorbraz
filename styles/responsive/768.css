@@ -203,3 +203,18 @@
 #historia .text {
   padding-top: 0;
 }
+#missao p {
+  line-height: 20px !important;
+}
+#missao .text-missao {
+  padding: 20px 0;
+}
+#missao .text {
+  padding: 25px 0 !important;
+}
+#produtos-sobre {
+  padding: 40px 0;
+}
+#produtos-sobre a {
+  max-width: 355px;
+}

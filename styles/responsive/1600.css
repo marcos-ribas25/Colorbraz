@@ -9,6 +9,9 @@
   max-width: 400px;
   padding: 25px 30px;
 }
+.imagem-produto {
+  left: 30px;
+}
 header a + nav {
   margin-left: 30px;
 }
@@ -183,4 +186,29 @@ header .container-color {
 #sustentabilidade .absolute-image {
   right: 95px;
   max-width: 435px;
+}
+#produtos-sobre {
+  padding: 80px 0;
+}
+#produtos-sobre a {
+  max-width: 415px;
+}
+#produto-infomacoes {
+  padding: 155px 0 35px;
+}
+#descricao {
+  padding: 35px 0;
+}
+#descricao .box-title {
+  max-width: 285px;
+  padding: 17px 10px 15px;
+}
+#descricao .content {
+  padding: 45px 100px 50px 50px;
+}
+#relacionados {
+  padding: 35px 0 90px;
+}
+#relacionados h2 + * {
+  margin-top: 32px;
 }

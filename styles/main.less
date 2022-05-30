@@ -1184,11 +1184,11 @@ footer {
   margin-top: 50px;
 }
 
-//PAGE SOBRE fazer até sexta
+//PAGE SOBRE 
 #banner-sobre {
   background-repeat: no-repeat;
-  background-position: 10% -315px;
-  background-size: cover;
+  background-size: contain;
+  background-position: top;
   padding-top: 235px;
   padding-bottom: 45px;
 
@@ -1242,14 +1242,13 @@ footer {
       margin-top: 2px;
     }
 
-    svg {
+    img {
       max-width: 24px;
       width: 100%;
       object-fit: contain;
-      fill: var(--verde);
     }
 
-    svg+* {
+    img+* {
       margin-left: 10px;
     }
   }
@@ -1323,7 +1322,7 @@ footer {
   display: flex;
 
   .text-missao {
-    max-width: 43.3%;
+    max-width: 832px;
     width: 100%;
     padding: 130px 0;
     background-color: var(--verde);
@@ -1344,12 +1343,11 @@ footer {
   }
 
   .content {
-    max-width: 56.8%;
     width: 100%;
   }
 
   .text {
-    max-height: 292px;
+    max-height: 294px;
 
     .container-color {
       max-width: 745px;
@@ -1436,9 +1434,7 @@ footer {
   padding-top: 180px;
   padding-bottom: 40px;
 
-
-
-  .list+* {
+  .list-breadcrumb+* {
     margin-top: 15px;
   }
 }
@@ -1446,6 +1442,7 @@ footer {
 .container-produto {
   display: flex;
   justify-content: space-between;
+  gap: 60px;
 
   .image {
     width: 745px;
@@ -2590,4 +2587,76 @@ footer {
 
 @media only screen and (max-width: 400px) {
   @import "responsive/400";
+}
+
+
+
+
+#imagemAbsoluta {
+  position: relative;
+
+  img {
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+  }
+
+  svg {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+
+    g,
+    path {
+      cursor: cell;
+    }
+
+    g:hover {
+      stroke: black;
+      stroke-width: 0.5;
+    }
+
+    g:hover {
+      stroke: black;
+      stroke-width: 0.5;
+    }
+
+    g:hover {
+      stroke: black;
+      stroke-width: 0.5;
+    }
+  }
+}
+
+#imagemAbsoluta:hover {
+  svg {
+    z-index: 3;
+    opacity: 0.5;
+  }
+}
+
+.ball-color {
+  height: 25px;
+  width: 25px;
+  border-radius: 100%;
+}
+
+.tab-content {
+  margin-top: 15px;
+
+  .tab-content--container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+  }
+}
+
+#corSelecionada {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }

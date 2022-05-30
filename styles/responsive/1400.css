@@ -16,6 +16,29 @@
   max-width: 65px;
   max-height: 65px;
 }
+.imagem-produto {
+  left: 20px;
+  max-width: 205px;
+}
+.box-produto {
+  max-width: 660px;
+  padding: 40px 0 34px;
+}
+.box-produto .container-box {
+  max-width: 265px;
+}
+.box-produto .title + * {
+  margin-top: 47px;
+}
+.box-produto .informacoes h4 + * {
+  margin-top: 13px;
+}
+.box-produto .box-informacoes {
+  padding: 9px 0 8px 20px;
+}
+.bg {
+  height: 130px;
+}
 header .logo {
   max-width: 225px;
 }
@@ -65,6 +88,7 @@ header nav a + * {
 }
 .text-absolute-image.right .content {
   padding-left: 110px;
+  padding-right: 50px;
 }
 .text-absolute-image.left .content {
   padding-right: 110px;
@@ -252,4 +276,61 @@ header nav a + * {
 }
 #missao .text.valores {
   padding: 60px 0 50px;
+}
+#produtos-sobre {
+  padding: 70px 0;
+}
+#produtos-sobre a {
+  max-width: 400px;
+}
+#produto-infomacoes {
+  padding: 140px 0 30px;
+}
+.container-produto [class*='paragrafo-2'] {
+  font-size: 17px;
+}
+.container-produto .title h3 + * {
+  margin-top: 5px;
+}
+.container-produto .title h2 {
+  line-height: 45px;
+}
+.container-produto .title + * {
+  margin-top: 15px;
+}
+.container-produto .content {
+  max-width: 435px;
+}
+.container-produto .image {
+  height: auto;
+}
+.container-produto .image img {
+  height: 100%;
+  object-fit: cover;
+}
+.container-produto .box-informacao-produto {
+  max-width: 100%;
+  padding: 13px 10px 12px;
+}
+#descricao {
+  padding: 30px 0;
+}
+#descricao .box-title {
+  max-width: 265px;
+  padding: 15px 10px 13px;
+}
+#descricao .content {
+  padding: 40px 85px 45px 45px;
+}
+#descricao .share {
+  gap: 20px;
+}
+#descricao .share .midias {
+  gap: 16px;
+}
+#relacionados {
+  padding: 30px 0 75px;
+}
+#relacionados h2 + * {
+  margin-top: 29px;
 }

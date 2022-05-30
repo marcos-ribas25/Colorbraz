@@ -328,8 +328,17 @@ header {
 #missao {
     flex-direction: column;
 
+    h2+* {
+        margin-top: 5px !important;
+    }
+
+    p {
+        line-height: 21px !important;
+    }
+
     .text-missao {
         max-width: 100%;
+        padding: 25px 0;
 
         .container-color {
             max-width: 80%;
@@ -342,9 +351,19 @@ header {
 
     .text {
         max-width: 100%;
+        padding: 30px 0 !important;
 
         .container-color {
             max-width: 80%;
+            margin: 0 auto;
         }
+    }
+}
+
+#produtos-sobre {
+    padding: 50px 0;
+
+    a {
+        max-width: 370px;
     }
 }
