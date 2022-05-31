@@ -17,6 +17,50 @@
     }
 }
 
+.imagem-produto {
+    top: 30px;
+    left: 50px;
+    max-width: 216px;
+}
+
+.box-produto {
+    max-width: 100%;
+    padding: 40px 0 34px;
+
+    .container-box {
+        max-width: 285px;
+    }
+
+    .title {
+        h4 {
+            font-size: 23px;
+        }
+    }
+
+    .title+* {
+        margin-top: 47px;
+    }
+
+    .informacoes {
+        h4 {
+            font-size: 16px;
+        }
+
+        h4+* {
+            margin-top: 13px;
+        }
+    }
+
+    .box-informacoes {
+        padding: 9px 0 8px 20px;
+    }
+}
+
+.bg {
+    height: 125px;
+}
+
+
 //SECTIONS
 header {
     background-position: 17%;
@@ -365,5 +409,111 @@ header {
 
     a {
         max-width: 370px;
+    }
+}
+
+//PAGE PRODUTO
+#produto-infomacoes {
+    padding: 115px 0 20px;
+
+    .container-color {
+        max-width: 90%;
+    }
+}
+
+.container-produto {
+    gap: 25px;
+
+    [class*='paragrafo-2'] {
+        font-size: 14px;
+    }
+
+    .title {
+        h2 {
+            line-height: 25px;
+            font-size: 23px;
+        }
+
+        h3 {
+            font-size: 14px;
+        }
+    }
+
+    .title+* {
+        margin-top: 15px;
+    }
+
+    .content {
+        max-width: 260px;
+    }
+
+    .box-informacao-produto {
+        max-width: 100%;
+        padding: 11px 10px 10px;
+    }
+
+    .box-informacao-produto+.box-informacao-produto {
+        margin-top: 8px;
+    }
+
+    .box-informacao-produto+.description {
+        margin-top: 8px;
+    }
+
+    .informacoes+* {
+        margin-top: 25px;
+    }
+
+    .actions {
+        gap: 8px;
+    }
+
+    .bt {
+        height: 37px;
+    }
+}
+
+#descricao {
+    padding: 20px 0;
+
+    .container-color {
+        max-width: 90%;
+    }
+
+    .box-title {
+        max-width: 220px;
+        padding: 11px 10px 9px;
+    }
+
+    .content {
+        padding: 25px;
+    }
+
+    .share {
+        gap: 14px;
+
+        svg {
+            max-width: 17px;
+        }
+
+        .midias {
+            gap: 11px;
+        }
+    }
+}
+
+#relacionados {
+    padding: 20px 0 40px;
+
+    h2+* {
+        margin-top: 15px;
+    }
+
+    .relacionados-sumir {
+        display: none;
+    }
+
+    .relacionados-aparecer {
+        display: block;
     }
 }

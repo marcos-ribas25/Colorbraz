@@ -12,6 +12,36 @@
   max-width: 50px;
   max-height: 50px;
 }
+.imagem-produto {
+  top: 30px;
+  left: 50px;
+  max-width: 216px;
+}
+.box-produto {
+  max-width: 100%;
+  padding: 40px 0 34px;
+}
+.box-produto .container-box {
+  max-width: 285px;
+}
+.box-produto .title h4 {
+  font-size: 23px;
+}
+.box-produto .title + * {
+  margin-top: 47px;
+}
+.box-produto .informacoes h4 {
+  font-size: 16px;
+}
+.box-produto .informacoes h4 + * {
+  margin-top: 13px;
+}
+.box-produto .box-informacoes {
+  padding: 9px 0 8px 20px;
+}
+.bg {
+  height: 125px;
+}
 header {
   background-position: 17%;
 }
@@ -276,4 +306,82 @@ header .container-color {
 }
 #produtos-sobre a {
   max-width: 370px;
+}
+#produto-infomacoes {
+  padding: 115px 0 20px;
+}
+#produto-infomacoes .container-color {
+  max-width: 90%;
+}
+.container-produto {
+  gap: 25px;
+}
+.container-produto [class*='paragrafo-2'] {
+  font-size: 14px;
+}
+.container-produto .title h2 {
+  line-height: 25px;
+  font-size: 23px;
+}
+.container-produto .title h3 {
+  font-size: 14px;
+}
+.container-produto .title + * {
+  margin-top: 15px;
+}
+.container-produto .content {
+  max-width: 260px;
+}
+.container-produto .box-informacao-produto {
+  max-width: 100%;
+  padding: 11px 10px 10px;
+}
+.container-produto .box-informacao-produto + .box-informacao-produto {
+  margin-top: 8px;
+}
+.container-produto .box-informacao-produto + .description {
+  margin-top: 8px;
+}
+.container-produto .informacoes + * {
+  margin-top: 25px;
+}
+.container-produto .actions {
+  gap: 8px;
+}
+.container-produto .bt {
+  height: 37px;
+}
+#descricao {
+  padding: 20px 0;
+}
+#descricao .container-color {
+  max-width: 90%;
+}
+#descricao .box-title {
+  max-width: 220px;
+  padding: 11px 10px 9px;
+}
+#descricao .content {
+  padding: 25px;
+}
+#descricao .share {
+  gap: 14px;
+}
+#descricao .share svg {
+  max-width: 17px;
+}
+#descricao .share .midias {
+  gap: 11px;
+}
+#relacionados {
+  padding: 20px 0 40px;
+}
+#relacionados h2 + * {
+  margin-top: 15px;
+}
+#relacionados .relacionados-sumir {
+  display: none;
+}
+#relacionados .relacionados-aparecer {
+  display: block;
 }

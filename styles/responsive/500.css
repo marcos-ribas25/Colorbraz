@@ -24,6 +24,47 @@
   font-size: 12px;
   max-width: 80%;
 }
+.list-breadcrumb {
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 6px;
+}
+.list-breadcrumb li {
+  line-height: 0.7;
+}
+.imagem-produto {
+  left: 50%;
+  transform: translate(-50%, 0);
+  max-width: 120px;
+  top: 21%;
+  z-index: 10;
+}
+.box-produto {
+  padding: 15px 0 20px;
+}
+.box-produto .container-box {
+  max-width: 100%;
+  padding: 0 15px;
+  text-align: center;
+}
+.box-produto .title h4 {
+  font-size: 19px;
+}
+.box-produto .title + * {
+  margin-top: 160px;
+}
+.box-produto .informacoes h4 {
+  font-size: 13px;
+}
+.box-produto .informacoes h4 + * {
+  margin-top: 10px;
+}
+.box-produto .box-informacoes {
+  padding: 8px 0 7px 18px;
+}
+.bg {
+  height: 100px;
+}
 header {
   background-position: 17%;
 }
@@ -230,4 +271,76 @@ header .container-color {
 }
 #produtos-sobre a {
   max-width: 340px;
+}
+#produto-infomacoes {
+  padding: 90px 0 15px;
+}
+#produto-infomacoes .title h2 {
+  line-height: 20px;
+  font-size: 18px;
+}
+#produto-infomacoes .title h3 {
+  font-size: 11px;
+}
+#produto-infomacoes .title h3 + * {
+  margin-top: 0;
+}
+#produto-infomacoes .title + * {
+  margin-top: 15px;
+}
+.container-produto {
+  gap: 14px;
+}
+.container-produto .title + * {
+  margin-top: 10px;
+}
+.container-produto .informacoes + * {
+  margin-top: 15px;
+}
+.container-produto .description {
+  line-height: 20px;
+}
+#descricao {
+  position: relative;
+}
+#descricao .title {
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  gap: 15px;
+}
+#descricao .box-title {
+  max-width: 185px;
+  padding: 11px 10px 9px;
+}
+#descricao .box-title h3 {
+  font-size: 11px;
+}
+#descricao .content {
+  padding: 20px 20px 40px;
+}
+#descricao .share {
+  position: absolute;
+  bottom: 25px;
+  left: 50px;
+}
+#descricao .share h3 {
+  display: none;
+}
+#descricao .share svg {
+  max-width: 17px;
+}
+#descricao .share .midias {
+  gap: 10px;
+}
+#cores .container-color {
+  max-width: 90%;
+}
+#relacionados {
+  padding: 15px 0 30px;
+}
+#relacionados h2 + * {
+  margin-top: 15px;
+}
+#relacionados .container-color {
+  max-width: 320px;
 }

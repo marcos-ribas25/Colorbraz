@@ -53,6 +53,13 @@ $(document).ready(function () {
       }
    })
 
+   $('.owl-produtos').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: false,
+      items: 1,
+   })
+
    $("#myInput").on("keyup", function () {
       var value = $(this).val().toLowerCase();
       $(".dropdown-menu li").filter(function () {

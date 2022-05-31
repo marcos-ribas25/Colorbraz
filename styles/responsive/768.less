@@ -30,6 +30,48 @@
     }
 }
 
+.imagem-produto {
+    left: 27px;
+    max-width: 150px;
+    top:36px;
+}
+
+.box-produto {
+    padding: 30px 0 20px;
+
+    .container-box {
+        max-width: 220px;
+    }
+
+    .title {
+        h4 {
+            font-size: 18px;
+        }
+    }
+
+    .title+* {
+        margin-top: 35px;
+    }
+
+    .informacoes {
+        h4 {
+            font-size: 15px;
+        }
+
+        h4+* {
+            margin-top: 10px;
+        }
+    }
+
+    .box-informacoes {
+        padding: 8px 0 7px 18px;
+    }
+}
+
+.bg {
+    height: 100px;
+}
+
 //SECTIONS
 .title-text {
     padding-top: 25px;
@@ -297,5 +339,112 @@
 
     a {
         max-width: 355px;
+    }
+}
+
+//PAGE PRODUTO
+#produto-infomacoes {
+    padding: 100px 0 15px;
+
+    [class*='paragrafo-3'] {
+        font-size: 11px;
+    }
+
+    .container-color.mobile-sumir {
+        display: none;
+    }
+
+    .container-color.mobile-aparecer {
+        display: block;
+    }
+
+    .title {
+        h2 {
+            line-height: 23px;
+            font-size: 20px;
+        }
+
+        h3 {
+            font-size: 12px;
+        }
+
+        h3+*{
+            margin-top: 5px;
+        }
+    }
+
+    .title+*{
+        margin-top: 15px;
+    }
+}
+
+.container-produto {
+    flex-direction: column;
+    gap: 17px;
+
+    .image{
+        max-width: 100%;
+    }
+
+    .title+* {
+        margin-top: 12px;
+    }
+
+    .content {
+        max-width: 570px;
+        margin: 0 auto;
+    }
+
+    .informacoes+* {
+        margin-top: 15px;
+    }
+
+    .description {
+        text-align: center;
+    }
+}
+
+#descricao {
+    padding: 15px 0;
+
+    .box-title {
+        max-width: 220px;
+        padding: 11px 10px 9px;
+    }
+
+    .content {
+        padding: 25px;
+    }
+
+    .share {
+        h3 {
+            display: none;
+        }
+
+        svg {
+            max-width: 17px;
+        }
+
+        .midias {
+            gap: 10px;
+        }
+    }
+}
+
+#cores {
+    .container-color {
+        max-width: 90%;
+    }
+}
+
+#relacionados {
+    padding: 15px 0 30px;
+
+    h2+* {
+        margin-top: 15px;
+    }
+
+    .container-color {
+        max-width: 480px;
     }
 }
