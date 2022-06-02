@@ -26,8 +26,6 @@ $(document).ready(function () {
       listInterna.classList.toggle('ativo');
    };
 
-
-
    $("#myInput").on("keyup", function () {
       var value = $(this).val().toLowerCase();
       $(".dropdown-menu li").filter(function () {
@@ -58,8 +56,6 @@ $(document).ready(function () {
    if ($('.phone-mask').length > 0) {
       $('.phone-mask').mask(SPMaskBehavior, spOptions);
    }
-
- 
 });
 
 $('.owl-banner').owlCarousel({

@@ -139,7 +139,9 @@ footer {
         display: none;
     }
 
-    .links, .logo, .redes {
+    .links,
+    .logo,
+    .redes {
         padding-top: 5px;
     }
 
@@ -713,5 +715,30 @@ footer {
 
     .grid-catalogo {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+//PAGE BLOG 
+#blog {
+    padding: 110px 0 6.25vw;
+
+    .container-color {
+        flex-direction: column;
+    }
+
+    .posts,
+    .side-bar {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .side-bar {
+        .side-box {
+            .popular-post {
+                .title-date {
+                    max-width: 100%;
+                }
+            }
+        }
     }
 }

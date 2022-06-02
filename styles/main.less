@@ -823,7 +823,7 @@ header {
   transition: 0.3s all;
 }
 
-footer {  
+footer {
   background-color: var(--azul);
   padding-top: 50px;
 
@@ -1852,7 +1852,7 @@ footer {
     position: relative;
     max-width: 1120px;
     margin: 0 auto;
-  
+
     img {
       width: 100%;
       position: absolute;
@@ -1861,52 +1861,52 @@ footer {
       left: 0;
       margin: 0 auto;
     }
-  
+
     svg {
       position: relative;
       z-index: 1;
       width: 100%;
       height: auto;
       margin: 0 auto;
-  
+
       g,
       path {
         cursor: cell;
       }
-  
+
       g:hover {
         stroke: black;
         stroke-width: 0.5;
       }
-  
+
       g:hover {
         stroke: black;
         stroke-width: 0.5;
       }
-  
+
       g:hover {
         stroke: black;
         stroke-width: 0.5;
       }
     }
   }
-  
+
   #imagemAbsoluta:hover {
     svg {
       z-index: 3;
       opacity: 0.5;
     }
   }
-  
+
   .ball-color {
     height: 44px;
     width: 44px;
     border-radius: 100%;
   }
-  
+
   .tab-content {
     margin-top: 15px;
-  
+
     .tab-content--container {
       display: flex;
       flex-wrap: wrap;
@@ -1914,7 +1914,7 @@ footer {
       align-items: center;
     }
   }
-  
+
   #corSelecionada {
     display: flex;
     align-items: center;
@@ -1925,15 +1925,15 @@ footer {
     margin-top: 38px;
   }
 
-  #objetoSelecionado{
+  #objetoSelecionado {
     text-align: center;
   }
 
-  #objetoSelecionado+*{
+  #objetoSelecionado+* {
     margin-top: 10px;
   }
 
-  #colors{
+  #colors {
     justify-content: space-between;
   }
 
@@ -1941,7 +1941,7 @@ footer {
     width: 430px;
     background-color: #fff;
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 18px;
     padding: 18px;
 
@@ -1954,11 +1954,11 @@ footer {
     }
   }
 
-  #tabs+*{
+  #tabs+* {
     margin-top: 20px;
   }
 
-  .informacoes{
+  .informacoes {
     max-width: 430px;
   }
 
@@ -2133,10 +2133,14 @@ footer {
 
 //PAGE BLOG fazer até domingo
 #blog {
-  padding: 195px 15px 6.25vw;
+  padding: 195px 0 6.25vw;
 
-  h1 {
-    margin-bottom: 2.5vw !important;
+  .container-color.title {
+    gap: unset;
+  }
+
+  .title+* {
+    margin-top: 2.5vw;
   }
 
   .container-color {
@@ -2162,6 +2166,10 @@ footer {
     max-width: 890px;
     position: relative;
     overflow: hidden;
+
+    a {
+      display: flex;
+    }
 
     img {
       width: 100%;
@@ -2278,12 +2286,17 @@ footer {
       display: flex;
       align-items: center;
       gap: 10px;
+
+      svg {
+        max-width: 9px;
+        width: 100%;
+        object-fit: contain;
+      }
     }
   }
 
   .side-bar.mobile {
     max-width: 100%;
-    margin-bottom: 20px;
   }
 
   .side-bar.mobile+* {
@@ -2829,7 +2842,3 @@ footer {
 @media only screen and (max-width: 400px) {
   @import "responsive/400";
 }
-
-
-
-

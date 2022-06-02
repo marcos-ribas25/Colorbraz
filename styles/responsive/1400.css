@@ -47,6 +47,10 @@
 .box-catalogo img + * {
   margin-top: 20px;
 }
+.bt-tag {
+  width: 155px;
+  max-height: 38px;
+}
 .bt-filtro {
   padding: 12px 20px 10px;
   max-width: 170px;
@@ -391,4 +395,30 @@ footer .container-color + * {
 }
 #contato {
   padding-top: 150px;
+}
+#blog {
+  padding: 145px 0 6.25vw;
+}
+#blog .post-title h3 {
+  font-size: 39px;
+  line-height: 43px;
+}
+#blog .author + * {
+  margin-top: 14px;
+}
+#blog .post-title + * {
+  margin-top: 15px;
+}
+#blog .text-preview p {
+  line-height: 22px;
+}
+#blog [class*='link-1'] {
+  font-size: 16px;
+}
+#blog .share .leia-mais svg {
+  max-width: 8px;
+}
+#blog .paginacao li {
+  max-width: 40px;
+  max-height: 40px;
 }

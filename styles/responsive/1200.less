@@ -27,7 +27,7 @@
 .imagem-produto {
     left: 27px;
     max-width: 150px;
-    top:36px;
+    top: 36px;
 }
 
 .box-produto {
@@ -55,6 +55,12 @@
 .bg {
     height: 100px;
 }
+
+.bt-tag {
+    width: 130px;
+    max-height: 35px;
+}
+
 
 //FILTROS COMPONENTES
 .bt-filtro {
@@ -95,13 +101,13 @@ header {
 
 footer {
     padding-top: 40px;
-    
+
     .logo {
         .color {
             max-width: 180px;
         }
 
-        a+*{
+        a+* {
             margin-top: 10px;
         }
 
@@ -110,7 +116,8 @@ footer {
         }
     }
 
-    .links, .links.svg {
+    .links,
+    .links.svg {
         gap: 12px;
         max-width: 155px;
     }
@@ -136,7 +143,7 @@ footer {
         }
     }
 
-    .container-color+*{
+    .container-color+* {
         margin-top: 45px;
     }
 
@@ -553,7 +560,7 @@ footer {
         }
     }
 
-    .filter+*{
+    .filter+* {
         margin-top: 45px;
     }
 }
@@ -562,7 +569,7 @@ footer {
 #catalogo {
     padding: 115px 0 60px;
 
-    h1+*{
+    h1+* {
         margin-top: 35px;
     }
 
@@ -572,7 +579,7 @@ footer {
 
 
     .grid-catalogo {
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 15px;
     }
 }
@@ -580,4 +587,96 @@ footer {
 //PAGE CONTATO
 #contato {
     padding-top: 120px;
+}
+
+//PAGE BLOG
+#blog {
+    padding: 125px 0 6.25vw;
+
+    .post-title {
+        h3 {
+            font-size: 33px;
+            line-height: 36px;
+        }
+    }
+
+    .author {
+
+        span,
+        .date {
+            font-size: 12px;
+        }
+
+        .author-info {
+            .author-picture {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+
+    .author+* {
+        margin-top: 9px;
+    }
+
+    .post-title+* {
+        margin-top: 11px;
+    }
+
+    .text-preview {
+        p {
+            line-height: 22px;
+        }
+    }
+
+    [class*='link-1'] {
+        font-size: 15px;
+    }
+
+    .share {
+        .midias {
+            max-width: 115px;
+
+            svg {
+                max-width: 19px;
+                max-height: 19px;
+            }
+        }
+
+        .leia-mais {
+            svg {
+                max-width: 7px;
+            }
+        }
+    }
+
+    .paginacao {
+        li {
+            max-width: 38px;
+            max-height: 38px;
+        }
+    }
+
+    .side-box.tags {
+        .bt-transp {
+            font-size: 10px;
+            padding: 7px 13px 8px;
+        }
+    }
+
+    .side-bar {
+        .side-box {
+            h4+* {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .popular-post {
+
+        h5,
+        span {
+            font-size: 12px;
+        }
+    }
 }

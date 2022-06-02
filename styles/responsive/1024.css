@@ -525,3 +525,17 @@ footer .barra-footer .logo-codie {
 #catalogo .grid-catalogo {
   grid-template-columns: repeat(2, 1fr);
 }
+#blog {
+  padding: 110px 0 6.25vw;
+}
+#blog .container-color {
+  flex-direction: column;
+}
+#blog .posts,
+#blog .side-bar {
+  width: 100%;
+  max-width: 100%;
+}
+#blog .side-bar .side-box .popular-post .title-date {
+  max-width: 100%;
+}
