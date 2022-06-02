@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8" />
 
-    <title>Catálogos</title>
+    <title>Produtos</title>
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
@@ -74,7 +74,7 @@
 <body>
     <div class="background-menu aparecer"></div>
 
-    <div class="box-menu aparecer">
+    <!-- <div class="box-menu aparecer">
         <ul>
             <li>
                 <a class="box-link link-1-regular-roc uppercase" href="index.html">home</a>
@@ -95,15 +95,14 @@
                 <a class="box-link link-1-regular-roc uppercase" href="contato.html">contato</a>
             </li>
         </ul>
-    </div>
+    </div> -->
 
     <header style="background-image: url(images/bg-header.png);">
         <div class="container-color">
             <a href="index.html" class="logo">
-                <img src="images/logo-header.png" alt="Logo Cabeçalho" />
             </a>
 
-            <nav>
+            <nav class="sumir">
                 <a class="link-2-alternates branco" href="index.html">Home</a>
                 <a class="link-2-alternates branco" href="sobre.html">Sobre nós</a>
                 <a class="link-2-alternates branco" href="produtos.html">Produtos</a>
@@ -130,7 +129,7 @@
     <section id="produtos-content">
         <div class="container-color">
             <div class="filter">
-                <div class="box-left">
+                <div class="box-left mobile-sumir">
                     <div class="dropdown superficie">
                         <button class="bt-filtro dropdown-toggle paragrafo-3-bold-montserrat uppercase" type="button"
                             data-toggle="dropdown">superfícies
@@ -198,6 +197,133 @@
                             <li><a class="paragrafo-3-semibold-montserrat black" href="#">filtro 1</a></li>
                             <li><a class="paragrafo-3-semibold-montserrat black" href="#">filtro 2</a></li>
                         </ul>
+                    </div>
+                </div>
+
+                <div class="box-left mobile-aparecer">
+                    <div class="dropdown-filtrar">
+                        <button class="dropbtn paragrafo-3-bold-montserrat uppercase">
+                            Filtrar
+                            <i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7">
+                                    <g>
+                                        <g>
+                                            <path fill="none" stroke="#000" stroke-miterlimit="20"
+                                                d="M10.675.5v0l-5 6v0l-5-6v0" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </i>
+                        </button>
+
+                        <div class="dropdown-content">
+                            <ul>
+                                <li class="dropdown-interno">
+                                    <ul class="dropdown-content superficie">
+                                        <li>
+                                            <div class="dropdown superficie">
+                                                <button
+                                                    class="bt-filtro dropdown-toggle paragrafo-3-bold-montserrat uppercase"
+                                                    type="button" data-toggle="dropdown">superfícies
+                                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="7"
+                                                            viewBox="0 0 11 7">
+                                                            <g>
+                                                                <g>
+                                                                    <path fill="none" stroke="#000"
+                                                                        stroke-miterlimit="20"
+                                                                        d="M10.675.5v0l-5 6v0l-5-6v0" />
+                                                                </g>
+                                                            </g>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+
+                                                <ul class="dropdown-menu superficie">
+                                                    <input class="form-control paragrafo-3-regular-montserrat black"
+                                                        id="myInput" type="text" placeholder="Search..">
+                                                    <li><a class="paragrafo-3-semibold-montserrat black" href="#">Marca
+                                                            1</a></li>
+                                                    <li><a class="paragrafo-3-semibold-montserrat black" href="#">Marca
+                                                            2</a></li>
+                                                    <li><a class="paragrafo-3-semibold-montserrat black" href="#">Marca
+                                                            3</a></li>
+                                                    <li><a class="paragrafo-3-semibold-montserrat black" href="#">Marca
+                                                            4</a></li>
+                                                    <li><a class="paragrafo-3-semibold-montserrat black" href="#">Marca
+                                                            5</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-interno">
+                                    <ul class="dropdown-content ambientes">
+                                        <li>
+                                            <div class="dropdown ambientes">
+                                                <button
+                                                    class="bt-filtro dropdown-toggle paragrafo-3-bold-montserrat uppercase"
+                                                    type="button" data-toggle="dropdown">Ambientes
+                                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="7"
+                                                            viewBox="0 0 11 7">
+                                                            <g>
+                                                                <g>
+                                                                    <path fill="none" stroke="#000"
+                                                                        stroke-miterlimit="20"
+                                                                        d="M10.675.5v0l-5 6v0l-5-6v0" />
+                                                                </g>
+                                                            </g>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+
+                                                <ul class="dropdown-menu ambientes">
+                                                    <input class="form-control paragrafo-3-semibold-montserrat black"
+                                                        id="myInput" type="text" placeholder="Search..">
+                                                    <li><a class="paragrafo-3-semibold-montserrat black" href="#">filtro
+                                                            1</a></li>
+                                                    <li><a class="paragrafo-3-semibold-montserrat black" href="#">filtro
+                                                            2</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-interno">
+                                    <ul class="dropdown-content acabamentos">
+                                        <li>
+                                            <div class="dropdown acabamentos">
+                                                <button
+                                                    class="bt-filtro full dropdown-toggle paragrafo-3-bold-montserrat uppercase"
+                                                    type="button" data-toggle="dropdown">acabamentos
+                                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="7"
+                                                            viewBox="0 0 11 7">
+                                                            <g>
+                                                                <g>
+                                                                    <path fill="none" stroke="#000"
+                                                                        stroke-miterlimit="20"
+                                                                        d="M10.675.5v0l-5 6v0l-5-6v0" />
+                                                                </g>
+                                                            </g>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+
+                                                <ul class="dropdown-menu acabamentos">
+                                                    <input class="form-control paragrafo-3-semibold-montserrat black"
+                                                        id="myInput" type="text" placeholder="Search..">
+                                                    <li><a class="paragrafo-3-semibold-montserrat black" href="#">filtro
+                                                            1</a></li>
+                                                    <li><a class="paragrafo-3-semibold-montserrat black" href="#">filtro
+                                                            2</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 

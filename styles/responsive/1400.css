@@ -35,6 +35,29 @@
 .bg {
   height: 130px;
 }
+.box-catalogo {
+  padding: 25px 20px 25px;
+}
+.box-catalogo img {
+  max-width: 50px;
+}
+.box-catalogo h3 {
+  margin-bottom: 12px !important;
+}
+.box-catalogo img + * {
+  margin-top: 20px;
+}
+.bt-filtro {
+  padding: 12px 20px 10px;
+  max-width: 170px;
+}
+.bt-filtro.full {
+  max-width: 200px;
+}
+.bt-ordenar {
+  padding: 12px 20px 10px;
+  max-width: 250px;
+}
 header .logo {
   max-width: 225px;
 }
@@ -43,6 +66,24 @@ header a + nav {
 }
 header nav a + * {
   margin-left: 30px;
+}
+footer {
+  padding-top: 45px;
+}
+footer .logo .color {
+  max-width: 200px;
+}
+footer .logo a + * {
+  margin-top: 15px;
+}
+footer .logo .ecotex {
+  max-width: 110px;
+}
+footer .links {
+  gap: 17px;
+}
+footer .container-color + * {
+  margin-top: 65px;
 }
 .title-text {
   padding-top: 45px;
@@ -329,4 +370,25 @@ header nav a + * {
 }
 #relacionados h2 + * {
   margin-top: 29px;
+}
+#banner-produtos {
+  height: 450px;
+}
+#produtos-content {
+  padding-bottom: 80px;
+}
+#catalogo {
+  padding: 130px 0 70px;
+}
+#catalogo h1 + * {
+  margin-top: 33px;
+}
+#catalogo .filter + * {
+  margin-top: 38px;
+}
+#catalogo .grid-catalogo {
+  gap: 25px;
+}
+#contato {
+  padding-top: 150px;
 }

@@ -33,7 +33,7 @@
 .imagem-produto {
     left: 27px;
     max-width: 150px;
-    top:36px;
+    top: 36px;
 }
 
 .box-produto {
@@ -70,6 +70,39 @@
 
 .bg {
     height: 100px;
+}
+
+.paginacao {
+    li {
+        max-width: 35px;
+        height: 35px;
+    }
+}
+
+//FILTROS COMPONENTES
+.bt-filtro {
+    padding: 5px 10px 3px;
+    max-width: 110px;
+    font-size: 11px;
+
+    svg {
+        max-width: 9px;
+        margin-bottom: 2px;
+    }
+}
+
+.bt-filtro.full {
+    max-width: 140px;
+}
+
+.bt-ordenar {
+    padding: 5px 10px 3px 5px;
+    max-width: 150px;
+
+    svg {
+        max-width: 9px;
+        margin-bottom: 2px;
+    }
 }
 
 //SECTIONS
@@ -114,6 +147,79 @@
 .text-absolute-image.left {
     .content {
         padding: 30px 30px 20px;
+    }
+}
+
+footer {
+    padding-top: 30px;
+
+    .container-color {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .logo {
+        .color {
+            max-width: 205px;
+        }
+
+        a+* {
+            margin-top: 15px;
+        }
+
+        .ecotex {
+            max-width: 105px;
+        }
+    }
+
+    .links,
+    .links.svg {
+        gap: 10px;
+
+        a {
+            font-size: 14px;
+            line-height: 20px!important;
+        }
+    }
+
+    .links:nth-child(4) {
+        display: none;
+    }
+
+    .links.svg {
+        .link {
+            justify-content: center;
+
+            a {
+                margin: unset;
+            }
+        }
+
+        svg {
+            display: none;
+        }
+    }
+
+    .container-color+* {
+        margin-top: 30px;
+    }
+
+    .barra-footer {
+        .container-color {
+            gap: 5px;
+        }
+        
+        .box-left {
+            a+* {
+                margin-left: 3.43vw;
+            }
+        }
+
+        .logo-codie {
+            max-width: 54px;
+        }
     }
 }
 
@@ -368,12 +474,12 @@
             font-size: 12px;
         }
 
-        h3+*{
+        h3+* {
             margin-top: 5px;
         }
     }
 
-    .title+*{
+    .title+* {
         margin-top: 15px;
     }
 }
@@ -382,7 +488,7 @@
     flex-direction: column;
     gap: 17px;
 
-    .image{
+    .image {
         max-width: 100%;
     }
 
@@ -447,4 +553,48 @@
     .container-color {
         max-width: 480px;
     }
+}
+
+//PAGE PRODUTOS
+#banner-produtos {
+    height: 300px;
+}
+
+#produtos-content {
+    padding: 25px 0 50px;
+
+    .filter {
+        flex-wrap: wrap;
+        row-gap: 15px;
+
+        .box-left {
+            gap: 10px;
+        }
+    }
+
+    .filter+* {
+        margin-top: 30px;
+    }
+
+    .container-color {
+        max-width: 590px;
+    }
+}
+
+#grid-produtos {
+    gap: 20px;
+
+    .box-produto {
+
+        .title {
+            h4 {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+//PAGE CONTATO
+#contato {
+    padding-top: 110px;
 }

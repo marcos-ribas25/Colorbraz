@@ -51,6 +51,30 @@
 .bg {
   height: 100px;
 }
+.paginacao li {
+  max-width: 35px;
+  height: 35px;
+}
+.bt-filtro {
+  padding: 5px 10px 3px;
+  max-width: 110px;
+  font-size: 11px;
+}
+.bt-filtro svg {
+  max-width: 9px;
+  margin-bottom: 2px;
+}
+.bt-filtro.full {
+  max-width: 140px;
+}
+.bt-ordenar {
+  padding: 5px 10px 3px 5px;
+  max-width: 150px;
+}
+.bt-ordenar svg {
+  max-width: 9px;
+  margin-bottom: 2px;
+}
 .title-text {
   padding-top: 25px;
 }
@@ -80,6 +104,57 @@
 }
 .text-absolute-image.left .content {
   padding: 30px 30px 20px;
+}
+footer {
+  padding-top: 30px;
+}
+footer .container-color {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+footer .logo .color {
+  max-width: 205px;
+}
+footer .logo a + * {
+  margin-top: 15px;
+}
+footer .logo .ecotex {
+  max-width: 105px;
+}
+footer .links,
+footer .links.svg {
+  gap: 10px;
+}
+footer .links a,
+footer .links.svg a {
+  font-size: 14px;
+  line-height: 20px!important;
+}
+footer .links:nth-child(4) {
+  display: none;
+}
+footer .links.svg .link {
+  justify-content: center;
+}
+footer .links.svg .link a {
+  margin: unset;
+}
+footer .links.svg svg {
+  display: none;
+}
+footer .container-color + * {
+  margin-top: 30px;
+}
+footer .barra-footer .container-color {
+  gap: 5px;
+}
+footer .barra-footer .box-left a + * {
+  margin-left: 3.43vw;
+}
+footer .barra-footer .logo-codie {
+  max-width: 54px;
 }
 .contato {
   padding: 30px 0;
@@ -322,4 +397,32 @@
 }
 #relacionados .container-color {
   max-width: 480px;
+}
+#banner-produtos {
+  height: 300px;
+}
+#produtos-content {
+  padding: 25px 0 50px;
+}
+#produtos-content .filter {
+  flex-wrap: wrap;
+  row-gap: 15px;
+}
+#produtos-content .filter .box-left {
+  gap: 10px;
+}
+#produtos-content .filter + * {
+  margin-top: 30px;
+}
+#produtos-content .container-color {
+  max-width: 590px;
+}
+#grid-produtos {
+  gap: 20px;
+}
+#grid-produtos .box-produto .title h4 {
+  font-size: 16px;
+}
+#contato {
+  padding-top: 110px;
 }

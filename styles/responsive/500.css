@@ -65,12 +65,57 @@
 .bg {
   height: 100px;
 }
+.bt-filtro {
+  max-width: 100%;
+  border: unset;
+  font-size: 10px;
+}
+.bt-filtro svg {
+  max-width: 7px;
+  margin-bottom: 2px;
+}
+.bt-filtro.full {
+  max-width: 100%;
+}
+.bt-ordenar {
+  padding: 5px 10px 3px 3px;
+  max-width: 130px;
+}
+.bt-ordenar svg {
+  max-width: 9px;
+  margin-bottom: 2px;
+}
+.box-catalogo {
+  padding: 20px 12px 15px;
+}
+.box-catalogo img {
+  max-width: 35px;
+}
+.box-catalogo img + * {
+  margin-top: 15px;
+}
+.box-catalogo h3 {
+  font-size: 13px;
+  margin-bottom: 9px !important;
+}
+.box-catalogo a {
+  font-size: 11px;
+}
 header {
   background-position: 17%;
 }
 header .container-color {
   max-width: 100%;
   padding: 15px 30px 10px 45px;
+}
+footer {
+  padding-top: 20px;
+}
+footer .barra-footer a {
+  font-size: 13px;
+}
+footer .logo-codie {
+  max-width: 40px;
 }
 .title-text {
   padding-top: 20px;
@@ -343,4 +388,78 @@ header .container-color {
 }
 #relacionados .container-color {
   max-width: 320px;
+}
+#banner-produtos {
+  height: 200px;
+}
+#produtos-content {
+  padding: 25px 0 50px;
+}
+#produtos-content .filter {
+  position: relative;
+  flex-wrap: wrap;
+  row-gap: 15px;
+}
+#produtos-content .filter .box-left {
+  gap: 10px;
+}
+#produtos-content .box-left.mobile-sumir {
+  display: none;
+}
+#produtos-content .box-left.mobile-aparecer {
+  display: block !important;
+  width: 120px;
+}
+#produtos-content .box-left.mobile-aparecer .dropbtn {
+  padding: 5px 10px 3px;
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+  border: 1px solid #000;
+}
+#produtos-content .filter + * {
+  margin-top: 30px;
+}
+#produtos-content .container-color {
+  max-width: 350px;
+}
+#grid-produtos {
+  gap: 20px;
+  grid-template-columns: repeat(1, 1fr);
+}
+#grid-produtos .box-produto {
+  padding: 22px 0 20px;
+}
+#grid-produtos .box-produto .title h4 {
+  font-size: 16px;
+  max-width: 230px;
+  margin: 0 auto;
+}
+#grid-produtos .box-produto a {
+  width: 100%;
+}
+#catalogo {
+  padding: 90px 0 45px;
+}
+#catalogo h1 + * {
+  margin-top: 20px;
+}
+#catalogo .filter + * {
+  margin-top: 15px;
+}
+#catalogo .container-color {
+  max-width: 90%;
+}
+#catalogo .filter .bt-filtro.full {
+  max-width: 115px;
+  border: 1px solid #000;
+  padding: 5px 10px 3px;
+  height: 100%;
+}
+#catalogo .filter .bt-ordenar {
+  font-size: 10px;
+  max-width: 110px;
+}
+#contato {
+  padding-top: 90px;
 }

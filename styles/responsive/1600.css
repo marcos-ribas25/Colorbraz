@@ -212,3 +212,22 @@ header .container-color {
 #relacionados h2 + * {
   margin-top: 32px;
 }
+#banner-produtos {
+  height: 500px;
+}
+#produtos-content {
+  padding-bottom: 90px;
+}
+#catalogo {
+  padding-top: 135px;
+  padding-bottom: 90px;
+}
+#catalogo h1 + * {
+  margin-top: 37px;
+}
+#catalogo .filter + * {
+  margin-top: 45px;
+}
+#contato {
+  padding-top: 190px;
+}

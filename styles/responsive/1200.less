@@ -56,6 +56,21 @@
     height: 100px;
 }
 
+//FILTROS COMPONENTES
+.bt-filtro {
+    padding: 10px 15px 8px;
+    max-width: 155px;
+}
+
+.bt-filtro.full {
+    max-width: 185px;
+}
+
+.bt-ordenar {
+    padding: 10px 15px 8px;
+    max-width: 220px;
+}
+
 //SECTIONS
 header {
     background-position: 38%;
@@ -76,6 +91,67 @@ header {
     .container-color {
         padding: 20px 15px;
     }
+}
+
+footer {
+    padding-top: 40px;
+    
+    .logo {
+        .color {
+            max-width: 180px;
+        }
+
+        a+*{
+            margin-top: 10px;
+        }
+
+        .ecotex {
+            max-width: 95px;
+        }
+    }
+
+    .links, .links.svg {
+        gap: 12px;
+        max-width: 155px;
+    }
+
+    .links {
+        padding-top: 5px;
+    }
+
+    .links.svg {
+        padding-top: unset;
+
+        svg {
+            max-width: 18px;
+            max-height: 18px;
+        }
+    }
+
+    .redes {
+        .link-redes {
+            svg {
+                max-width: 19px;
+            }
+        }
+    }
+
+    .container-color+*{
+        margin-top: 45px;
+    }
+
+    .barra-footer {
+        .box-left {
+            a+* {
+                margin-left: 3.43vw;
+            }
+        }
+
+        .logo-codie {
+            max-width: 59px;
+        }
+    }
+
 }
 
 .title-text {
@@ -162,11 +238,11 @@ header {
 #banner-home {
     .owl-carousel {
         .owl-stage-outer {
-            height: 855px;
+            height: 765px;
         }
 
         .item {
-            height: 700px;
+            height: 615px;
 
             .container-color {
                 padding-top: 145px;
@@ -461,4 +537,47 @@ header {
     h2+* {
         margin-top: 29px;
     }
+}
+
+//PAGE PRODUTOS
+#banner-produtos {
+    height: 400px;
+}
+
+#produtos-content {
+    padding: 35px 0 60px;
+
+    .filter {
+        .box-left {
+            gap: 18px;
+        }
+    }
+
+    .filter+*{
+        margin-top: 45px;
+    }
+}
+
+//PAGE CATALOGO 
+#catalogo {
+    padding: 115px 0 60px;
+
+    h1+*{
+        margin-top: 35px;
+    }
+
+    .filter+* {
+        margin-top: 27px;
+    }
+
+
+    .grid-catalogo {
+        grid-template-columns: repeat(3,1fr);
+        gap: 15px;
+    }
+}
+
+//PAGE CONTATO
+#contato {
+    padding-top: 120px;
 }

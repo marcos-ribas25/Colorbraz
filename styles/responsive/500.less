@@ -88,6 +88,54 @@
     height: 100px;
 }
 
+//FILTROS COMPONENTES
+.bt-filtro {
+    max-width: 100%;
+    border: unset;
+    font-size: 10px;
+
+    svg {
+        max-width: 7px;
+        margin-bottom: 2px;
+    }
+}
+
+.bt-filtro.full {
+    max-width: 100%;
+}
+
+.bt-ordenar {
+    padding: 5px 10px 3px 3px;
+    max-width: 130px;
+
+    svg {
+        max-width: 9px;
+        margin-bottom: 2px;
+    }
+}
+
+.box-catalogo {
+    padding: 20px 12px 15px;
+
+    img {
+        max-width: 35px;
+    }
+
+    img+* {
+        margin-top: 15px;
+    }
+
+    h3 {
+        font-size: 13px;
+        margin-bottom: 9px !important;
+    }
+
+    a {
+        font-size: 11px;
+    }
+}
+
+
 //SECTIONS
 header {
     background-position: 17%;
@@ -95,6 +143,19 @@ header {
     .container-color {
         max-width: 100%;
         padding: 15px 30px 10px 45px;
+    }
+}
+
+footer {
+    padding-top: 20px;
+    .barra-footer {
+        a {
+            font-size: 13px;
+        }
+    }
+
+    .logo-codie {
+        max-width: 40px;
     }
 }
 
@@ -473,4 +534,105 @@ header {
     .container-color {
         max-width: 320px;
     }
+}
+
+//PAGE PRODUTOS
+#banner-produtos {
+    height: 200px;
+}
+
+#produtos-content {
+    padding: 25px 0 50px;
+
+    .filter {
+        position: relative;
+        flex-wrap: wrap;
+        row-gap: 15px;
+
+        .box-left {
+            gap: 10px;
+        }
+    }
+
+    .box-left.mobile-sumir {
+        display: none;
+    }
+
+    .box-left.mobile-aparecer {
+        display: block !important;
+        width: 120px;
+
+        .dropbtn {
+            padding: 5px 10px 3px;
+            display: flex;
+            justify-content: space-between;
+            width: 120px;
+            border: 1px solid #000;
+        }
+    }
+
+    .filter+* {
+        margin-top: 30px;
+    }
+
+    .container-color {
+        max-width: 350px;
+    }
+}
+
+#grid-produtos {
+    gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+
+    .box-produto {
+        padding: 22px 0 20px;
+
+        .title {
+            h4 {
+                font-size: 16px;
+                max-width: 230px;
+                margin: 0 auto;
+            }
+        }
+
+        a {
+            width: 100%;
+        }
+    }
+}
+
+//PAGE PRODUTOS 
+#catalogo {
+    padding: 90px 0 45px;
+
+    h1+* {
+        margin-top: 20px;
+    }
+
+    .filter+* {
+        margin-top: 15px;
+    }
+
+    .container-color {
+        max-width: 90%;
+    }
+
+    .filter {
+        .bt-filtro.full {
+            max-width: 115px;
+            border: 1px solid #000;
+            padding: 5px 10px 3px;
+            height: 100%;
+        }
+
+        .bt-ordenar {
+            font-size: 10px;
+            max-width: 110px;
+        }
+    }
+}
+
+//PAGE CONTATO 
+#contato {
+    padding-top: 90px;
 }
