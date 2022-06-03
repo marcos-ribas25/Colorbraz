@@ -172,7 +172,7 @@ ul {
 
 .box-produto {
   max-width: 660px;
-  width: 100%; 
+  width: 100%;
   padding: 40px 0 34px;
   position: relative;
   display: flex;
@@ -1897,98 +1897,99 @@ footer {
       opacity: 0.5;
     }
   }
+}
 
-  .ball-color {
-    height: 44px;
-    width: 44px;
-    border-radius: 100%;
-  }
 
-  .tab-content {
-    margin-top: 15px;
+.ball-color {
+  height: 44px;
+  width: 44px;
+  border-radius: 100%;
+}
 
-    .tab-content--container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      align-items: center;
-    }
-  }
+.tab-content {
+  margin-top: 15px;
 
-  #corSelecionada {
+  .tab-content--container {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     gap: 10px;
+    align-items: center;
   }
+}
 
-  #imagemAbsoluta+* {
-    margin-top: 38px;
+#corSelecionada {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#imagemAbsoluta+* {
+  margin-top: 38px;
+}
+
+#objetoSelecionado {
+  text-align: center;
+}
+
+#objetoSelecionado+* {
+  margin-top: 10px;
+}
+
+#colors {
+  justify-content: space-between;
+}
+
+#tabs {
+  width: 430px;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+  padding: 18px;
+
+  button {
+    max-width: 64px;
+    height: 64px;
+    border: unset;
+    width: 100%;
+    object-fit: contain;
   }
+}
 
-  #objetoSelecionado {
+#tabs+* {
+  margin-top: 20px;
+}
+
+.informacoes {
+  max-width: 430px;
+}
+
+.paleta-cores {
+  max-width: 890px;
+  width: 100%;
+  padding-top: 30px;
+}
+
+#corSelecionada {
+  flex-wrap: wrap;
+
+  .text {
+    max-width: 430px;
+    width: 100%;
     text-align: center;
   }
 
-  #objetoSelecionado+* {
-    margin-top: 10px;
+  .bt {
+    max-width: 368px;
+    margin: 0 auto;
   }
+}
 
-  #colors {
-    justify-content: space-between;
-  }
-
-  #tabs {
-    width: 430px;
-    background-color: #fff;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 18px;
-    padding: 18px;
-
-    button {
-      max-width: 64px;
-      height: 64px;
-      border: unset;
-      width: 100%;
-      object-fit: contain;
-    }
-  }
-
-  #tabs+* {
-    margin-top: 20px;
-  }
-
-  .informacoes {
-    max-width: 430px;
-  }
-
-  .paleta-cores {
-    max-width: 890px;
-    width: 100%;
-    padding-top: 30px;
-  }
-
-  #corSelecionada {
-    flex-wrap: wrap;
-
-    .text {
-      max-width: 430px;
-      width: 100%;
-      text-align: center;
-    }
-
-    .bt {
-      max-width: 368px;
-      margin: 0 auto;
-    }
-  }
-
-  .ball-color.selecionada {
-    max-width: 430px;
-    height: 140px;
-    width: 100%;
-    border-radius: unset;
-  }
+.ball-color.selecionada {
+  max-width: 430px;
+  height: 140px;
+  width: 100%;
+  border-radius: unset;
 }
 
 //PAGE CORES
@@ -2131,7 +2132,7 @@ footer {
   }
 }
 
-//PAGE BLOG fazer até domingo
+//PAGE BLOG
 #blog {
   padding: 195px 0 6.25vw;
 
@@ -2416,7 +2417,7 @@ footer {
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: left;
+  background-position: center;
 }
 
 #blog.post {
@@ -2493,7 +2494,6 @@ footer {
   .side-box.tags {
     background-color: #fff;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-    border-radius: 10px;
     padding: 40px;
     display: flex;
     justify-content: space-between;
@@ -2523,8 +2523,6 @@ footer {
       border: unset;
       padding-top: unset;
 
-
-
       .midias {
         display: flex;
         gap: 10px;
@@ -2540,7 +2538,6 @@ footer {
 
   .tags {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-    border-radius: 10px;
     background-color: #ffffff;
     padding: 2.08vw 2.08vw 2.6vw;
     width: 100%;

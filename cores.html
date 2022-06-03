@@ -126,472 +126,82 @@
         </div>
     </section>
 
-    <section id="cores-select">
+    <div id="colors" style="display: flex">
+        <!-- <div id="tabs">
+            CORESDOBANCO.forEach(batata => {
+            <button type="button" onclick="handleColorTab('red')">{batata.cor}</button>
+            })
+          </div>
+          CORESDOBANCO.forEach(cor => {
+          <div id="red" class="tab-content" style="display: none">
+            { cor.subCores.forEach(subCor => {
+            <div onclick="handleColor(subCor)">{subCor}</div>
+            }) }
+          </div>
+          }) -->
         <div class="container-color">
-            <div class="search">
-                <h3 class="paragrafo-2-bold-alternates">Navegue pelas famílias de cores abaixo ou busque pelo nome.</h3>
-
-                <div class="search-form">
-                    <input type="search" name="search" id="color-search" class="paragrafo-3-medium-montserrat"
-                        placeholder="Digite aqui o nome da cor" required>
-                    <button>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28">
-                            <g>
-                                <g>
-                                    <path fill="#16437d"
-                                        d="M10.765 19.706a8.398 8.398 0 0 1-5.977-2.475 8.394 8.394 0 0 1-2.475-5.97 8.37 8.37 0 0 1 2.475-5.97 8.398 8.398 0 0 1 5.977-2.474c2.257 0 4.38.879 5.976 2.475a8.394 8.394 0 0 1 2.475 5.97 8.37 8.37 0 0 1-2.475 5.969 8.398 8.398 0 0 1-5.976 2.475zm15.919 5.843l-7.51-7.58a10.738 10.738 0 0 0 2.356-6.715C21.53 5.313 16.713.496 10.765.496 4.816.496 0 5.32 0 11.261 0 17.203 4.816 22.02 10.765 22.02c2.573 0 4.929-.9 6.785-2.405l7.46 7.53c.225.24.535.36.837.36.288 0 .576-.106.794-.317a1.163 1.163 0 0 0 .043-1.638z" />
-                                </g>
-                            </g>
-                        </svg>
-                    </button>
+            <div class="informacoes">
+                <div id="tabs" style="display: grid;">
+                    <button type="button" onclick="handleColorTab('red')"
+                        style="background-image: url(images/color-vermelho.png);"></button>
+                    <button type="button" onclick="handleColorTab('laranja')"
+                        style="background-image: url(images/color-laranja.png);"></button>
+                    <button type="button" onclick="handleColorTab('amarelo')"
+                        style="background-image: url(images/color-amarelo.png);"></button>
+                    <button type="button" onclick="handleColorTab('verde')"
+                        style="background-image: url(images/color-verdes.png);"></button>
+                    <button type="button" onclick="handleColorTab('azul')"
+                        style="background-image: url(images/color-azuls.png);"></button>
+                    <button type="button" onclick="handleColorTab('violetas')"
+                        style="background-image: url(images/color-violetas.png);"></button>
+                    <button type="button" onclick="handleColorTab('marrons')"
+                        style="background-image: url(images/color-marrons.png);"></button>
+                    <button type="button" onclick="handleColorTab('cinzas')"
+                        style="background-image: url(images/color-cinzas.png);"></button>
+                    <button type="button" onclick="handleColorTab('pasteis')"
+                        style="background-image: url(images/color-pasteis.png);"></button>
+                    <button type="button" onclick="handleColorTab('catalogo')"
+                        style="background-image: url(images/color-catalogo.png);"></button>
                 </div>
+
+                <p id="corSelecionada">
+                    <span class="ball-color selecionada"></span>
+                    <span class="text titulo-6-bold-alternates"></span>
+
+                    <a href="#" class="bt yellow link-2-bold-alternates" style="display: none;">Encontre um produto
+                        nesta
+                        cor
+                    </a>
+                </p>
+
             </div>
 
-            <div class="selecione">
-                <div class="cores">
-                    <a href="#" class="c-1 top-sinaliza" data-class="VERMELHOS" title="VERMELHOS"
-                        style="background-image: url(images/color-vermelho.png);"></a>
-
-                    <a href="#" class="c-2" data-class="LARANJAS" title="LARANJAS"
-                        style="background-image: url(images/color-laranja.png);"></a>
-
-                    <a href="#" class="c-3" data-class="AMARELOS" title="AMARELOS"
-                        style="background-image: url(images/color-amarelo.png);"></a>
-
-                    <a href="#" class="c-4" data-class="VERDES" title="VERDES"
-                        style="background-image: url(images/color-verdes.png);"></a>
-
-                    <a href="#" class="c-5" data-class="AZUIS" title="AZUIS"
-                        style="background-image: url(images/color-azuls.png);"></a>
-
-                    <a href="#" class="c-6" data-class="VIOLETAS" title="VIOLETAS"
-                        style="background-image: url(images/color-violetas.png);"></a>
-
-                    <a href="#" class="c-7" data-class="MARRONS E NEUTROS" title="MARRONS E NEUTROS"
-                        style="background-image: url(images/color-marrons.png);"></a>
-
-                    <a href="#" class="c-8" data-class="CINZAS" title="CINZAS"
-                        style="background-image: url(images/color-cinzas.png);"></a>
-
-                    <a href="#" class="c-9" data-class="PASTÉIS" title="PASTÉIS"
-                        style="background-image: url(images/color-pasteis.png);"></a>
-
-                    <a href="#" class="c-10" data-class="CATÁLOGO" title="CATÁLOGO"
-                        style="background-image: url(images/color-catalogo.png);"></a>
-                </div>
-
-                <div class="tabela-cores">
-                    <div class="busca-tonalidade">
-
-                    </div>
-
-                    <div class="detalhes-cor">
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="tabela-cores">
-                <div class="busca-tonalidade">
-                    <div class="overflow scroll-pane horizontal-only">
-                        <ul>
-                            <li class=" ">
-                                <!-- <span class="pop-up">CÃ³digo: </span> -->
-                                <a data-nome="" data-codigo="" href="#" style="background-color:red" title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:blue;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:yellow;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:green;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <!-- <span class="pop-up">CÃ³digo: </span> -->
-                                <a data-nome="" data-codigo="" href="#" style="background-color:gray"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:purple;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:brown;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:black;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <!-- <span class="pop-up">CÃ³digo: </span> -->
-                                <a data-nome="" data-codigo="" href="#" style="background-color:gray"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:blue;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:purple;"
-                                    title="Nome: "></a>
-                            </li>
-
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:yellow;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:green;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <!-- <span class="pop-up">CÃ³digo: </span> -->
-                                <a data-nome="" data-codigo="" href="#" style="background-color:gray"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:purple;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:brown;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <!-- <span class="pop-up">CÃ³digo: </span> -->
-                                <a data-nome="" data-codigo="" href="#" style="background-color:red" title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:blue;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:yellow;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:green;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <!-- <span class="pop-up">CÃ³digo: </span> -->
-                                <a data-nome="" data-codigo="" href="#" style="background-color:gray"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:purple;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:brown;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:black;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <!-- <span class="pop-up">CÃ³digo: </span> -->
-                                <a data-nome="" data-codigo="" href="#" style="background-color:gray"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:blue;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:purple;"
-                                    title="Nome: "></a>
-                            </li>
-
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:yellow;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:green;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <!-- <span class="pop-up">CÃ³digo: </span> -->
-                                <a data-nome="" data-codigo="" href="#" style="background-color:gray"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:purple;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:brown;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <!-- <span class="pop-up">CÃ³digo: </span> -->
-                                <a data-nome="" data-codigo="" href="#" style="background-color:red" title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:blue;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:yellow;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:green;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <!-- <span class="pop-up">CÃ³digo: </span> -->
-                                <a data-nome="" data-codigo="" href="#" style="background-color:gray"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:purple;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:brown;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:black;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <!-- <span class="pop-up">CÃ³digo: </span> -->
-                                <a data-nome="" data-codigo="" href="#" style="background-color:gray"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:blue;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:purple;"
-                                    title="Nome: "></a>
-                            </li>
-
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:yellow;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:green;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <!-- <span class="pop-up">CÃ³digo: </span> -->
-                                <a data-nome="" data-codigo="" href="#" style="background-color:gray"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <!-- <span class="pop-up">CÃ³digo: </span> -->
-                                <a data-nome="" data-codigo="" href="#" style="background-color:red" title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:blue;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:yellow;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:green;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <!-- <span class="pop-up">CÃ³digo: </span> -->
-                                <a data-nome="" data-codigo="" href="#" style="background-color:gray"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:purple;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:brown;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:black;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <!-- <span class="pop-up">CÃ³digo: </span> -->
-                                <a data-nome="" data-codigo="" href="#" style="background-color:gray"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:blue;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:purple;"
-                                    title="Nome: "></a>
-                            </li>
-
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:yellow;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:green;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <!-- <span class="pop-up">CÃ³digo: </span> -->
-                                <a data-nome="" data-codigo="" href="#" style="background-color:gray"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <!-- <span class="pop-up">CÃ³digo: </span> -->
-                                <a data-nome="" data-codigo="" href="#" style="background-color:red" title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:blue;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:yellow;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:green;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <!-- <span class="pop-up">CÃ³digo: </span> -->
-                                <a data-nome="" data-codigo="" href="#" style="background-color:gray"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:purple;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:brown;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:black;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <!-- <span class="pop-up">CÃ³digo: </span> -->
-                                <a data-nome="" data-codigo="" href="#" style="background-color:gray"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:blue;"
-                                    title="Nome: "></a>
-                            </li>
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:purple;"
-                                    title="Nome: "></a>
-                            </li>
-
-
-                            <li class=" ">
-                                <a data-nome="" data-codigo="" href="#" style="background-color:yellow;"
-                                    title="Nome: "></a>
-                            </li>
-                        </ul>
+            <div class="paleta-cores">
+                <div id="red" class="tab-content" style="display: none">
+                    <div class="tab-content--container">
+                        <div onclick="handleColor('rgb(185, 86, 96)')" style="background-color: rgb(185, 86, 96)"
+                            class="ball-color">
+                        </div>
+                        <div onclick="handleColor('#f20000')" style="background-color: #f20000" class="ball-color">
+                        </div>
+                        <div onclick="handleColor('#ffaeae')" style="background-color: #ffaeae" class="ball-color">
+                        </div>
                     </div>
                 </div>
 
-                <div class="detalhes-cor">
-                    <div class="wrap-content">
-                        <span class="cor-escolhida"></span>
-                        <div class="nome-ancorda">
-                            <span class="name-prod n-p titulo-6-bold-alternates">Amazônia</span>
-                            <!-- <span class="name-prod c-p">CÃ³digo: </span> -->
-                            <a href="#" class="bt full yellow link-2-bold-alternates"
-                                title="Produtos com essa cor">Encontre um produto nesta cor </a>
+                <div id="green" class="tab-content" style="display: none">
+                    <div class="tab-content--container">
+                        <div onclick="handleColor('#5c8000')" style="background-color: #5c8000" class="ball-color">
+                        </div>
+                        <div onclick="handleColor('#46642b')" style="background-color: #46642b" class="ball-color">
+                        </div>
+                        <div onclick="handleColor('#65b07b')" style="background-color: #65b07b" class="ball-color">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-    </section>
+    </div>
 
     <footer>
         <div class="container-color">
@@ -714,6 +324,10 @@
         </div>
     </footer>
 
+    <script>
+
+    </script>
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
@@ -722,8 +336,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
         integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous">
     </script>
-    <script src="scripts/jquery.mask.min.js"></script>
-    <script src="scripts/main.js"></script>
+
 </body>
 
 </html>

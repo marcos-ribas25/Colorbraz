@@ -63,6 +63,9 @@ $('.owl-banner').owlCarousel({
    margin: 0,
    nav: false,
    items: 1,
+   autoplay: true,
+   autoplayTimeout: 6000,
+   autoplayHoverPause: true
 })
 
 $('.owl-tintas').owlCarousel({

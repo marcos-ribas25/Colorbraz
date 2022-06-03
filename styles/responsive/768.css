@@ -56,8 +56,8 @@
   height: 35px;
 }
 .bt-tag {
-  width: 115px;
-  max-height: 32px;
+  width: 100px;
+  max-height: 30px;
 }
 .bt-filtro {
   padding: 5px 10px 3px;
@@ -134,7 +134,7 @@ footer .links.svg {
 footer .links a,
 footer .links.svg a {
   font-size: 14px;
-  line-height: 20px!important;
+  line-height: 20px !important;
 }
 footer .links:nth-child(4) {
   display: none;
@@ -434,7 +434,7 @@ footer .barra-footer .logo-codie {
   padding: 110px 0 6.25vw;
 }
 #blog [class*='link-1'] {
-  font-size: 14px;
+  font-size: 13px;
 }
 #blog .container-color {
   flex-direction: column;
@@ -456,10 +456,47 @@ footer .barra-footer .logo-codie {
   max-width: 18px;
   max-height: 18px;
 }
-#blog .side-bar .side-box .content-popular {
-  gap: 10px;
+#blog .side-bar .side-box {
+  padding: 15px;
+}
+#blog .side-bar .side-box .content.popular {
+  gap: 11px;
 }
 #blog .paginacao li {
   max-width: 36px;
   max-height: 36px;
+}
+#blog .image .tag {
+  top: 10px;
+  right: 10px;
+}
+#banner-post {
+  height: 300px;
+  background-position: 12%;
+}
+#blog.post {
+  padding-top: 12px;
+}
+#blog.post .top-post .container-color {
+  gap: 12px;
+}
+#blog.post .top-post h2 {
+  font-size: 29px;
+}
+#blog.post .text-preview h1,
+#blog.post .text-preview h2,
+#blog.post .text-preview h3,
+#blog.post .text-preview h4,
+#blog.post .text-preview h5,
+#blog.post .text-preview h6 {
+  font-size: 14px;
+  line-height: 25px;
+}
+#blog.post .text-preview p {
+  line-height: 19px;
+  font-size: 13px;
+}
+#blog.post .text-preview ul {
+  line-height: 19px;
+  font-size: 13px;
 }

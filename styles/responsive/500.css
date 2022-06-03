@@ -468,14 +468,25 @@ footer .logo-codie {
   padding-top: 90px;
 }
 #blog {
-  padding: 90px 0 6.25vw;
+  padding: 90px 0 30px;
+}
+#blog [class*='link-1'] {
+  font-size: 12px;
 }
 #blog .container-color {
-  max-width: 90%;
+  max-width: 95%;
 }
 #blog .post-title h3 {
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 19px;
+  line-height: 22px;
+}
+#blog .author .author-info .author-picture {
+  width: 23px;
+  height: 23px;
+}
+#blog .author span,
+#blog .author .date {
+  font-size: 11px;
 }
 #blog .share .midias {
   max-width: 100px;
@@ -484,9 +495,75 @@ footer .logo-codie {
   max-width: 17px;
   max-height: 17px;
 }
+#blog .share .leia-mais {
+  gap: 5px;
+}
+#blog .share .leia-mais svg {
+  max-width: 6px;
+}
 #blog .post-title + * {
   margin-top: 8px;
 }
-#blog .autor + * {
+#blog .author + * {
   margin-top: 7px;
+}
+#blog .text-preview p {
+  line-height: 19px;
+}
+#blog .text-preview + * {
+  margin-top: 15px;
+}
+#blog .paginacao li {
+  max-width: 34px;
+  max-height: 34px;
+}
+#blog .side-bar .side-box h4 + * {
+  margin-top: 13px;
+}
+#banner-post {
+  height: 300px;
+  background-position: 12%;
+}
+#blog.post {
+  padding-top: 12px;
+}
+#blog.post .top-post .container-color {
+  gap: 10px;
+}
+#blog.post .top-post h2 {
+  font-size: 18px;
+}
+#blog.post .top-post .list-breadcrumb li {
+  font-size: 11px;
+}
+#blog.post .text-preview h1,
+#blog.post .text-preview h2,
+#blog.post .text-preview h3,
+#blog.post .text-preview h4,
+#blog.post .text-preview h5,
+#blog.post .text-preview h6 {
+  font-size: 14px;
+  line-height: 19px;
+}
+#blog.post .text-preview h3 + * {
+  margin-top: 5px;
+}
+#blog.post .text-preview p {
+  line-height: 18px;
+  font-size: 12px;
+}
+#blog.post .text-preview ul {
+  line-height: 18px;
+  font-size: 12px;
+}
+#blog.post .side-box.tags.bottom {
+  padding: 20px 20px 50px;
+  position: relative;
+}
+#blog.post .side-box.tags.bottom .share {
+  position: absolute;
+  display: flex;
+  bottom: 15px;
+  align-items: flex-end;
+  left: 25px;
 }

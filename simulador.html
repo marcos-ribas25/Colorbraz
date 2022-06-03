@@ -99,10 +99,9 @@
     <header style="background-image: url(images/bg-header.png);">
         <div class="container-color">
             <a href="index.html" class="logo">
-                <img src="images/logo-header.png" alt="Logo Cabeçalho" />
             </a>
 
-            <nav>
+            <nav class="sumir">
                 <a class="link-2-alternates branco" href="index.html">Home</a>
                 <a class="link-2-alternates branco" href="sobre.html">Sobre nós</a>
                 <a class="link-2-alternates branco" href="produtos.html">Produtos</a>
@@ -320,6 +319,38 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        let objetoQueSeraPintado = "";
+        let tab = "";
+
+        function handle_click_event(obj) {
+            document.querySelector("#colors").style.display = "flex";
+            objetoQueSeraPintado = obj.classList[0];
+
+            document.querySelector("#objetoSelecionado").innerHTML = obj.classList[0]
+        }
+
+        function handleColor(color) {
+            document
+                .querySelector(`.${objetoQueSeraPintado}`)
+                .style.setProperty("fill", color, "important");
+
+            document.querySelector("#corSelecionada .text").innerHTML = color
+            document.querySelector("#corSelecionada .ball-color").style.backgroundColor = color
+            document.querySelector("#corSelecionada .bt").style.display = "flex";
+        }
+
+        function handleColorTab(tabSelecionado) {
+            const tabs = document.getElementsByClassName("tab-content");
+
+            for (const tab of tabs) {
+                tab.style.display = "none";
+            }
+
+            document.getElementById(tabSelecionado).style.display = "block";
+        }
+    </script>
 
     <!--Bootstrap/Jquery/cdnjs-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

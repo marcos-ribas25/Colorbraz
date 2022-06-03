@@ -234,3 +234,27 @@ header .container-color {
 #blog {
   padding: 165px 0 6.25vw;
 }
+#banner-post {
+  height: 395px;
+}
+#blog.post .top-post .container-color {
+  gap: 20px;
+}
+#blog.post .top-post h2 {
+  max-width: 965px;
+}
+#title-simulador {
+  padding-top: 150px;
+}
+#title-simulador h1 + * {
+  margin-top: 22px;
+}
+#title-simulador + * {
+  margin-top: 50px;
+}
+#grid-simulador {
+  padding-bottom: 90px;
+}
+#grid-simulador .container-color {
+  gap: 25px;
+}
