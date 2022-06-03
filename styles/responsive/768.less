@@ -79,6 +79,11 @@
     }
 }
 
+.bt-tag {
+    width: 115px;
+    max-height: 32px;
+}
+
 //FILTROS COMPONENTES
 .bt-filtro {
     padding: 5px 10px 3px;
@@ -597,4 +602,62 @@ footer {
 //PAGE CONTATO
 #contato {
     padding-top: 110px;
+}
+
+//PAGE BLOG 
+#blog {
+    padding: 110px 0 6.25vw;
+    
+    [class*='link-1'] {
+        font-size: 14px;
+    }
+
+    .container-color {
+        flex-direction: column;
+    }
+
+    .autor+* {
+        margin-top: 7px;
+    }
+
+    .content-preview {
+        padding: 15px;
+    }
+
+    .post-title{
+        h3 {
+            font-size: 26px;
+            line-height: 30px;
+        }
+    }
+
+    .text-preview {
+        p {
+            line-height: 20px;
+        }
+    } 
+
+    .share {
+        .midias {
+            svg {
+                max-width: 18px;
+                max-height: 18px;
+            }
+        }
+    }
+
+    .side-bar {
+        .side-box {
+            .content-popular {
+                gap: 10px;
+            }
+        }
+    }
+
+    .paginacao {
+        li {
+            max-width: 36px;
+            max-height: 36px;
+        }
+    }
 }

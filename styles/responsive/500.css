@@ -65,6 +65,10 @@
 .bg {
   height: 100px;
 }
+.bt-tag {
+  width: 100px;
+  max-height: 30px;
+}
 .bt-filtro {
   max-width: 100%;
   border: unset;
@@ -462,4 +466,27 @@ footer .logo-codie {
 }
 #contato {
   padding-top: 90px;
+}
+#blog {
+  padding: 90px 0 6.25vw;
+}
+#blog .container-color {
+  max-width: 90%;
+}
+#blog .post-title h3 {
+  font-size: 20px;
+  line-height: 24px;
+}
+#blog .share .midias {
+  max-width: 100px;
+}
+#blog .share .midias svg {
+  max-width: 17px;
+  max-height: 17px;
+}
+#blog .post-title + * {
+  margin-top: 8px;
+}
+#blog .autor + * {
+  margin-top: 7px;
 }

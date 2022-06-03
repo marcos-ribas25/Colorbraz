@@ -88,6 +88,11 @@
     height: 100px;
 }
 
+.bt-tag {
+    width: 100px;
+    max-height: 30px;
+}
+
 //FILTROS COMPONENTES
 .bt-filtro {
     max-width: 100%;
@@ -635,4 +640,39 @@ footer {
 //PAGE CONTATO 
 #contato {
     padding-top: 90px;
+}
+
+//PAGE BLOG 
+#blog {
+    padding: 90px 0 6.25vw;
+
+    .container-color {
+        max-width: 90%;
+    }
+
+    .post-title{
+        h3 {
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+
+    .share {
+        .midias {
+            max-width: 100px;
+
+            svg {
+                max-width: 17px;
+                max-height: 17px;
+            }
+        }
+    }
+
+    .post-title+*{
+        margin-top: 8px;
+    }
+
+    .autor+*{
+        margin-top: 7px;
+    }
 }

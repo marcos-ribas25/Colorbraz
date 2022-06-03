@@ -55,6 +55,10 @@
   max-width: 35px;
   height: 35px;
 }
+.bt-tag {
+  width: 115px;
+  max-height: 32px;
+}
 .bt-filtro {
   padding: 5px 10px 3px;
   max-width: 110px;
@@ -425,4 +429,37 @@ footer .barra-footer .logo-codie {
 }
 #contato {
   padding-top: 110px;
+}
+#blog {
+  padding: 110px 0 6.25vw;
+}
+#blog [class*='link-1'] {
+  font-size: 14px;
+}
+#blog .container-color {
+  flex-direction: column;
+}
+#blog .autor + * {
+  margin-top: 7px;
+}
+#blog .content-preview {
+  padding: 15px;
+}
+#blog .post-title h3 {
+  font-size: 26px;
+  line-height: 30px;
+}
+#blog .text-preview p {
+  line-height: 20px;
+}
+#blog .share .midias svg {
+  max-width: 18px;
+  max-height: 18px;
+}
+#blog .side-bar .side-box .content-popular {
+  gap: 10px;
+}
+#blog .paginacao li {
+  max-width: 36px;
+  max-height: 36px;
 }
