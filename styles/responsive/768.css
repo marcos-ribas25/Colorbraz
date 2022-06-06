@@ -1,5 +1,5 @@
 [class*="container-color"] {
-  max-width: 480px;
+  max-width: 680px;
 }
 .bt {
   max-width: 170px;
@@ -499,4 +499,14 @@ footer .barra-footer .logo-codie {
 #blog.post .text-preview ul {
   line-height: 19px;
   font-size: 13px;
+}
+#title-simulador h1,
+#title-simulador p {
+  text-align: center;
+}
+#grid-simulador {
+  padding-bottom: 40px;
+}
+#grid-simulador .box-simulador {
+  padding: 12px 12px 8px;
 }

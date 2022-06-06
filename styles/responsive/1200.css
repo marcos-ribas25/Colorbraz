@@ -5,18 +5,9 @@
   max-width: 185px;
   height: 45px;
 }
-.box-generic {
-  max-width: 295px;
-  padding: 20px 25px;
-}
 .box-generic img {
   max-width: 55px;
   max-height: 55px;
-}
-.box-generic .description {
-  max-width: 181px;
-  width: 100%;
-  margin: 0 auto;
 }
 .imagem-produto {
   left: 27px;

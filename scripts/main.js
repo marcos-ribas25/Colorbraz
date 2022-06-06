@@ -78,8 +78,11 @@ $('.owl-tintas').owlCarousel({
          items: 1,
          margin: 0,
       },
-      600: {
+      500: {
          items: 2,
+      },
+      768: {
+         items: 3,
          margin: 15,
       }
    }

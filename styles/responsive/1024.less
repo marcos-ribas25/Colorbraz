@@ -1,6 +1,6 @@
 //COMPONENTES
 [class*="container-color"] {
-    max-width: 640px;
+    max-width: 850px;
 }
 
 .block-bar {
@@ -8,9 +8,6 @@
 }
 
 .box-generic {
-    max-width: 195px;
-    padding: 15px 20px;
-
     img {
         max-width: 50px;
         max-height: 50px;
@@ -314,6 +311,14 @@ footer {
 
         .owl-dots {
             bottom: 165px;
+        }
+    }
+}
+
+#sobre {
+    .title {
+        br {
+            display: block;
         }
     }
 }
@@ -739,6 +744,29 @@ footer {
                     max-width: 100%;
                 }
             }
+        }
+    }
+}
+
+//PAGE SIMULADOR GRID
+#title-simulador {
+    h1+* {
+        margin-top: 5px;
+    }
+}
+
+#title-simulador+* {
+    margin-top: 15px;
+}
+
+#grid-simulador {
+    padding-bottom: 50px;
+
+    .box-simulador {
+        padding: 15px 15px 12px;
+
+        img+* {
+            margin-top: 8px;
         }
     }
 }

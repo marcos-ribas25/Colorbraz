@@ -1,12 +1,8 @@
 [class*="container-color"] {
-  max-width: 640px;
+  max-width: 850px;
 }
 .block-bar {
   display: flex !important;
-}
-.box-generic {
-  max-width: 195px;
-  padding: 15px 20px;
 }
 .box-generic img {
   max-width: 50px;
@@ -224,6 +220,9 @@ footer .barra-footer .logo-codie {
 }
 #banner-home .owl-carousel .owl-dots {
   bottom: 165px;
+}
+#sobre .title br {
+  display: block;
 }
 #tintas {
   padding: 15px 0 20px;
@@ -538,4 +537,19 @@ footer .barra-footer .logo-codie {
 }
 #blog .side-bar .side-box .popular-post .title-date {
   max-width: 100%;
+}
+#title-simulador h1 + * {
+  margin-top: 5px;
+}
+#title-simulador + * {
+  margin-top: 15px;
+}
+#grid-simulador {
+  padding-bottom: 50px;
+}
+#grid-simulador .box-simulador {
+  padding: 15px 15px 12px;
+}
+#grid-simulador .box-simulador img + * {
+  margin-top: 8px;
 }

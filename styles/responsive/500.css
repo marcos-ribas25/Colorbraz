@@ -567,3 +567,20 @@ footer .logo-codie {
   align-items: flex-end;
   left: 25px;
 }
+#title-simulador .container-color,
+#grid-simulador .container-color {
+  max-width: 90%;
+}
+#title-simulador {
+  padding-top: 90px;
+}
+#title-simulador h1 {
+  font-size: 20px;
+}
+#title-simulador .description {
+  font-size: 13px;
+  line-height: 16px;
+}
+#grid-simulador .container-color {
+  row-gap: 15px;
+}

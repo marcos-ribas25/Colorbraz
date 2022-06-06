@@ -99,10 +99,9 @@
     <header style="background-image: url(images/bg-header.png);">
         <div class="container-color">
             <a href="index.html" class="logo">
-                <img src="images/logo-header.png" alt="Logo Cabeçalho" />
             </a>
 
-            <nav>
+            <nav class="sumir">
                 <a class="link-2-alternates branco" href="index.html">Home</a>
                 <a class="link-2-alternates branco" href="sobre.html">Sobre nós</a>
                 <a class="link-2-alternates branco" href="produtos.html">Produtos</a>
@@ -123,79 +122,90 @@
     <section id="banner-text">
         <div class="container-color">
             <h1 class="titulo-3-bold-alternates">Cores</h1>
+
+            <div class="content">
+                <h3 class="paragrafo-2-bold-alternates">Navegue pelas famí­lias de cores abaixo ou busque pelo nome.
+                </h3>
+
+                <div class="input-form search">
+                    <input id="buscar" type="search" class="link-2-medium-montserrat"
+                        placeholder="Digite aqui o nome da cor">
+
+
+                    <button type="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28">
+                            <g>
+                                <g>
+                                    <path
+                                        d="M10.765 19.706a8.398 8.398 0 0 1-5.977-2.475 8.394 8.394 0 0 1-2.475-5.97 8.37 8.37 0 0 1 2.475-5.97 8.398 8.398 0 0 1 5.977-2.474c2.257 0 4.38.879 5.976 2.475a8.394 8.394 0 0 1 2.475 5.97 8.37 8.37 0 0 1-2.475 5.969 8.398 8.398 0 0 1-5.976 2.475zm15.919 5.843l-7.51-7.58a10.738 10.738 0 0 0 2.356-6.715C21.53 5.313 16.713.496 10.765.496 4.816.496 0 5.32 0 11.261 0 17.203 4.816 22.02 10.765 22.02c2.573 0 4.929-.9 6.785-2.405l7.46 7.53c.225.24.535.36.837.36.288 0 .576-.106.794-.317a1.163 1.163 0 0 0 .043-1.638z" />
+                                </g>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+            </div>
         </div>
     </section>
 
-    <div id="colors" style="display: flex">
-        <!-- <div id="tabs">
-            CORESDOBANCO.forEach(batata => {
-            <button type="button" onclick="handleColorTab('red')">{batata.cor}</button>
-            })
-          </div>
-          CORESDOBANCO.forEach(cor => {
-          <div id="red" class="tab-content" style="display: none">
-            { cor.subCores.forEach(subCor => {
-            <div onclick="handleColor(subCor)">{subCor}</div>
-            }) }
-          </div>
-          }) -->
-        <div class="container-color">
-            <div class="informacoes">
-                <div id="tabs" style="display: grid;">
-                    <button type="button" onclick="handleColorTab('red')"
-                        style="background-image: url(images/color-vermelho.png);"></button>
-                    <button type="button" onclick="handleColorTab('laranja')"
-                        style="background-image: url(images/color-laranja.png);"></button>
-                    <button type="button" onclick="handleColorTab('amarelo')"
-                        style="background-image: url(images/color-amarelo.png);"></button>
-                    <button type="button" onclick="handleColorTab('verde')"
-                        style="background-image: url(images/color-verdes.png);"></button>
-                    <button type="button" onclick="handleColorTab('azul')"
-                        style="background-image: url(images/color-azuls.png);"></button>
-                    <button type="button" onclick="handleColorTab('violetas')"
-                        style="background-image: url(images/color-violetas.png);"></button>
-                    <button type="button" onclick="handleColorTab('marrons')"
-                        style="background-image: url(images/color-marrons.png);"></button>
-                    <button type="button" onclick="handleColorTab('cinzas')"
-                        style="background-image: url(images/color-cinzas.png);"></button>
-                    <button type="button" onclick="handleColorTab('pasteis')"
-                        style="background-image: url(images/color-pasteis.png);"></button>
-                    <button type="button" onclick="handleColorTab('catalogo')"
-                        style="background-image: url(images/color-catalogo.png);"></button>
-                </div>
-
-                <p id="corSelecionada">
-                    <span class="ball-color selecionada"></span>
-                    <span class="text titulo-6-bold-alternates"></span>
-
-                    <a href="#" class="bt yellow link-2-bold-alternates" style="display: none;">Encontre um produto
-                        nesta
-                        cor
-                    </a>
-                </p>
-
+    <div id="colors" class="simples" style="display: flex">
+        <div id="page-cores" class="container-color">
+            <div id="tabs" style="display: grid;">
+                <button type="button" onclick="handleColorTab('red')"
+                    style="background-image: url(images/color-vermelho.png);"></button>
+                <button type="button" onclick="handleColorTab('laranja')"
+                    style="background-image: url(images/color-laranja.png);"></button>
+                <button type="button" onclick="handleColorTab('amarelo')"
+                    style="background-image: url(images/color-amarelo.png);"></button>
+                <button type="button" onclick="handleColorTab('verde')"
+                    style="background-image: url(images/color-verdes.png);"></button>
+                <button type="button" onclick="handleColorTab('azul')"
+                    style="background-image: url(images/color-azuls.png);"></button>
+                <button type="button" onclick="handleColorTab('violetas')"
+                    style="background-image: url(images/color-violetas.png);"></button>
+                <button type="button" onclick="handleColorTab('marrons')"
+                    style="background-image: url(images/color-marrons.png);"></button>
+                <button type="button" onclick="handleColorTab('cinzas')"
+                    style="background-image: url(images/color-cinzas.png);"></button>
+                <button type="button" onclick="handleColorTab('pasteis')"
+                    style="background-image: url(images/color-pasteis.png);"></button>
+                <button type="button" onclick="handleColorTab('catalogo')"
+                    style="background-image: url(images/color-catalogo.png);"></button>
             </div>
 
-            <div class="paleta-cores">
-                <div id="red" class="tab-content" style="display: none">
-                    <div class="tab-content--container">
-                        <div onclick="handleColor('rgb(185, 86, 96)')" style="background-color: rgb(185, 86, 96)"
-                            class="ball-color">
-                        </div>
-                        <div onclick="handleColor('#f20000')" style="background-color: #f20000" class="ball-color">
-                        </div>
-                        <div onclick="handleColor('#ffaeae')" style="background-color: #ffaeae" class="ball-color">
-                        </div>
-                    </div>
+            <div class="content">
+                <div class="informacoes">
+                    <p id="corSelecionada">
+                        <span class="ball-color selecionada"></span>
+                        <span class="text titulo-6-bold-alternates"></span>
+
+                        <a href="#" class="bt yellow link-2-bold-alternates" style="display: none;">Encontre um produto
+                            nesta
+                            cor
+                        </a>
+                    </p>
                 </div>
 
-                <div id="green" class="tab-content" style="display: none">
-                    <div class="tab-content--container">
-                        <div onclick="handleColor('#5c8000')" style="background-color: #5c8000" class="ball-color">
+                <div class="paleta-cores">
+                    <div id="red" class="tab-content" style="display: none">
+                        <div class="tab-content--container">
+                            <div onclick="handleColor('rgb(185, 86, 96)')" style="background-color: rgb(185, 86, 96)"
+                                class="ball-color">
+                            </div>
+                            <div onclick="handleColor('#f20000')" style="background-color: #f20000" class="ball-color">
+                            </div>
+                            <div onclick="handleColor('#ffaeae')" style="background-color: #ffaeae" class="ball-color">
+                            </div>
                         </div>
-                        <div onclick="handleColor('#46642b')" style="background-color: #46642b" class="ball-color">
-                        </div>
-                        <div onclick="handleColor('#65b07b')" style="background-color: #65b07b" class="ball-color">
+                    </div>
+
+                    <div id="green" class="tab-content" style="display: none">
+                        <div class="tab-content--container">
+                            <div onclick="handleColor('#5c8000')" style="background-color: #5c8000" class="ball-color">
+                            </div>
+                            <div onclick="handleColor('#46642b')" style="background-color: #46642b" class="ball-color">
+                            </div>
+                            <div onclick="handleColor('#65b07b')" style="background-color: #65b07b" class="ball-color">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -324,10 +334,6 @@
         </div>
     </footer>
 
-    <script>
-
-    </script>
-
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
@@ -337,6 +343,23 @@
         integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous">
     </script>
 
+    <script>
+        function handleColor(color) {
+            document.querySelector("#corSelecionada .text").innerHTML = color
+            document.querySelector("#corSelecionada .ball-color").style.backgroundColor = color
+            document.querySelector("#corSelecionada .bt").style.display = "flex";
+        }
+
+        function handleColorTab(tabSelecionado) {
+            const tabs = document.getElementsByClassName("tab-content");
+
+            for (const tab of tabs) {
+                tab.style.display = "none";
+            }
+
+            document.getElementById(tabSelecionado).style.display = "block";
+        }
+    </script>
 </body>
 
 </html>
