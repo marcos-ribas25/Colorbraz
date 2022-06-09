@@ -1908,6 +1908,7 @@ footer {
   height: 44px;
   width: 44px;
   border-radius: 100%;
+  cursor: pointer;
 }
 
 .tab-content {
@@ -1952,8 +1953,7 @@ footer {
   padding: 18px;
 
   button {
-    max-width: 64px;
-    height: 64px;
+    aspect-ratio: 1;
     border: unset;
     width: 100%;
     object-fit: contain;
@@ -1971,7 +1971,7 @@ footer {
 }
 
 .paleta-cores {
-  max-width: 890px;
+  max-width: calc(100% - 465px);
   width: 100%;
   padding-top: 30px;
 }
@@ -1979,16 +1979,19 @@ footer {
 #corSelecionada {
   flex-wrap: wrap;
 
-  .text {
-    max-width: 430px;
-    width: 100%;
-    text-align: center;
-  }
+  .text {max-width: 430px;
+width: 100%;
+text-align: center;
+}
 
   .bt {
-    max-width: 368px;
+    max-width: 90%;
     margin: 0 auto;
   }
+}
+
+#corSelecionada.mobile-aparecer {
+  display: none;
 }
 
 .ball-color.selecionada {

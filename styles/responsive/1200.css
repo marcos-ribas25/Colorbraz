@@ -527,3 +527,35 @@ footer .barra-footer .logo-codie {
 #grid-simulador .box-simulador {
   padding: 18px;
 }
+#title-simulador-interno {
+  padding-top: 115px;
+}
+#imagemAbsoluta + * {
+  margin-top: 20px;
+}
+#objetoSelecionado + * {
+  margin-top: 5px;
+}
+#simulador-content {
+  padding-bottom: 55px;
+}
+.informacoes,
+#tabs {
+  max-width: 350px;
+}
+#tabs + * {
+  margin-top: 15px;
+}
+.paleta-cores {
+  max-width: calc(100% - 385px);
+}
+.ball-color {
+  width: 40px;
+  height: 40px;
+}
+.tab-content {
+  margin-top: 10px;
+}
+.ball-color.selecionada {
+  height: 115px;
+}

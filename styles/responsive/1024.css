@@ -553,3 +553,39 @@ footer .barra-footer .logo-codie {
 #grid-simulador .box-simulador img + * {
   margin-top: 8px;
 }
+#title-simulador-interno {
+  padding-top: 105px;
+}
+#title-simulador-interno + * {
+  margin-top: 15px;
+}
+#imagemAbsoluta + * {
+  margin-top: 15px;
+}
+#simulador-content {
+  padding-bottom: 45px;
+}
+.informacoes,
+#tabs {
+  max-width: 300px;
+}
+#tabs {
+  padding: 10px;
+  gap: 10px;
+}
+.paleta-cores {
+  max-width: calc(100% - 335px);
+}
+.ball-color {
+  width: 38px;
+  height: 38px;
+}
+#corSelecionada {
+  gap: 5px;
+}
+#corSelecionada .bt {
+  height: 40px;
+}
+.ball-color.selecionada {
+  height: 90px;
+}

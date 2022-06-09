@@ -510,3 +510,21 @@ footer .barra-footer .logo-codie {
 #grid-simulador .box-simulador {
   padding: 12px 12px 8px;
 }
+#title-simulador-interno .list-breadcrumb {
+  gap: 7px;
+}
+#title-simulador-interno .list-breadcrumb li {
+  font-size: 11px;
+}
+#title-simulador-interno + * {
+  margin-top: 10px;
+}
+#colors {
+  flex-direction: column;
+}
+#corSelecionada.mobile-sumir {
+  display: none;
+}
+#corSelecionada.mobile-aparecer {
+  display: flex;
+}
