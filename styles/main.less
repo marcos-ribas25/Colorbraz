@@ -1962,16 +1962,16 @@ footer {
   }
 }
 
-#tabs+* {
-  margin-top: 20px;
-}
-
 .informacoes {
   max-width: 430px;
+
+  .content+* {
+    margin-top: 20px;
+  }
 }
 
 .paleta-cores {
-  max-width: calc(100% - 465px);
+  max-width: calc(100% - 520px);
   width: 100%;
   padding-top: 30px;
 }
@@ -1979,10 +1979,11 @@ footer {
 #corSelecionada {
   flex-wrap: wrap;
 
-  .text {max-width: 430px;
-width: 100%;
-text-align: center;
-}
+  .text {
+    max-width: 430px;
+    width: 100%;
+    text-align: center;
+  }
 
   .bt {
     max-width: 90%;
@@ -2144,9 +2145,6 @@ text-align: center;
     }
   }
 }
-
-
-
 
 //PAGE BLOG
 #blog {

@@ -584,3 +584,51 @@ footer .logo-codie {
 #grid-simulador .container-color {
   row-gap: 15px;
 }
+#title-simulador-interno .container-color,
+#imagemAbsoluta .container-color,
+#simulador-content .container-color {
+  max-width: 95%;
+}
+#title-simulador-interno {
+  padding-top: 90px;
+}
+#title-simulador-interno .list-breadcrumb {
+  gap: 3px;
+}
+#title-simulador-interno .list-breadcrumb li {
+  font-size: 9px;
+}
+#title-simulador-interno .list-breadcrumb a {
+  margin-right: 3px;
+}
+#title-simulador-interno h1 {
+  max-width: 280px;
+  margin: 0 auto;
+}
+#title-simulador-interno ul + * {
+  margin-top: 10px;
+}
+#simulador-content {
+  padding-bottom: 25px;
+}
+#simulador-content #imagemAbsoluta {
+  max-width: 100%;
+}
+#imagemAbsoluta + * {
+  margin-top: 10px;
+}
+#colors {
+  padding-bottom: 175px;
+}
+#tabs {
+  display: grid;
+  max-width: 350px;
+  padding: 13px;
+  gap: 13px;
+}
+.paleta-cores {
+  padding-top: 5px;
+}
+#corSelecionada .ball-color.selecionada {
+  height: 70px;
+}

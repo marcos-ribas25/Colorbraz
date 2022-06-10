@@ -519,12 +519,44 @@ footer .barra-footer .logo-codie {
 #title-simulador-interno + * {
   margin-top: 10px;
 }
+#simulador-content {
+  padding-bottom: 35px;
+}
 #colors {
   flex-direction: column;
+  position: relative;
+  padding-bottom: 185px;
 }
-#corSelecionada.mobile-sumir {
-  display: none;
-}
-#corSelecionada.mobile-aparecer {
+#corSelecionada {
   display: flex;
+  bottom: 0;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100%;
+}
+#corSelecionada .ball-color.selecionada {
+  height: 80px;
+}
+.informacoes,
+#tabs {
+  max-width: 100%;
+}
+#tabs {
+  margin: 0 auto;
+  padding: 10px;
+  gap: 10px;
+  width: 100%;
+  display: flex;
+}
+#objetoSelecionado + * {
+  margin-top: 5px;
+}
+.paleta-cores {
+  max-width: 100%;
+  padding-top: 10px;
+}
+.ball-color {
+  width: 36px;
+  height: 36px;
 }

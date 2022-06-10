@@ -231,32 +231,34 @@
           }) -->
 
         <div class="informacoes">
-          <p id="objetoSelecionado" class="titulo-6-bold-alternates"></p>
+          <div class="content">
+            <p id="objetoSelecionado" class="titulo-6-bold-alternates"></p>
 
-          <div id="tabs">
-            <button type="button" onclick="handleColorTab('red')"
-              style="background-image: url(images/color-vermelho.png);"></button>
-            <button type="button" onclick="handleColorTab('laranja')"
-              style="background-image: url(images/color-laranja.png);"></button>
-            <button type="button" onclick="handleColorTab('amarelo')"
-              style="background-image: url(images/color-amarelo.png);"></button>
-            <button type="button" onclick="handleColorTab('verde')"
-              style="background-image: url(images/color-verdes.png);"></button>
-            <button type="button" onclick="handleColorTab('azul')"
-              style="background-image: url(images/color-azuls.png);"></button>
-            <button type="button" onclick="handleColorTab('violetas')"
-              style="background-image: url(images/color-violetas.png);"></button>
-            <button type="button" onclick="handleColorTab('marrons')"
-              style="background-image: url(images/color-marrons.png);"></button>
-            <button type="button" onclick="handleColorTab('cinzas')"
-              style="background-image: url(images/color-cinzas.png);"></button>
-            <button type="button" onclick="handleColorTab('pasteis')"
-              style="background-image: url(images/color-pasteis.png);"></button>
-            <button type="button" onclick="handleColorTab('catalogo')"
-              style="background-image: url(images/color-catalogo.png);"></button>
+            <div id="tabs">
+              <button type="button" onclick="handleColorTab('red')"
+                style="background-image: url(images/color-vermelho.png);"></button>
+              <button type="button" onclick="handleColorTab('laranja')"
+                style="background-image: url(images/color-laranja.png);"></button>
+              <button type="button" onclick="handleColorTab('amarelo')"
+                style="background-image: url(images/color-amarelo.png);"></button>
+              <button type="button" onclick="handleColorTab('verde')"
+                style="background-image: url(images/color-verdes.png);"></button>
+              <button type="button" onclick="handleColorTab('azul')"
+                style="background-image: url(images/color-azuls.png);"></button>
+              <button type="button" onclick="handleColorTab('violetas')"
+                style="background-image: url(images/color-violetas.png);"></button>
+              <button type="button" onclick="handleColorTab('marrons')"
+                style="background-image: url(images/color-marrons.png);"></button>
+              <button type="button" onclick="handleColorTab('cinzas')"
+                style="background-image: url(images/color-cinzas.png);"></button>
+              <button type="button" onclick="handleColorTab('pasteis')"
+                style="background-image: url(images/color-pasteis.png);"></button>
+              <button type="button" onclick="handleColorTab('catalogo')"
+                style="background-image: url(images/color-catalogo.png);"></button>
+            </div>
           </div>
 
-          <p id="corSelecionada" class="mobile-sumir">
+          <p id="corSelecionada" style="display: none;">
             <span class="ball-color selecionada"></span>
             <span class="text titulo-6-bold-alternates"></span>
 
@@ -274,6 +276,41 @@
               </div>
               <div onclick="handleColor('#f20000')" style="background-color: #f20000" class="ball-color"></div>
               <div onclick="handleColor('#ffaeae')" style="background-color: #ffaeae" class="ball-color"></div>
+              <div onclick="handleColor('rgb(185, 86, 96)')" style="background-color: rgb(185, 86, 96)"
+                class="ball-color">
+              </div>
+              <div onclick="handleColor('#f20000')" style="background-color: #f20000" class="ball-color"></div>
+              <div onclick="handleColor('#ffaeae')" style="background-color: #ffaeae" class="ball-color"></div>
+              <div onclick="handleColor('rgb(185, 86, 96)')" style="background-color: rgb(185, 86, 96)"
+                class="ball-color">
+              </div>
+              <div onclick="handleColor('#f20000')" style="background-color: #f20000" class="ball-color"></div>
+              <div onclick="handleColor('#ffaeae')" style="background-color: #ffaeae" class="ball-color"></div>
+              <div onclick="handleColor('rgb(185, 86, 96)')" style="background-color: rgb(185, 86, 96)"
+                class="ball-color">
+              </div>
+              <div onclick="handleColor('#f20000')" style="background-color: #f20000" class="ball-color"></div>
+              <div onclick="handleColor('#ffaeae')" style="background-color: #ffaeae" class="ball-color"></div>
+              <div onclick="handleColor('rgb(185, 86, 96)')" style="background-color: rgb(185, 86, 96)"
+                class="ball-color">
+              </div>
+              <div onclick="handleColor('#f20000')" style="background-color: #f20000" class="ball-color"></div>
+              <div onclick="handleColor('#ffaeae')" style="background-color: #ffaeae" class="ball-color"></div>
+              <div onclick="handleColor('rgb(185, 86, 96)')" style="background-color: rgb(185, 86, 96)"
+                class="ball-color">
+              </div>
+              <div onclick="handleColor('#f20000')" style="background-color: #f20000" class="ball-color"></div>
+              <div onclick="handleColor('#ffaeae')" style="background-color: #ffaeae" class="ball-color"></div>
+              <div onclick="handleColor('rgb(185, 86, 96)')" style="background-color: rgb(185, 86, 96)"
+                class="ball-color">
+              </div>
+              <div onclick="handleColor('#f20000')" style="background-color: #f20000" class="ball-color"></div>
+              <div onclick="handleColor('#ffaeae')" style="background-color: #ffaeae" class="ball-color"></div>
+              <div onclick="handleColor('rgb(185, 86, 96)')" style="background-color: rgb(185, 86, 96)"
+                class="ball-color">
+              </div>
+              <div onclick="handleColor('#f20000')" style="background-color: #f20000" class="ball-color"></div>
+              <div onclick="handleColor('#ffaeae')" style="background-color: #ffaeae" class="ball-color"></div>
             </div>
           </div>
 
@@ -285,14 +322,6 @@
             </div>
           </div>
         </div>
-
-        <p id="corSelecionada" class="mobile-aparecer">
-          <span class="ball-color selecionada"></span>
-          <span class="text titulo-6-bold-alternates"></span>
-
-          <a href="#" class="bt yellow link-2-bold-alternates" style="display: none;">Encontre um produto nesta cor
-          </a>
-        </p>
       </div>
     </div>
   </section>
@@ -438,6 +467,7 @@
       document.querySelector("#corSelecionada .text").innerHTML = color
       document.querySelector("#corSelecionada .ball-color").style.backgroundColor = color
       document.querySelector("#corSelecionada .bt").style.display = "flex";
+      document.querySelector("#corSelecionada").style.display = "flex";
     }
 
     function handleColorTab(tabSelecionado) {
@@ -450,6 +480,7 @@
       document.getElementById(tabSelecionado).style.display = "block";
     }
   </script>
+  <script src="./scripts/main.js"></script>
 </body>
 
 </html>

@@ -543,7 +543,7 @@ footer .barra-footer .logo-codie {
 #tabs {
   max-width: 350px;
 }
-#tabs + * {
+.informacoes .content + * {
   margin-top: 15px;
 }
 .paleta-cores {
