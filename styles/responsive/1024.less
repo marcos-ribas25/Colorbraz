@@ -20,6 +20,11 @@
     max-width: 216px;
 }
 
+.box-menu.aparecer {
+    display: flex !important;
+    flex-direction: row-reverse;
+}
+
 .box-produto {
     max-width: 100%;
     padding: 40px 0 34px;
@@ -556,7 +561,12 @@ footer {
     }
 
     .content {
-        max-width: 260px;
+        max-width: 300px;
+        justify-content: flex-start;
+    }
+
+    .image {
+        max-width: 550px;
     }
 
     .box-informacao-produto {
@@ -817,4 +827,71 @@ footer {
 
 .ball-color.selecionada {
     height: 90px;
+}
+
+//PAGE CORES 
+#banner-text {
+    padding-top: 100px;
+
+    .title+* {
+        margin-top: 0;
+    }
+
+    h3 {
+        max-width: 400px;
+    }
+
+    .search {
+        max-width: 275px;
+        height: 39px;
+
+        input {
+            padding: 13px 15px 12px 20px;
+        }
+
+        button {
+            padding: 0 15px 0 0;
+
+            svg {
+                max-width: 20px;
+            }
+        }
+    }
+}
+
+#colors.simples {
+    padding-bottom: 60px;
+
+    .container-color {
+        max-width: 950px;
+    }
+}
+
+#page-cores {
+    .informacoes {
+        max-width: 315px;
+    }
+
+    #corSelecionada {
+        .ball-color.selecionada {
+            height: 320px;
+        }
+    }
+
+    .tab-content {
+        .tab-content--container {
+            gap: 10px;
+        }
+    }
+
+    #tabs+* {
+        margin-top: 29px;
+    }
+
+    .paleta-cores {
+        .ball-color {
+            width: 45px;
+            height: 45px;
+        }
+    }
 }

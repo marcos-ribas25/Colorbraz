@@ -5,6 +5,12 @@
   max-width: 163px;
   height: 36px;
 }
+.box-menu {
+  max-width: 200px;
+}
+.close {
+  max-width: 15px;
+}
 .box-generic {
   max-width: 75%;
   padding: 10px;
@@ -110,7 +116,9 @@ header {
 }
 header .container-color {
   max-width: 100%;
-  padding: 15px 30px 10px 45px;
+}
+header .logo {
+  max-width: 150px;
 }
 footer {
   padding-top: 20px;
@@ -283,6 +291,7 @@ footer .logo-codie {
 }
 #banner-sobre .text a svg {
   max-width: 14px;
+  margin-right: 5px;
 }
 #banner-sobre .text a p {
   margin-top: 0;
@@ -323,6 +332,13 @@ footer .logo-codie {
 }
 #produto-infomacoes {
   padding: 90px 0 15px;
+}
+#produto-infomacoes .title .list-breadcrumb {
+  column-gap: 3px;
+  row-gap: 6px;
+}
+#produto-infomacoes .title .list-breadcrumb a {
+  margin-right: 3px;
 }
 #produto-infomacoes .title h2 {
   line-height: 20px;
@@ -473,8 +489,20 @@ footer .logo-codie {
 #blog [class*='link-1'] {
   font-size: 12px;
 }
+#blog .side-box.filtros.mobile {
+  display: block;
+}
+#blog .side-box.filtros.desktop {
+  display: none;
+}
+#blog .container-color.title {
+  gap: 10px;
+}
 #blog .container-color {
   max-width: 95%;
+}
+#blog .posts {
+  gap: 10px;
 }
 #blog .post-title h3 {
   font-size: 19px;
@@ -631,4 +659,51 @@ footer .logo-codie {
 }
 #corSelecionada .ball-color.selecionada {
   height: 70px;
+}
+#banner-text {
+  padding-top: 90px;
+}
+#banner-text .title {
+  align-items: flex-start;
+  gap: 30px;
+}
+#banner-text .search input {
+  font-size: 10px;
+  width: 100%;
+  padding: 11px 2px 10px 10px;
+}
+#banner-text .search button svg {
+  max-width: 15px;
+}
+#banner-text .container-color {
+  max-width: 100%;
+}
+#colors.simples .container-color {
+  max-width: 100%;
+}
+#page-cores #tabs {
+  gap: 5px;
+  padding: 5px;
+}
+#page-cores #tabs + * {
+  margin-top: 15px;
+}
+#page-cores .content {
+  flex-direction: column-reverse;
+}
+#page-cores .informacoes {
+  max-width: 100%;
+}
+#page-cores #corSelecionada .ball-color.selecionada {
+  height: 90px;
+}
+#page-cores #colors.simples {
+  padding-bottom: 40px;
+}
+#page-cores .tab-content .tab-content--container {
+  gap: 7px;
+}
+#page-cores .paleta-cores .ball-color {
+  width: 26px;
+  height: 26px;
 }

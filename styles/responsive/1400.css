@@ -514,3 +514,41 @@ footer .container-color + * {
 #corSelecionada {
   gap: 8px;
 }
+#banner-text {
+  padding-top: 130px;
+}
+#banner-text .title + * {
+  margin-top: 10px;
+}
+#banner-text .search {
+  max-width: 390px;
+  height: 50px;
+}
+#banner-text .search input {
+  padding: 14px 15px 14px 34px;
+}
+#banner-text + * {
+  margin-top: 28px;
+}
+#colors.simples {
+  padding-bottom: 80px;
+}
+#colors.simples .container-color {
+  max-width: 1130px;
+}
+#page-cores .informacoes {
+  max-width: 475px;
+}
+#page-cores #corSelecionada .ball-color.selecionada {
+  height: 475px;
+}
+#page-cores .tab-content .tab-content--container {
+  gap: 17px;
+}
+#page-cores #tabs + * {
+  margin-top: 38px;
+}
+#page-cores .paleta-cores .ball-color {
+  width: 59px;
+  height: 59px;
+}

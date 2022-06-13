@@ -74,24 +74,32 @@
     <div class="background-menu aparecer"></div>
 
     <div class="box-menu aparecer">
+        <svg class="close" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512"
+            xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path
+                d="M443.6,387.1L312.4,255.4l131.5-130c5.4-5.4,5.4-14.2,0-19.6l-37.4-37.6c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4  L256,197.8L124.9,68.3c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4L68,105.9c-5.4,5.4-5.4,14.2,0,19.6l131.5,130L68.4,387.1  c-2.6,2.6-4.1,6.1-4.1,9.8c0,3.7,1.4,7.2,4.1,9.8l37.4,37.6c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1L256,313.1l130.7,131.1  c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1l37.4-37.6c2.6-2.6,4.1-6.1,4.1-9.8C447.7,393.2,446.2,389.7,443.6,387.1z" />
+        </svg>
         <ul>
             <li>
-                <a class="box-link link-1-regular-roc uppercase" href="index.html">home</a>
+                <a class="link-2-alternates" href="index.html">Home</a>
             </li>
             <li>
-                <a class="box-link link-1-regular-roc uppercase" href="sobre.html">sobre nóS</a>
+                <a class="link-2-alternates" href="sobre.html">Sobre nós</a>
             </li>
             <li>
-                <a class="box-link link-1-regular-roc uppercase" href="servicos.html">serviços</a>
+                <a class="link-2-alternates" href="produtos.html">Produtos</a>
             </li>
             <li>
-                <a class="box-link link-1-regular-roc uppercase" href="eventos.html">eventos</a>
+                <a class="link-2-alternates" href="cores.html">Cores</a>
             </li>
             <li>
-                <a class="box-link link-1-regular-roc uppercase" href="agenda.html">agenda</a>
+                <a class="link-2-alternates" href="simulador.html">Simulador de Ambientes</a>
             </li>
             <li>
-                <a class="box-link link-1-regular-roc uppercase" href="contato.html">contato</a>
+                <a class="link-2-alternates" href="blog.html">Blog</a>
+            </li>
+            <li>
+                <a class="link-2-alternates" href="contato.html">Contato</a>
             </li>
         </ul>
     </div>
@@ -121,13 +129,33 @@
 
     <section id="banner-text">
         <div class="container-color">
-            <h1 class="titulo-3-bold-alternates">Cores</h1>
+            <div class="title">
+                <h1 class="titulo-3-bold-alternates">Cores</h1>
+
+                <div class="input-form search mobile-aparecer">
+                    <input id="buscar" type="search" class="link-2-medium-montserrat"
+                        placeholder="Digite aqui o nome da cor">
+
+
+                    <button type="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28">
+                            <g>
+                                <g>
+                                    <path
+                                        d="M10.765 19.706a8.398 8.398 0 0 1-5.977-2.475 8.394 8.394 0 0 1-2.475-5.97 8.37 8.37 0 0 1 2.475-5.97 8.398 8.398 0 0 1 5.977-2.474c2.257 0 4.38.879 5.976 2.475a8.394 8.394 0 0 1 2.475 5.97 8.37 8.37 0 0 1-2.475 5.969 8.398 8.398 0 0 1-5.976 2.475zm15.919 5.843l-7.51-7.58a10.738 10.738 0 0 0 2.356-6.715C21.53 5.313 16.713.496 10.765.496 4.816.496 0 5.32 0 11.261 0 17.203 4.816 22.02 10.765 22.02c2.573 0 4.929-.9 6.785-2.405l7.46 7.53c.225.24.535.36.837.36.288 0 .576-.106.794-.317a1.163 1.163 0 0 0 .043-1.638z" />
+                                </g>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
 
             <div class="content">
                 <h3 class="paragrafo-2-bold-alternates">Navegue pelas famí­lias de cores abaixo ou busque pelo nome.
                 </h3>
 
-                <div class="input-form search">
+                <div class="input-form search mobile-sumir">
                     <input id="buscar" type="search" class="link-2-medium-montserrat"
                         placeholder="Digite aqui o nome da cor">
 
@@ -216,8 +244,10 @@
     <footer>
         <div class="container-color">
             <div class="logo">
-                <a class="color" href="index.html"><img src="images/logo-footer.png" alt="Logo rodapé"></a>
-                <a class="ecotex" href="#"><img src="images/logo-ecotex.png" alt="Logo ecotex"></a>
+                <a class="color" href="index.html"><img loading="lazy" src="images/logo-footer.png"
+                        alt="Logo rodapé"></a>
+                <a class="ecotex" href=" JavaScript: void (0)"><img loading="lazy" src="images/logo-ecotex.png"
+                        alt="Logo ecotex"></a>
             </div>
 
             <div class="links">
@@ -327,21 +357,12 @@
                     <h3 class="titulo-7-light-arboria branco">Desenvolvido por</h3>
 
                     <a href="https://www.codie.com.br/" target="_blank" class="logo-codie">
-                        <img src="images/logo-codie.png" alt="Logo Codie">
+                        <img loading="lazy" src="images/logo-codie.png" alt="Logo Codie">
                     </a>
                 </div>
             </div>
         </div>
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
-        integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous">
-    </script>
 
     <script>
         function handleColor(color) {

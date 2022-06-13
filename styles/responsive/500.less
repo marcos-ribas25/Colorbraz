@@ -8,6 +8,14 @@
     height: 36px;
 }
 
+.box-menu {
+    max-width: 200px;
+}
+
+.close {
+    max-width: 15px;
+}
+
 .box-generic {
     max-width: 75%;
     padding: 10px;
@@ -147,8 +155,12 @@ header {
 
     .container-color {
         max-width: 100%;
-        padding: 15px 30px 10px 45px;
     }
+
+    .logo {
+        max-width: 150px;
+    }
+
 }
 
 footer {
@@ -384,6 +396,7 @@ footer {
         a {
             svg {
                 max-width: 14px;
+                margin-right: 5px;
             }
 
             p {
@@ -448,6 +461,15 @@ footer {
 
 
     .title {
+        .list-breadcrumb {
+            column-gap: 3px;
+            row-gap: 6px;
+
+            a {
+                margin-right: 3px;
+            }
+        }
+
         h2 {
             line-height: 20px;
             font-size: 18px;
@@ -651,8 +673,24 @@ footer {
         font-size: 12px;
     }
 
+    .side-box.filtros.mobile {
+        display: block;
+    }
+
+    .side-box.filtros.desktop {
+        display: none;
+    }
+
+    .container-color.title {
+        gap: 10px;
+    }
+
     .container-color {
         max-width: 95%;
+    }
+
+    .posts {
+        gap: 10px;
     }
 
     .post-title {
@@ -886,5 +924,81 @@ footer {
 #corSelecionada {
     .ball-color.selecionada {
         height: 70px;
+    }
+}
+
+//PAGE CORES 
+#banner-text {
+    padding-top: 90px;
+
+    .title {
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .search {
+        input {
+            font-size: 10px;
+            width: 100%;
+            padding: 11px 2px 10px 10px;
+        }
+
+        button {
+            svg {
+                max-width: 15px;
+            }
+        }
+    }
+
+    .container-color {
+        max-width: 100%;
+    }
+}
+
+#colors.simples {
+    .container-color {
+        max-width: 100%;
+    }
+}
+
+#page-cores {
+    #tabs {
+        gap: 5px;
+        padding: 5px;
+    }
+
+    #tabs+* {
+        margin-top: 15px;
+    }
+
+    .content {
+        flex-direction: column-reverse;
+    }
+
+    .informacoes {
+        max-width: 100%;
+    }
+
+    #corSelecionada {
+        .ball-color.selecionada {
+            height: 90px;
+        }
+    }
+
+    #colors.simples {
+        padding-bottom: 40px;
+    }
+
+    .tab-content {
+        .tab-content--container {
+            gap: 7px;
+        }
+    }
+
+    .paleta-cores {
+        .ball-color {
+            width: 26px;
+            height: 26px;
+        }
     }
 }

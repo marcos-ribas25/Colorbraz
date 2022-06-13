@@ -277,3 +277,33 @@ header .container-color {
 #corSelecionada {
   max-width: 405px;
 }
+#banner-text {
+  padding-top: 150px;
+}
+#banner-text .title + * {
+  margin-top: 15px;
+}
+#banner-text .search {
+  max-width: 510px;
+}
+#banner-text + * {
+  margin-top: 33px;
+}
+#colors.simples {
+  padding-bottom: 90px;
+}
+#colors.simples .container-color {
+  max-width: 1330px;
+}
+#page-cores .informacoes {
+  max-width: 500px;
+}
+#page-cores #corSelecionada .ball-color.selecionada {
+  height: 500px;
+}
+#page-cores .tab-content .tab-content--container {
+  gap: 20px;
+}
+#page-cores #tabs + * {
+  margin-top: 45px;
+}

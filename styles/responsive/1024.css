@@ -13,6 +13,10 @@
   left: 50px;
   max-width: 216px;
 }
+.box-menu.aparecer {
+  display: flex !important;
+  flex-direction: row-reverse;
+}
 .box-produto {
   max-width: 100%;
   padding: 40px 0 34px;
@@ -403,7 +407,11 @@ footer .barra-footer .logo-codie {
   margin-top: 15px;
 }
 .container-produto .content {
-  max-width: 260px;
+  max-width: 300px;
+  justify-content: flex-start;
+}
+.container-produto .image {
+  max-width: 550px;
 }
 .container-produto .box-informacao-produto {
   max-width: 100%;
@@ -588,4 +596,48 @@ footer .barra-footer .logo-codie {
 }
 .ball-color.selecionada {
   height: 90px;
+}
+#banner-text {
+  padding-top: 100px;
+}
+#banner-text .title + * {
+  margin-top: 0;
+}
+#banner-text h3 {
+  max-width: 400px;
+}
+#banner-text .search {
+  max-width: 275px;
+  height: 39px;
+}
+#banner-text .search input {
+  padding: 13px 15px 12px 20px;
+}
+#banner-text .search button {
+  padding: 0 15px 0 0;
+}
+#banner-text .search button svg {
+  max-width: 20px;
+}
+#colors.simples {
+  padding-bottom: 60px;
+}
+#colors.simples .container-color {
+  max-width: 950px;
+}
+#page-cores .informacoes {
+  max-width: 315px;
+}
+#page-cores #corSelecionada .ball-color.selecionada {
+  height: 320px;
+}
+#page-cores .tab-content .tab-content--container {
+  gap: 10px;
+}
+#page-cores #tabs + * {
+  margin-top: 29px;
+}
+#page-cores .paleta-cores .ball-color {
+  width: 45px;
+  height: 45px;
 }

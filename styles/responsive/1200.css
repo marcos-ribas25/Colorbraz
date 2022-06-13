@@ -559,3 +559,44 @@ footer .barra-footer .logo-codie {
 .ball-color.selecionada {
   height: 115px;
 }
+#banner-text {
+  padding-top: 110px;
+}
+#banner-text .title + * {
+  margin-top: 5px;
+}
+#banner-text .search {
+  max-width: 330px;
+  height: 43px;
+}
+#banner-text .search input {
+  padding: 15px 15px 14px 20px;
+}
+#banner-text .search button svg {
+  max-width: 24px;
+}
+#banner-text + * {
+  margin-top: 24px;
+}
+#colors.simples {
+  padding-bottom: 70px;
+}
+#colors.simples .container-color {
+  max-width: 990px;
+}
+#page-cores .informacoes {
+  max-width: 405px;
+}
+#page-cores #corSelecionada .ball-color.selecionada {
+  height: 405px;
+}
+#page-cores .tab-content .tab-content--container {
+  gap: 13px;
+}
+#page-cores #tabs + * {
+  margin-top: 34px;
+}
+#page-cores .paleta-cores .ball-color {
+  width: 55px;
+  height: 55px;
+}
