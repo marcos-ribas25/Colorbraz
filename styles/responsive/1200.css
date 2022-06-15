@@ -166,17 +166,21 @@ footer .barra-footer .logo-codie {
 #banner-home .owl-carousel .item {
   height: 615px;
 }
+#banner-home .owl-carousel .item [class*='titulo-1'] {
+  font-size: 75px;
+}
+#banner-home .owl-carousel .item [class*='titulo-2'] {
+  font-size: 45px;
+}
 #banner-home .owl-carousel .item .container-color {
-  padding-top: 145px;
+  padding-top: 120px;
 }
 #banner-home .owl-carousel .item .container-color h1 {
-  margin-left: 205px;
+  margin: 0 auto;
+  text-align: center;
 }
-#banner-home .owl-carousel .item .container-color .barra-absolute {
-  left: 265px;
-  max-width: 435px;
-  height: 95px;
-  top: 220px;
+#banner-home .owl-carousel .item .container-color h1 span {
+  height: 73px;
 }
 #banner-home .owl-carousel .owl-dots {
   bottom: 185px;
@@ -257,6 +261,12 @@ footer .barra-footer .logo-codie {
 #dicas .box-aparecer {
   display: block;
 }
+#dicas h3 {
+  height: 65px;
+}
+#dicas .box-dicas .description {
+  height: 80px;
+}
 #dicas .owl-carousel {
   max-width: 800px;
   margin: 0 auto;
@@ -296,6 +306,9 @@ footer .barra-footer .logo-codie {
 }
 #banner-sobre .description {
   margin-bottom: 40px;
+}
+#banner-sobre .scroll svg {
+  max-width: 20px;
 }
 #historia {
   padding: 30px 0 35px;
@@ -387,9 +400,6 @@ footer .barra-footer .logo-codie {
 #relacionados h2 + * {
   margin-top: 29px;
 }
-#banner-produtos {
-  height: 400px;
-}
 #produtos-content {
   padding: 35px 0 60px;
 }
@@ -417,6 +427,9 @@ footer .barra-footer .logo-codie {
 }
 #blog {
   padding: 125px 0 6.25vw;
+}
+#blog .image img {
+  height: 235px;
 }
 #blog .post-title h3 {
   font-size: 33px;

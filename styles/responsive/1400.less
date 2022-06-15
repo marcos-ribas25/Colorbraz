@@ -75,6 +75,7 @@
 .bt-ordenar {
     padding: 12px 20px 10px;
     max-width: 250px;
+    font-size: 12px;
 }
 
 //SECTIONS
@@ -225,13 +226,24 @@ footer {
         .item {
             height: 740px;
 
+            [class*='titulo-1'] {
+                font-size: 100px;
+            }
+
+            [class*='titulo-2'] {
+                font-size: 55px;
+            }
+
             .container-color {
+                padding-top: 145px;
+
                 h1 {
                     margin-left: 275px;
-                }
 
-                .barra-absolute {
-                    left: 350px;
+                    span {
+                        margin-left: 60px;
+                        height: 95px;
+                    }
                 }
             }
         }
@@ -319,6 +331,10 @@ footer {
         line-height: 22px;
     }
 
+    h3 {
+        height: 80px;
+    }
+
     .box-dicas {
         padding: 20px 20px 30px;
 
@@ -336,6 +352,10 @@ footer {
 
         .description+* {
             margin-top: 22px;
+        }
+
+        .description {
+            height: 84px;
         }
     }
 }
@@ -513,9 +533,6 @@ footer {
 }
 
 //PAGE PRODUTOS
-#banner-produtos {
-    height: 450px;
-}
 
 #produtos-content {
     padding-bottom: 80px;
@@ -551,6 +568,12 @@ footer {
         h3 {
             font-size: 39px;
             line-height: 43px;
+        }
+    }
+
+    .image {
+        img {
+            height: 290px;
         }
     }
 

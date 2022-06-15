@@ -175,6 +175,16 @@ footer {
     .logo-codie {
         max-width: 40px;
     }
+
+    .logo {
+        .color {
+            max-width: 185px;
+        }
+
+        .ecotex {
+            max-width: 95px;
+        }
+    }
 }
 
 .title-text {
@@ -214,6 +224,12 @@ footer {
     .content {
         padding: 25px 20px 20px;
     }
+
+    .absolute-image {
+        max-width: 40px;
+        top: -25px;
+        transform: rotate(-85deg);
+    }
 }
 
 .text-absolute-image.left {
@@ -226,15 +242,20 @@ footer {
     padding: 20px 0;
 
     .container-color {
-        gap: 12px;
         max-width: 90%;
+        gap: 20px;
+
     }
 
     input+* {
         margin-top: 5px;
     }
 
-
+    .links {
+        svg {
+            max-width: 17px;
+        }
+    }
 
     .bt {
         max-width: 280px;
@@ -260,23 +281,23 @@ footer {
         .item {
             height: 430px;
 
+            [class*='titulo-1'] {
+                font-size: 45px;
+            }
+
+            [class*='titulo-2'] {
+                font-size: 29px;
+            }
+
+
             .container-color {
-                padding-top: 105px;
+                padding-top: 95px;
 
                 h1 {
-                    margin: 0 auto;
-                    text-align: center;
-
                     span {
                         margin-left: 25px;
+                        height: 46px;
                     }
-                }
-
-                .barra-absolute {
-                    left: 64px;
-                    max-width: 225px;
-                    height: 55px;
-                    top: 138px;
                 }
             }
 
@@ -297,6 +318,14 @@ footer {
 
 #tintas {
     padding: 15px 0;
+
+    .container-color {
+        max-width: 300px;
+    }
+
+    .content {
+        padding: 11px 0 7px;
+    }
 }
 
 #teste {
@@ -312,13 +341,13 @@ footer {
     }
 
     .image {
-        display: none;
+        margin-top: -30px;
     }
 
     .content {
         padding: 15px;
-        margin-top: -25px;
-        max-width: 100%;
+        margin-top: -15px;
+        max-width: 90%;
 
         .description {
             line-height: 17px;
@@ -340,6 +369,7 @@ footer {
 
     .owl-carousel {
         margin-top: 15px;
+        max-width: 385px;
     }
 }
 
@@ -405,6 +435,10 @@ footer {
             }
         }
     }
+
+    .scroll {
+        gap: 5px;
+    }
 }
 
 #historia {
@@ -420,6 +454,13 @@ footer {
 
     h3+* {
         margin-top: 0;
+    }
+}
+
+#sustentabilidade {
+    .absolute-image {
+        max-width: 40px;
+        top: -20px;
     }
 }
 
@@ -450,12 +491,18 @@ footer {
 #produtos-sobre {
     padding: 30px 0;
 
+    .absolute-image {
+        max-width: 45px;
+        top: -15px;
+    }
+
     a {
         max-width: 340px;
     }
 }
 
 //PAGE PRODUTO
+
 #produto-infomacoes {
     padding: 90px 0 15px;
 
@@ -566,7 +613,10 @@ footer {
 
 //PAGE PRODUTOS
 #banner-produtos {
-    height: 200px;
+    .container-color {
+        margin: 0;
+        margin-left: 20px;
+    }
 }
 
 #produtos-content {
@@ -671,6 +721,12 @@ footer {
 
     [class*='link-1'] {
         font-size: 12px;
+    }
+
+    .image {
+        img {
+            height: 145px;
+        }
     }
 
     .side-box.filtros.mobile {

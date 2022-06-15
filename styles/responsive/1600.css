@@ -74,6 +74,15 @@ header .container-color {
 #banner-home .owl-carousel .item {
   height: 785px;
 }
+#banner-home .owl-carousel .item [class*='titulo-1'] {
+  font-size: 105px;
+}
+#banner-home .owl-carousel .item [class*='titulo-2'] {
+  font-size: 60px;
+}
+#banner-home .owl-carousel .item .container-color {
+  padding-top: 150px;
+}
 #banner-home .owl-carousel .owl-dots {
   bottom: 210px;
 }
@@ -133,6 +142,9 @@ header .container-color {
 #dicas .description {
   line-height: 23px;
 }
+#dicas h3 {
+  height: 80px;
+}
 #dicas .box-dicas {
   padding: 20px 20px 30px;
 }
@@ -147,6 +159,9 @@ header .container-color {
 }
 #dicas .box-dicas .description + * {
   margin-top: 25px;
+}
+#dicas .box-dicas .description {
+  height: 88px;
 }
 #contato-home {
   margin-top: 45px;
@@ -208,9 +223,6 @@ header .container-color {
 #relacionados h2 + * {
   margin-top: 32px;
 }
-#banner-produtos {
-  height: 500px;
-}
 #produtos-content {
   padding-bottom: 90px;
 }
@@ -229,6 +241,9 @@ header .container-color {
 }
 #blog {
   padding: 165px 0 6.25vw;
+}
+#blog .image img {
+  height: 335px;
 }
 #banner-post {
   height: 395px;

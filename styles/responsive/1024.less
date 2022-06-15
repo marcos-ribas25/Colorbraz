@@ -212,10 +212,6 @@ footer {
     padding-top: 25px;
     padding-bottom: 15px;
 
-    .absolute-image {
-        display: none;
-    }
-
     .content {
         max-width: 100%;
         text-align: center;
@@ -247,6 +243,12 @@ footer {
     .content {
         padding: 40px 50px 30px;
     }
+
+    .absolute-image {
+        max-width: 150px;
+        top: -25px;
+        left: 25px;
+    }
 }
 
 .text-absolute-image.left {
@@ -259,27 +261,25 @@ footer {
     padding-top: 40px;
     padding-bottom: 40px;
 
-    .container-color {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-
-    h2 {
-        text-align: center;
-    }
-
     h2+* {
-        margin-top: 0;
-    }
-
-    .links {
-        display: none;
+        margin-top: 20px;
     }
 
     input {
         padding: 8px 15px 6px;
         height: 45px;
+    }
+
+    form {
+        max-width: 370px;
+    }
+
+    .text {
+        max-width: 360px;
+    }
+
+    .container-color {
+        gap: 30px;
     }
 
 }
@@ -296,17 +296,6 @@ footer {
 
             .container-color {
                 padding-top: 120px;
-
-                h1 {
-                    margin-left: 110px;
-                }
-
-                .barra-absolute {
-                    left: 180px;
-                    max-width: 345px;
-                    height: 82px;
-                    top: 180px;
-                }
             }
 
             .container-color.box {
@@ -394,6 +383,14 @@ footer {
 
     .description {
         line-height: 20px;
+    }
+
+    .owl-carousel {
+        max-width: 730px;
+    }
+
+    h3{
+        height: 60px;
     }
 }
 
@@ -484,6 +481,12 @@ footer {
 
 #sustentabilidade {
     padding-bottom: 40px;
+
+    .absolute-image {
+        right: 5px;
+        max-width: 100px;
+        top: -25px;
+    }
 }
 
 #missao {
@@ -641,9 +644,6 @@ footer {
 }
 
 //PAGE PRODUTOS
-#banner-produtos {
-    height: 370px;
-}
 
 #produtos-content {
     padding: 25px 0 50px;
@@ -673,6 +673,8 @@ footer {
 
     .box-produto {
         padding: 15px 0 20px;
+        display: flex;
+        align-items: center;
 
         .container-box {
             max-width: 100%;
@@ -691,11 +693,9 @@ footer {
             }
         }
 
-        .title+* {
-            margin-top: 160px;
-        }
-
         .informacoes {
+            margin: 0 auto;
+
             h4 {
                 font-size: 13px;
             }
@@ -703,6 +703,10 @@ footer {
             h4+* {
                 margin-top: 10px;
             }
+        }
+
+        .title+* {
+            margin-top: 175px;
         }
 
         .box-informacoes {

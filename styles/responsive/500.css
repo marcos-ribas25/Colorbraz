@@ -129,6 +129,12 @@ footer .barra-footer a {
 footer .logo-codie {
   max-width: 40px;
 }
+footer .logo .color {
+  max-width: 185px;
+}
+footer .logo .ecotex {
+  max-width: 95px;
+}
 .title-text {
   padding-top: 20px;
 }
@@ -157,6 +163,11 @@ footer .logo-codie {
 .text-absolute-image.right .content {
   padding: 25px 20px 20px;
 }
+.text-absolute-image.right .absolute-image {
+  max-width: 40px;
+  top: -25px;
+  transform: rotate(-85deg);
+}
 .text-absolute-image.left .content {
   padding: 25px 20px 20px;
 }
@@ -164,11 +175,14 @@ footer .logo-codie {
   padding: 20px 0;
 }
 .contato .container-color {
-  gap: 12px;
   max-width: 90%;
+  gap: 20px;
 }
 .contato input + * {
   margin-top: 5px;
+}
+.contato .links svg {
+  max-width: 17px;
 }
 .contato .bt {
   max-width: 280px;
@@ -186,21 +200,18 @@ footer .logo-codie {
 #banner-home .owl-carousel .item {
   height: 430px;
 }
-#banner-home .owl-carousel .item .container-color {
-  padding-top: 105px;
+#banner-home .owl-carousel .item [class*='titulo-1'] {
+  font-size: 45px;
 }
-#banner-home .owl-carousel .item .container-color h1 {
-  margin: 0 auto;
-  text-align: center;
+#banner-home .owl-carousel .item [class*='titulo-2'] {
+  font-size: 29px;
+}
+#banner-home .owl-carousel .item .container-color {
+  padding-top: 95px;
 }
 #banner-home .owl-carousel .item .container-color h1 span {
   margin-left: 25px;
-}
-#banner-home .owl-carousel .item .container-color .barra-absolute {
-  left: 64px;
-  max-width: 225px;
-  height: 55px;
-  top: 138px;
+  height: 46px;
 }
 #banner-home .owl-carousel .item .container-color.box {
   bottom: -285px;
@@ -214,6 +225,12 @@ footer .logo-codie {
 #tintas {
   padding: 15px 0;
 }
+#tintas .container-color {
+  max-width: 300px;
+}
+#tintas .content {
+  padding: 11px 0 7px;
+}
 #teste {
   padding: 15px 0;
 }
@@ -225,12 +242,12 @@ footer .logo-codie {
   font-size: 24px;
 }
 #teste .image {
-  display: none;
+  margin-top: -30px;
 }
 #teste .content {
   padding: 15px;
-  margin-top: -25px;
-  max-width: 100%;
+  margin-top: -15px;
+  max-width: 90%;
 }
 #teste .content .description {
   line-height: 17px;
@@ -247,6 +264,7 @@ footer .logo-codie {
 }
 #dicas .owl-carousel {
   margin-top: 15px;
+  max-width: 385px;
 }
 #contato-home {
   margin-top: 15px;
@@ -297,6 +315,9 @@ footer .logo-codie {
   margin-top: 0;
   font-size: 11px;
 }
+#banner-sobre .scroll {
+  gap: 5px;
+}
 #historia {
   padding: 0 0 15px;
 }
@@ -308,6 +329,10 @@ footer .logo-codie {
 }
 #historia h3 + * {
   margin-top: 0;
+}
+#sustentabilidade .absolute-image {
+  max-width: 40px;
+  top: -20px;
 }
 #missao p {
   line-height: 19px !important;
@@ -326,6 +351,10 @@ footer .logo-codie {
 }
 #produtos-sobre {
   padding: 30px 0;
+}
+#produtos-sobre .absolute-image {
+  max-width: 45px;
+  top: -15px;
 }
 #produtos-sobre a {
   max-width: 340px;
@@ -409,8 +438,9 @@ footer .logo-codie {
 #relacionados .container-color {
   max-width: 320px;
 }
-#banner-produtos {
-  height: 200px;
+#banner-produtos .container-color {
+  margin: 0;
+  margin-left: 20px;
 }
 #produtos-content {
   padding: 25px 0 50px;
@@ -488,6 +518,9 @@ footer .logo-codie {
 }
 #blog [class*='link-1'] {
   font-size: 12px;
+}
+#blog .image img {
+  height: 145px;
 }
 #blog .side-box.filtros.mobile {
   display: block;

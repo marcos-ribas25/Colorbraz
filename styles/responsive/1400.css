@@ -53,6 +53,7 @@
 .bt-ordenar {
   padding: 12px 20px 10px;
   max-width: 250px;
+  font-size: 12px;
 }
 header .logo {
   max-width: 225px;
@@ -158,11 +159,21 @@ footer .container-color + * {
 #banner-home .owl-carousel .item {
   height: 740px;
 }
+#banner-home .owl-carousel .item [class*='titulo-1'] {
+  font-size: 100px;
+}
+#banner-home .owl-carousel .item [class*='titulo-2'] {
+  font-size: 55px;
+}
+#banner-home .owl-carousel .item .container-color {
+  padding-top: 145px;
+}
 #banner-home .owl-carousel .item .container-color h1 {
   margin-left: 275px;
 }
-#banner-home .owl-carousel .item .container-color .barra-absolute {
-  left: 350px;
+#banner-home .owl-carousel .item .container-color h1 span {
+  margin-left: 60px;
+  height: 95px;
 }
 #banner-home .owl-carousel .owl-dots {
   bottom: 200px;
@@ -228,6 +239,9 @@ footer .container-color + * {
 #dicas .description {
   line-height: 22px;
 }
+#dicas h3 {
+  height: 80px;
+}
 #dicas .box-dicas {
   padding: 20px 20px 30px;
 }
@@ -242,6 +256,9 @@ footer .container-color + * {
 }
 #dicas .box-dicas .description + * {
   margin-top: 22px;
+}
+#dicas .box-dicas .description {
+  height: 84px;
 }
 #contato-home {
   margin-top: 40px;
@@ -367,9 +384,6 @@ footer .container-color + * {
 #relacionados h2 + * {
   margin-top: 29px;
 }
-#banner-produtos {
-  height: 450px;
-}
 #produtos-content {
   padding-bottom: 80px;
 }
@@ -394,6 +408,9 @@ footer .container-color + * {
 #blog .post-title h3 {
   font-size: 39px;
   line-height: 43px;
+}
+#blog .image img {
+  height: 290px;
 }
 #blog .author + * {
   margin-top: 14px;

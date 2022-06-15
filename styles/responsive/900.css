@@ -1,3 +1,11 @@
 [class*="container-color"] {
   max-width: 720px;
 }
+.text-absolute-image.right .absolute-image {
+  max-width: 105px;
+  top: -10px;
+  left: 20px;
+}
+#produtos-sobre .absolute-image {
+  max-width: 130px;
+}

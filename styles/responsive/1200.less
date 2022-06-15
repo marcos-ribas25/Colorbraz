@@ -242,18 +242,24 @@ footer {
         .item {
             height: 615px;
 
+            [class*='titulo-1'] {
+                font-size: 75px;
+            }
+
+            [class*='titulo-2'] {
+                font-size: 45px;
+            }
+
             .container-color {
-                padding-top: 145px;
+                padding-top: 120px;
 
                 h1 {
-                    margin-left: 205px;
-                }
+                    margin: 0 auto;
+                    text-align: center;
 
-                .barra-absolute {
-                    left: 265px;
-                    max-width: 435px;
-                    height: 95px;
-                    top: 220px;
+                    span {
+                        height: 73px;
+                    }
                 }
             }
         }
@@ -361,6 +367,16 @@ footer {
         display: block;
     }
 
+    h3 {
+        height: 65px;
+    }
+
+    .box-dicas {
+        .description {
+            height: 80px;
+        }
+    }
+
     .owl-carousel {
         max-width: 800px;
         margin: 0 auto;
@@ -413,6 +429,12 @@ footer {
 
     .description {
         margin-bottom: 40px;
+    }
+
+    .scroll {
+        svg {
+            max-width: 20px;
+        }
     }
 }
 
@@ -538,9 +560,6 @@ footer {
 }
 
 //PAGE PRODUTOS
-#banner-produtos {
-    height: 400px;
-}
 
 #produtos-content {
     padding: 35px 0 60px;
@@ -583,6 +602,12 @@ footer {
 //PAGE BLOG
 #blog {
     padding: 125px 0 6.25vw;
+
+    .image {
+        img {
+            height: 235px;
+        }
+    }
 
     .post-title {
         h3 {

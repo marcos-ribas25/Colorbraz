@@ -147,6 +147,14 @@
     .content {
         padding: 30px 20px 20px;
     }
+
+    .absolute-image {
+        transform: rotate(-95deg);
+        max-width: 45px;
+        top: -25px;
+        right: 5px;
+        left: unset;
+    }
 }
 
 .text-absolute-image.left {
@@ -177,7 +185,7 @@ footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        gap: 10px;
+        gap: 15px;
     }
 
     .logo {
@@ -194,8 +202,8 @@ footer {
         }
     }
 
-    .links,
     .links.svg {
+        display: flex;
         gap: 10px;
 
         a {
@@ -204,7 +212,7 @@ footer {
         }
     }
 
-    .links:nth-child(4) {
+    .links {
         display: none;
     }
 
@@ -223,7 +231,13 @@ footer {
     }
 
     .container-color+* {
-        margin-top: 30px;
+        margin-top: 20px;
+    }
+
+    .links,
+    .logo,
+    .redes {
+        padding-top: 0;
     }
 
     .barra-footer {
@@ -232,13 +246,22 @@ footer {
         }
 
         .box-left {
+            display: flex;
+            flex-direction: column;
+
             a+* {
-                margin-left: 3.43vw;
+                margin-left: 0;
             }
         }
 
         .logo-codie {
             max-width: 54px;
+        }
+
+        .box-right {
+            h3 {
+                display: none;
+            }
         }
     }
 }
@@ -247,7 +270,15 @@ footer {
     padding: 30px 0;
 
     .container-color {
-        gap: 15px;
+        flex-direction: column;
+        max-width: 85%;
+        align-items: center;
+        gap: 30px;
+    }
+
+    form,
+    .text {
+        max-width: 450px;
     }
 
     input+* {
@@ -256,6 +287,24 @@ footer {
 
     .bt {
         max-width: 205px;
+    }
+
+    .links {
+        .svg {
+            max-width: 18px;
+        }
+    }
+
+    h2+* {
+        margin-top: 10px;
+    }
+
+    .text.mobile-sumir {
+        display: none;
+    }
+
+    .text.mobile-aparecer {
+        display: block;
     }
 }
 
@@ -269,16 +318,22 @@ footer {
         .item {
             height: 525px;
 
-            .container-color {
-                h1 {
-                    margin-left: 25px;
-                }
+            [class*='titulo-1'] {
+                font-size: 65px;
+            }
 
-                .barra-absolute {
-                    left: 100px;
-                    max-width: 300px;
-                    height: 71px;
-                    top: 173px;
+            [class*='titulo-2'] {
+                font-size: 40px;
+            }
+
+            .container-color {
+                padding-top: 102px;
+
+                h1 {
+                    span {
+                        height: 63px;
+                        margin-left: 40px;
+                    }
                 }
             }
 
@@ -343,6 +398,10 @@ footer {
 #dicas {
     .container-color {
         max-width: 90%;
+    }
+
+    .owl-carousel {
+        max-width: 335px;
     }
 }
 
@@ -409,6 +468,12 @@ footer {
             }
         }
     }
+
+    .scroll {
+        svg {
+            max-width: 17px;
+        }
+    }
 }
 
 #historia {
@@ -416,8 +481,11 @@ footer {
 
     .container-color {
         max-width: 90%;
+        flex-direction: column;
         text-align: center;
         justify-content: center;
+        align-items: center;
+        gap: 20px;
     }
 
     .absolute-right {
@@ -425,7 +493,7 @@ footer {
     }
 
     .image {
-        display: none;
+        max-width: 280px;
     }
 
     h2 {
@@ -446,6 +514,12 @@ footer {
     }
 }
 
+#sustentabilidade {
+    .absolute-image {
+        max-width: 55px;
+    }
+}
+
 #missao {
     p {
         line-height: 20px !important;
@@ -462,6 +536,11 @@ footer {
 
 #produtos-sobre {
     padding: 40px 0;
+
+    .absolute-image {
+        transform: unset;
+        max-width: 70px;
+    }
 
     a {
         max-width: 355px;
@@ -576,9 +655,6 @@ footer {
 }
 
 //PAGE PRODUTOS
-#banner-produtos {
-    height: 300px;
-}
 
 #produtos-content {
     padding: 25px 0 50px;
@@ -625,6 +701,12 @@ footer {
 
     [class*='link-1'] {
         font-size: 13px;
+    }
+
+    .image {
+        img {
+            height: 210px;
+        }
     }
 
     .container-color {

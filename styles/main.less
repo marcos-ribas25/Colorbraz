@@ -13,7 +13,7 @@ html {
 
 body {
   background-color: #f2f2f2 !important;
-  // overflow-x: hidden !important;
+  overflow-x: hidden !important;
   position: relative;
 }
 
@@ -467,11 +467,14 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
 
+  .mobile-aparecer {
+    display: none;
+  }
+
 
   .container-color {
     display: flex;
     justify-content: space-between;
-
   }
 
   .text {
@@ -759,7 +762,7 @@ header {
 }
 
 .background-menu.ativo {
-  z-index: 98;
+  z-index: 102;
   opacity: 1;
   transition: 0.1s;
   visibility: unset;
@@ -779,7 +782,7 @@ header {
   padding: 40px 30px;
   transform: translateX(100%);
   -webkit-transition: 0.3s all;
-  z-index: 99;
+  z-index: 103;
   color: #fff;
   background-color: var(--verde);
 
@@ -793,6 +796,7 @@ header {
     width: 100%;
     object-fit: contain;
     margin-bottom: 0;
+    opacity: unset;
   }
 
   a+a {
@@ -911,6 +915,10 @@ footer {
   }
 
   .redes {
+    h3 {
+      margin-top: 0;
+    }
+
     h3+* {
       margin-top: 9px;
     }
@@ -1007,16 +1015,11 @@ footer {
 
           span {
             margin-left: 75px;
+            display: inline-block;
+            padding: 0 15px;
+            height: 115px;
+            margin-top: 5px;
           }
-        }
-
-        .barra-absolute {
-          position: absolute;
-          max-width: 500px;
-          height: 110px;
-          width: 100%;
-          left: 440px;
-          top: 264px;
         }
       }
 
@@ -1047,7 +1050,7 @@ footer {
 
     .item.green {
       .container-color {
-        .barra-absolute {
+        span {
           background-color: var(--verde);
         }
       }
@@ -1064,7 +1067,7 @@ footer {
 
     .item.blue {
       .container-color {
-        .barra-absolute {
+        span {
           background-color: var(--azul);
         }
       }
@@ -1080,7 +1083,7 @@ footer {
 
     .item.yellow {
       .container-color {
-        .barra-absolute {
+        span {
           background-color: var(--amarelo);
         }
       }
@@ -1281,7 +1284,7 @@ footer {
     }
 
     .image {
-      max-width: 390px;
+      aspect-ratio: 358/239;
 
       img {
         width: 100%;
@@ -1388,19 +1391,16 @@ footer {
   .scroll {
     display: flex;
     align-items: center;
+    gap: 10px;
 
     p {
       margin-top: 2px;
     }
 
-    img {
+    svg {
       max-width: 24px;
       width: 100%;
       object-fit: contain;
-    }
-
-    img+* {
-      margin-left: 10px;
     }
   }
 
@@ -1538,8 +1538,14 @@ footer {
 }
 
 //PAGE PRODUTOS
+
+body.interna {
+  padding-top: 40px;
+}
+
 #banner-produtos {
-  height: 731px;
+  aspect-ratio: 1920/731;
+  min-height: 200px;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1562,6 +1568,7 @@ footer {
   .filter {
     display: flex;
     justify-content: space-between;
+    gap: 5px;
 
     .box-left {
       display: flex;
@@ -2209,6 +2216,7 @@ footer {
       width: 100%;
       transition: ease-in-out 0.3s;
       object-fit: cover;
+      object-position: bottom;
     }
 
     .tag {
@@ -2834,7 +2842,7 @@ footer {
 
 
 @media only screen and (max-width: 1600px) {
-  @import "responsive/1600";
+  @import "responsive/1600.less";
 }
 
 @media only screen and (max-width: 1400px) {

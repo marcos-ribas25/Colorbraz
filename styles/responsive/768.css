@@ -106,6 +106,13 @@
 .text-absolute-image.right .content {
   padding: 30px 20px 20px;
 }
+.text-absolute-image.right .absolute-image {
+  transform: rotate(-95deg);
+  max-width: 45px;
+  top: -25px;
+  right: 5px;
+  left: unset;
+}
 .text-absolute-image.left .content {
   padding: 30px 30px 20px;
 }
@@ -125,7 +132,7 @@ footer .container-color {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 10px;
+  gap: 15px;
 }
 footer .logo .color {
   max-width: 205px;
@@ -136,16 +143,15 @@ footer .logo a + * {
 footer .logo .ecotex {
   max-width: 105px;
 }
-footer .links,
 footer .links.svg {
+  display: flex;
   gap: 10px;
 }
-footer .links a,
 footer .links.svg a {
   font-size: 14px;
   line-height: 20px !important;
 }
-footer .links:nth-child(4) {
+footer .links {
   display: none;
 }
 footer .links.svg .link {
@@ -158,22 +164,41 @@ footer .links.svg svg {
   display: none;
 }
 footer .container-color + * {
-  margin-top: 30px;
+  margin-top: 20px;
+}
+footer .links,
+footer .logo,
+footer .redes {
+  padding-top: 0;
 }
 footer .barra-footer .container-color {
   gap: 5px;
 }
+footer .barra-footer .box-left {
+  display: flex;
+  flex-direction: column;
+}
 footer .barra-footer .box-left a + * {
-  margin-left: 3.43vw;
+  margin-left: 0;
 }
 footer .barra-footer .logo-codie {
   max-width: 54px;
+}
+footer .barra-footer .box-right h3 {
+  display: none;
 }
 .contato {
   padding: 30px 0;
 }
 .contato .container-color {
-  gap: 15px;
+  flex-direction: column;
+  max-width: 85%;
+  align-items: center;
+  gap: 30px;
+}
+.contato form,
+.contato .text {
+  max-width: 450px;
 }
 .contato input + * {
   margin-top: 7px;
@@ -181,20 +206,36 @@ footer .barra-footer .logo-codie {
 .contato .bt {
   max-width: 205px;
 }
+.contato .links .svg {
+  max-width: 18px;
+}
+.contato h2 + * {
+  margin-top: 10px;
+}
+.contato .text.mobile-sumir {
+  display: none;
+}
+.contato .text.mobile-aparecer {
+  display: block;
+}
 #banner-home .owl-carousel .owl-stage-outer {
   height: 630px;
 }
 #banner-home .owl-carousel .item {
   height: 525px;
 }
-#banner-home .owl-carousel .item .container-color h1 {
-  margin-left: 25px;
+#banner-home .owl-carousel .item [class*='titulo-1'] {
+  font-size: 65px;
 }
-#banner-home .owl-carousel .item .container-color .barra-absolute {
-  left: 100px;
-  max-width: 300px;
-  height: 71px;
-  top: 173px;
+#banner-home .owl-carousel .item [class*='titulo-2'] {
+  font-size: 40px;
+}
+#banner-home .owl-carousel .item .container-color {
+  padding-top: 102px;
+}
+#banner-home .owl-carousel .item .container-color h1 span {
+  height: 63px;
+  margin-left: 40px;
 }
 #banner-home .owl-carousel .item .container-color.box {
   max-width: 510px;
@@ -241,6 +282,9 @@ footer .barra-footer .logo-codie {
 }
 #dicas .container-color {
   max-width: 90%;
+}
+#dicas .owl-carousel {
+  max-width: 335px;
 }
 #contato-home {
   margin-top: 20px;
@@ -293,19 +337,25 @@ footer .barra-footer .logo-codie {
   max-width: 20px;
   fill: var(--amarelo);
 }
+#banner-sobre .scroll svg {
+  max-width: 17px;
+}
 #historia {
   padding: 0 0 20px;
 }
 #historia .container-color {
   max-width: 90%;
+  flex-direction: column;
   text-align: center;
   justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 #historia .absolute-right {
   display: none;
 }
 #historia .image {
-  display: none;
+  max-width: 280px;
 }
 #historia h2 {
   max-width: 340px;
@@ -320,6 +370,9 @@ footer .barra-footer .logo-codie {
 #historia .text {
   padding-top: 0;
 }
+#sustentabilidade .absolute-image {
+  max-width: 55px;
+}
 #missao p {
   line-height: 20px !important;
 }
@@ -331,6 +384,10 @@ footer .barra-footer .logo-codie {
 }
 #produtos-sobre {
   padding: 40px 0;
+}
+#produtos-sobre .absolute-image {
+  transform: unset;
+  max-width: 70px;
 }
 #produtos-sobre a {
   max-width: 355px;
@@ -411,9 +468,6 @@ footer .barra-footer .logo-codie {
 #relacionados .container-color {
   max-width: 480px;
 }
-#banner-produtos {
-  height: 300px;
-}
 #produtos-content {
   padding: 25px 0 50px;
 }
@@ -444,6 +498,9 @@ footer .barra-footer .logo-codie {
 }
 #blog [class*='link-1'] {
   font-size: 13px;
+}
+#blog .image img {
+  height: 210px;
 }
 #blog .container-color {
   flex-direction: column;

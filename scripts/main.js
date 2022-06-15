@@ -2,6 +2,7 @@ $(document).ready(function () {
    const blockbar = document.querySelector('.block-bar');
    const BoxMenu = document.querySelector('.box-menu');
    const backgroundMenu = document.querySelector('.background-menu');
+   const close = document.querySelector('.close');
 
    blockbar.onclick = function () {
       backgroundMenu.classList.add('ativo');
@@ -13,18 +14,27 @@ $(document).ready(function () {
       BoxMenu.classList.remove('ativo');
    };
 
+   close.onclick = function () {
+      backgroundMenu.classList.remove('ativo');
+      BoxMenu.classList.remove('ativo');
+   };
+
    const list = document.querySelector('.dropbtn')
    const listar = document.querySelector('.dropdown-filtrar')
 
-   list.onclick = function () {
-      listar.classList.toggle('ativo');
-   };
+   if(list) {
+      list.onclick = function () {
+         listar.classList.toggle('ativo');
+      };
+   }
 
    const listInterna = document.querySelector('.dropdown-interno')
 
-   listInterna.onclick = function () {
-      listInterna.classList.toggle('ativo');
-   };
+   if(listInterna) {
+      listInterna.onclick = function () {
+         listInterna.classList.toggle('ativo');
+      };
+   }
 
    $("#myInput").on("keyup", function () {
       var value = $(this).val().toLowerCase();
@@ -78,7 +88,7 @@ $('.owl-tintas').owlCarousel({
          items: 1,
          margin: 0,
       },
-      500: {
+      501: {
          items: 2,
       },
       768: {
@@ -110,32 +120,3 @@ $('.owl-produtos').owlCarousel({
    nav: false,
    items: 1,
 })
-
-let objetoQueSeraPintado = "";
-let tab = "";
-
-function handleColor(color) {
-   document
-      .querySelector(`.${objetoQueSeraPintado}`)
-      .style.setProperty("fill", color, "important");
-
-   document.querySelector("#corSelecionada .text").innerHTML = color
-   document.querySelector("#corSelecionada .ball-color").style.backgroundColor = color
-}
-
-function handleColorTab(tabSelecionado) {
-   const tabs = document.getElementsByClassName("tab-content");
-
-   for (const tab of tabs) {
-      tab.style.display = "none";
-   }
-
-   document.getElementById(tabSelecionado).style.display = "block";
-}
-
-function handle_click_event(obj) {
-   document.querySelector("#colors").style.display = "block";
-   objetoQueSeraPintado = obj.classList[0];
-
-   document.querySelector("#objetoSelecionado").innerHTML = obj.classList[0]
-}
