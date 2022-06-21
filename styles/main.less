@@ -131,7 +131,7 @@ ul {
 }
 
 .box-catalogo {
-  max-width: 315px;
+  max-width: 100%;
   width: 100%;
   padding: 40px 30px 29px;
   text-align: center;
@@ -147,6 +147,8 @@ ul {
   h3 {
     color: #313132;
     margin-bottom: 12px !important;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   img+* {
@@ -1621,6 +1623,11 @@ body.interna {
     }
   }
 
+  .informacoes {
+    max-width: 100%;
+    text-align: center;
+  }
+
   .content {
     max-width: 545px;
     width: 100%;
@@ -1709,6 +1716,10 @@ body.interna {
       width: 100%;
       object-fit: contain;
       fill: var(--azul)
+    }
+
+    svg:hover {
+      fill: var(--amarelo);
     }
   }
 
@@ -2320,6 +2331,11 @@ body.interna {
         width: 20px;
         height: 20px;
         fill: var(--azul);
+        transition: .3s;
+      }
+
+      svg:hover {
+        fill: var(--amarelo);
       }
     }
 
@@ -2333,6 +2349,10 @@ body.interna {
         max-width: 9px;
         width: 100%;
         object-fit: contain;
+      }
+
+      svg:hover {
+        fill:var(--amarelo);
       }
     }
   }
@@ -2572,6 +2592,11 @@ body.interna {
           max-width: 20px;
           object-fit: contain;
           fill: var(--verde);
+          transition: .3s;
+        }
+
+        svg:hover {
+          fill: var(--amarelo);
         }
       }
     }
@@ -2618,6 +2643,10 @@ body.interna {
   display: none;
 }
 
+.side-box.tags.mobile {
+  display: none;
+}
+
 .bt-tag {
   width: 180px;
   max-height: 40px;
@@ -2626,12 +2655,20 @@ body.interna {
   align-items: center;
   padding: 10px 5px 9px;
   background-color: var(--verde);
+  transition: .3s;
 }
 
 .bt-transp {
   border: 1px solid #00803e;
   padding: 9px 16px 11px;
   color: #000;
+  transition: .3s;
+}
+
+.bt-transp:hover, .bt-tag:hover {
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: var(--verde);
 }
 
 @keyframes show-up {

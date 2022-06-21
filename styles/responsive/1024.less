@@ -81,16 +81,16 @@
 //FILTROS COMPONENTES
 .bt-filtro {
     padding: 8px 10px 6px;
-    max-width: 140px;
+    max-width: 130px;
 }
 
 .bt-filtro.full {
-    max-width: 170px;
+    max-width: 150px;
 }
 
 .bt-ordenar {
     padding: 8px 10px 6px;
-    max-width: 200px;
+    max-width: 170px;
 }
 
 
@@ -389,7 +389,7 @@ footer {
         max-width: 730px;
     }
 
-    h3{
+    h3 {
         height: 60px;
     }
 }
@@ -641,6 +641,12 @@ footer {
     .relacionados-aparecer {
         display: block;
     }
+
+    .owl-carousel {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 //PAGE PRODUTOS
@@ -653,7 +659,7 @@ footer {
         row-gap: 15px;
 
         .box-left {
-            gap: 25px;
+            gap: 10px;
         }
     }
 
@@ -741,8 +747,44 @@ footer {
 #blog {
     padding: 110px 0 6.25vw;
 
+    h1+*{
+        margin-top: 15px;
+    }
+
+    .title+*{
+        margin-top: 15px;
+    }
+
     .container-color {
         flex-direction: column;
+        max-width: 650px;
+        gap: 15px;
+    }
+
+    .side-box.desktop {
+        display: none;
+    }
+
+    .side-box.tags.mobile {
+        display: grid;
+
+        .bt-transp{
+            padding: 4px 9px 5px;
+        }
+    }
+
+    .side-box.filtros.mobile {
+        display: block;
+    }
+
+    .side-box.tags.desktop,
+    .side-box.filtros.desktop {
+        display: none;
+    }
+
+
+    .container-color.title {
+        text-align: center;
     }
 
     .posts,
@@ -751,14 +793,48 @@ footer {
         max-width: 100%;
     }
 
+    .posts {
+        gap: 15px;
+    }
+
+    .paginacao {
+        margin-top: 20px;
+    }
+
     .side-bar {
+        gap: 15px;
+
         .side-box {
+            padding: 20px;
+
+            h4 {
+                text-align: left;
+            }
+
+            h4+*{
+                margin-top: 15px;
+            }
+
+            .grid-tags {
+                gap: 8px;
+            }
+
             .popular-post {
                 .title-date {
                     max-width: 100%;
                 }
             }
         }
+    }
+}
+
+#blog.post {
+    #tags-post {
+        display: none;
+    }
+
+    .side-box.filtros.desktop {
+        display: block;
     }
 }
 

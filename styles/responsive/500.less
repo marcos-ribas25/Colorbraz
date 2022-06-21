@@ -102,31 +102,6 @@
 }
 
 //FILTROS COMPONENTES
-.bt-filtro {
-    max-width: 100%;
-    border: unset;
-    font-size: 10px;
-
-    svg {
-        max-width: 7px;
-        margin-bottom: 2px;
-    }
-}
-
-.bt-filtro.full {
-    max-width: 100%;
-}
-
-.bt-ordenar {
-    padding: 5px 10px 3px 3px;
-    max-width: 130px;
-
-    svg {
-        max-width: 9px;
-        margin-bottom: 2px;
-    }
-}
-
 .box-catalogo {
     padding: 20px 12px 15px;
 
@@ -147,7 +122,6 @@
         font-size: 11px;
     }
 }
-
 
 //SECTIONS
 header {
@@ -205,7 +179,6 @@ footer {
 }
 
 .text-absolute-image {
-    padding: 15px 0;
 
     .container-color {
         max-width: 90%;
@@ -596,6 +569,10 @@ footer {
 #cores {
     .container-color {
         max-width: 90%;
+
+        .content{
+            padding-top: 30px;
+        }
     }
 }
 
@@ -613,9 +590,10 @@ footer {
 
 //PAGE PRODUTOS
 #banner-produtos {
+    min-height: 160px;
+
     .container-color {
         margin: 0;
-        margin-left: 20px;
     }
 }
 
@@ -632,29 +610,12 @@ footer {
         }
     }
 
-    .box-left.mobile-sumir {
-        display: none;
-    }
-
-    .box-left.mobile-aparecer {
-        display: block !important;
-        width: 120px;
-
-        .dropbtn {
-            padding: 5px 10px 3px;
-            display: flex;
-            justify-content: space-between;
-            width: 120px;
-            border: 1px solid #000;
-        }
-    }
-
     .filter+* {
         margin-top: 30px;
     }
 
     .container-color {
-        max-width: 350px;
+        max-width: 90%;
     }
 }
 
@@ -717,36 +678,14 @@ footer {
 
 //PAGE BLOG 
 #blog {
-    padding: 90px 0 30px;
+    padding: 80px 0 30px;
 
     [class*='link-1'] {
         font-size: 12px;
     }
 
-    .image {
-        img {
-            height: 145px;
-        }
-    }
-
-    .side-box.filtros.mobile {
-        display: block;
-    }
-
-    .side-box.filtros.desktop {
-        display: none;
-    }
-
-    .container-color.title {
-        gap: 10px;
-    }
-
     .container-color {
         max-width: 95%;
-    }
-
-    .posts {
-        gap: 10px;
     }
 
     .post-title {
@@ -816,6 +755,10 @@ footer {
 
     .side-bar {
         .side-box {
+            h4 {
+                font-size: 20px;
+            }
+            
             h4+* {
                 margin-top: 13px;
             }
@@ -825,7 +768,7 @@ footer {
 
 //PAGE POST 
 #banner-post {
-    height: 300px;
+    height: 200px;
     background-position: 12%;
 }
 

@@ -8,9 +8,6 @@
 header .container-color {
   padding: 14px 20px 5px 10px;
 }
-.text-absolute-image {
-  padding: 15px 0;
-}
 .text-absolute-image h2 {
   font-size: 20px;
 }
@@ -28,4 +25,7 @@ header .container-color {
 }
 #produto-infomacoes .container-color {
   max-width: 95%;
+}
+#catalogo .grid-catalogo {
+  grid-template-columns: repeat(1, 1fr);
 }

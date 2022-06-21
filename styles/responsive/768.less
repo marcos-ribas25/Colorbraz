@@ -86,23 +86,22 @@
 
 //FILTROS COMPONENTES
 .bt-filtro {
-    padding: 5px 10px 3px;
-    max-width: 110px;
-    font-size: 11px;
+    max-width: 100%;
+    font-size: 10px;
 
     svg {
-        max-width: 9px;
+        max-width: 7px;
         margin-bottom: 2px;
     }
 }
 
 .bt-filtro.full {
-    max-width: 140px;
+    max-width: 100%;
 }
 
 .bt-ordenar {
-    padding: 5px 10px 3px 5px;
-    max-width: 150px;
+    padding: 5px 10px 3px 3px;
+    max-width: 130px;
 
     svg {
         max-width: 9px;
@@ -666,6 +665,27 @@ footer {
         .box-left {
             gap: 10px;
         }
+
+        .bt-filtro {
+            border: unset;
+        }
+    }
+
+    .box-left.mobile-sumir {
+        display: none;
+    }
+
+    .box-left.mobile-aparecer {
+        display: block !important;
+        width: 120px;
+
+        .dropbtn {
+            padding: 5px 10px 3px;
+            display: flex;
+            justify-content: space-between;
+            width: 120px;
+            border: 1px solid #000;
+        }
     }
 
     .filter+* {
@@ -690,6 +710,15 @@ footer {
     }
 }
 
+//PAGE CATALOGO 
+#catalogo {
+    .filter {
+        .bt-filtro.full {
+            max-width: 130px;
+        }
+    }
+}
+
 //PAGE CONTATO
 #contato {
     padding-top: 110px;
@@ -701,12 +730,6 @@ footer {
 
     [class*='link-1'] {
         font-size: 13px;
-    }
-
-    .image {
-        img {
-            height: 210px;
-        }
     }
 
     .container-color {

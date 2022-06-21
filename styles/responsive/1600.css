@@ -242,8 +242,9 @@ header .container-color {
 #blog {
   padding: 165px 0 6.25vw;
 }
-#blog .image img {
-  height: 335px;
+#blog .post .image img {
+  aspect-ratio: 687/370;
+  min-height: 210px;
 }
 #banner-post {
   height: 395px;

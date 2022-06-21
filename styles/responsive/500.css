@@ -75,26 +75,6 @@
   width: 100px;
   max-height: 30px;
 }
-.bt-filtro {
-  max-width: 100%;
-  border: unset;
-  font-size: 10px;
-}
-.bt-filtro svg {
-  max-width: 7px;
-  margin-bottom: 2px;
-}
-.bt-filtro.full {
-  max-width: 100%;
-}
-.bt-ordenar {
-  padding: 5px 10px 3px 3px;
-  max-width: 130px;
-}
-.bt-ordenar svg {
-  max-width: 9px;
-  margin-bottom: 2px;
-}
 .box-catalogo {
   padding: 20px 12px 15px;
 }
@@ -147,9 +127,6 @@ footer .logo .ecotex {
 }
 .title-text .description {
   line-height: 19px;
-}
-.text-absolute-image {
-  padding: 15px 0;
 }
 .text-absolute-image .container-color {
   max-width: 90%;
@@ -429,6 +406,9 @@ footer .logo .ecotex {
 #cores .container-color {
   max-width: 90%;
 }
+#cores .container-color .content {
+  padding-top: 30px;
+}
 #relacionados {
   padding: 15px 0 30px;
 }
@@ -438,9 +418,11 @@ footer .logo .ecotex {
 #relacionados .container-color {
   max-width: 320px;
 }
+#banner-produtos {
+  min-height: 160px;
+}
 #banner-produtos .container-color {
   margin: 0;
-  margin-left: 20px;
 }
 #produtos-content {
   padding: 25px 0 50px;
@@ -453,25 +435,11 @@ footer .logo .ecotex {
 #produtos-content .filter .box-left {
   gap: 10px;
 }
-#produtos-content .box-left.mobile-sumir {
-  display: none;
-}
-#produtos-content .box-left.mobile-aparecer {
-  display: block !important;
-  width: 120px;
-}
-#produtos-content .box-left.mobile-aparecer .dropbtn {
-  padding: 5px 10px 3px;
-  display: flex;
-  justify-content: space-between;
-  width: 120px;
-  border: 1px solid #000;
-}
 #produtos-content .filter + * {
   margin-top: 30px;
 }
 #produtos-content .container-color {
-  max-width: 350px;
+  max-width: 90%;
 }
 #grid-produtos {
   gap: 20px;
@@ -514,28 +482,13 @@ footer .logo .ecotex {
   padding-top: 90px;
 }
 #blog {
-  padding: 90px 0 30px;
+  padding: 80px 0 30px;
 }
 #blog [class*='link-1'] {
   font-size: 12px;
 }
-#blog .image img {
-  height: 145px;
-}
-#blog .side-box.filtros.mobile {
-  display: block;
-}
-#blog .side-box.filtros.desktop {
-  display: none;
-}
-#blog .container-color.title {
-  gap: 10px;
-}
 #blog .container-color {
   max-width: 95%;
-}
-#blog .posts {
-  gap: 10px;
 }
 #blog .post-title h3 {
   font-size: 19px;
@@ -578,11 +531,14 @@ footer .logo .ecotex {
   max-width: 34px;
   max-height: 34px;
 }
+#blog .side-bar .side-box h4 {
+  font-size: 20px;
+}
 #blog .side-bar .side-box h4 + * {
   margin-top: 13px;
 }
 #banner-post {
-  height: 300px;
+  height: 200px;
   background-position: 12%;
 }
 #blog.post {

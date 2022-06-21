@@ -409,9 +409,6 @@ footer .container-color + * {
   font-size: 39px;
   line-height: 43px;
 }
-#blog .image img {
-  height: 290px;
-}
 #blog .author + * {
   margin-top: 14px;
 }
